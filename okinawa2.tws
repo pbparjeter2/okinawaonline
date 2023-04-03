@@ -1,0 +1,6548 @@
+(dp0
+S'buildDestination'
+p1
+VC:\u005cusers\u005cmleno\u005cMy Documents\u005cokinawa\u005cindex.html
+p2
+sS'saveDestination'
+p3
+S'Z:\\home\\mleno\\Documents\\okinawa\\okinawa2.tws'
+p4
+sS'metadata'
+p5
+(dp6
+sS'target'
+p7
+S'sugarcube-2'
+p8
+sS'storyPanel'
+p9
+(dp10
+S'widgets'
+p11
+(lp12
+(dp13
+S'selected'
+p14
+I00
+sS'pos'
+p15
+(lp16
+F10.0
+aF0.49689440993788914
+asS'passage'
+p17
+(itiddlywiki
+Tiddler
+p18
+(dp20
+S'text'
+p21
+V[img[./img/belk.png][levels]]<<im>>\u000a\u000a<<if $debug eq "on">>[[title]][[twob]][[oneb]][[threeb]][[death]][[fourb]][[fiveb]]<<endif>>\u000a\u000a
+p22
+sS'title'
+p23
+VStart
+p24
+sS'modified'
+p25
+ctime
+struct_time
+p26
+((I2021
+I8
+I23
+I1
+I57
+I25
+I0
+I235
+I1
+tp27
+(dp28
+tp29
+Rp30
+sS'tags'
+p31
+(lp32
+sS'created'
+p33
+g26
+((I2021
+I8
+I19
+I21
+I52
+I4
+I3
+I231
+I1
+tp34
+(dp35
+tp36
+Rp37
+sbsa(dp38
+g14
+I00
+sg15
+(lp39
+F10.0
+aF148.13641900121803
+asg17
+(itiddlywiki
+Tiddler
+p40
+(dp41
+g21
+VOkinawa Online
+p42
+sg23
+VStoryTitle
+p43
+sg25
+g26
+((I2021
+I8
+I19
+I21
+I52
+I31
+I3
+I231
+I1
+tp44
+(dp45
+tp46
+Rp47
+sg31
+(lp48
+sg33
+g26
+((I2021
+I8
+I19
+I21
+I52
+I4
+I3
+I231
+I1
+tp49
+(dp50
+tp51
+Rp52
+sbsa(dp53
+g14
+I00
+sg15
+(lp54
+F10.0
+aF291.357586512866
+asg17
+(itiddlywiki
+Tiddler
+p55
+(dp56
+g21
+VChris Marker, P.B. Parjeter
+p57
+sg23
+VStoryAuthor
+p58
+sg25
+g26
+((I2021
+I8
+I19
+I21
+I52
+I36
+I3
+I231
+I1
+tp59
+(dp60
+tp61
+Rp62
+sg31
+(lp63
+sg33
+g26
+((I2021
+I8
+I19
+I21
+I52
+I4
+I3
+I231
+I1
+tp64
+(dp65
+tp66
+Rp67
+sbsa(dp68
+g14
+I00
+sg15
+(lp69
+F50.72759538598048
+aF428.13641900121803
+asg17
+(itiddlywiki
+Tiddler
+p70
+(dp71
+g21
+V<<set $debug to "off">>\u000a\u000a<<widget "br">><br><br><</widget>>\u000a\u000a<<widget "n">><span style="padding: 5px"><<link "\u21b5">></span><<goto $args[0]>><</link>><</widget>>\u000a\u000a<<widget "im">><style>a, a:hover {background-color: black; color: white}</style>\u000a<</widget>>\u000a\u000a<<include "progb">>\u000a\u000a\u000a<<set $textlv to 0>>\u000a\u000a<<widget "hov">><span class="hover" @title="$args[1]"><<print $args[0]>></span><</widget>>\u000a\u000a<<widget "prog">><<silently>>\u000a<<if $textlv lt $args[0]>>\u000a<<set $textlv to $args[0]>>\u000a<<endif>><</silently>>\u000a<</widget>>\u000a\u000a<<widget "seterr">><<silently>>\u000a<<if visited() eq 1>><<set $error to true>><<endif>><</silently>>\u000a<</widget>>\u000a\u000a\u000a<<widget "redhint">><<if visited() gt 2>><span style="color: red"><<print $args[0].toUpperCase()>></span><<else>><<print $args[0]>><<endif>><</widget>>\u000a\u000a<<widget "redred">><span style="color: grey"><<print $args[0]>></span><</widget>>\u000a\u000a<<widget "err">><<silently>><<if visited() is 1>><<set $error to true>><<endif>><</silently>>\u000a<</widget>>\u000a\u000a<<widget "sp">>&#8195;&#8195;<</widget>>\u000a\u000a<<include "memw">>\u000a\u000a<<widget "audiotag">>\u000a<div style="position:absolute; top: 0; right: 0; padding: 2px">&#128266;&#xfe0e; AUDIO PLAYING</div>\u000a<</widget>>
+p72
+sg23
+VStoryInit
+p73
+sg25
+g26
+((I2021
+I9
+I18
+I19
+I9
+I38
+I5
+I261
+I1
+tp74
+(dp75
+tp76
+Rp77
+sg31
+(lp78
+sg33
+g26
+((I2021
+I8
+I19
+I21
+I52
+I45
+I3
+I231
+I1
+tp79
+(dp80
+tp81
+Rp82
+sbsa(dp83
+g14
+I00
+sg15
+(lp84
+F8.642413487133984
+aF572.7151730257319
+asg17
+(itiddlywiki
+Tiddler
+p85
+(dp86
+g21
+V\u000a<<widget "progdyn">>\u000a\u000a<<if $args[2] neq "noskip">>\u000a<<if visited() gt 1 or $debug eq "on">><span vertical-align="middle"><<link "SKIP">><<goto $args[0]>><</link>></span><<endif>>\u000a<<endif>>\u000a\u000a<<set $intv to ($args[1] / 34) + 's'>>\u000a<<timed $intv>><<if $visited lt 1>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span><<endif>>\u000a<<next $intv>><<if $visited lt 1>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span><<endif>>\u000a<<next $intv>><<if $visited lt 1>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span><<endif>>\u000a<<next $intv>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span>\u000a<<next $intv>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span>\u000a<<next $intv>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span>\u000a<<next $intv>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span>\u000a<<next $intv>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span>\u000a<<next $intv>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span>\u000a<<next $intv>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span>\u000a<<next $intv>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span>\u000a<<next $intv>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span>\u000a<<next $intv>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span>\u000a<<next $intv>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span>\u000a<<next $intv>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span>\u000a<<next $intv>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span>\u000a<<next $intv>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span>\u000a<<next $intv>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span>\u000a<<next $intv>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span>\u000a<<next $intv>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span>\u000a<<next $intv>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span>\u000a<<next $intv>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span>\u000a<<next $intv>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span>\u000a<<next $intv>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span>\u000a<<next $intv>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span>\u000a<<next $intv>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span>\u000a<<next $intv>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span>\u000a<<next $intv>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span>\u000a<<next $intv>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span>\u000a<<next $intv>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span>\u000a<<next $intv>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span>\u000a<<next $intv>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span>\u000a<<next $intv>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span>\u000a<<next $intv>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span>\u000a<<next 5s>>\u000a<<goto $args[0]>>\u000a<</timed>>\u000a\u000a<</widget>>
+p87
+sg23
+Vprogb
+p88
+sg25
+g26
+((I2021
+I8
+I23
+I1
+I2
+I4
+I0
+I235
+I1
+tp89
+(dp90
+tp91
+Rp92
+sg31
+(lp93
+sg33
+g26
+((I2021
+I8
+I19
+I21
+I53
+I17
+I3
+I231
+I1
+tp94
+(dp95
+tp96
+Rp97
+sbsa(dp98
+g14
+I00
+sg15
+(lp99
+F136.4241348713398
+aF3.212067435669921
+asg17
+(itiddlywiki
+Tiddler
+p100
+(dp101
+g21
+V<<widget "levlink">>\u000a<<if $textlv eq $args[0]>>\u000a<<link `"Level " + $args[1] + ""`>><<goto $args[2]>><</link>><<else>>Level <<print $args[1]>><<endif>>\u000a<</widget>>\u000a\u000a\u000a\u000a\u000aIn conversation, I still mention the levels we used to give to people when we spoke. When someone came and said: \u201cI am Catholic, or Communist, or Anarchist\u201d, or any other bigotry, we would say: <<levlink 1 "One" "oneb">>!\u000a<<br>>\u000aWe'd laugh so much! When they were funnier, or wittier, we'd say: <<levlink 2 "Two" "twob">>!\u000a\u000a<<br>>\u000a<<if $textlv lt 3>>But it never went higher<<endif>>\u000a\u000a<<if $textlv gte 3>>\u000aThen:\u000a<<levlink 3 "Three" "threeb">>, \u000a or <<levlink 4 "Four" "fourb">><<endif>>.\u000a<<br>>\u000aThe Game became such a standard that we could do nothing unless we gave levels to everything in life.\u000a<<br>>\u000aBut nothing ever reached <<levlink 5 "Five" "fiveb">>. I remember one day I said to you: \u201cMust one die to get to Level Five?\u201d\u000a<<br>>\u000a<<if $textlv eq 0>><<progdyn "title" 15>><<endif>>
+p102
+sg23
+Vlevels
+p103
+sg25
+g26
+((I2022
+I9
+I3
+I14
+I19
+I46
+I5
+I246
+I1
+tp104
+(dp105
+tp106
+Rp107
+sg31
+(lp108
+sg33
+g26
+((I2021
+I8
+I19
+I21
+I53
+I32
+I3
+I231
+I1
+tp109
+(dp110
+tp111
+Rp112
+sbsa(dp113
+g14
+I00
+sg15
+(lp114
+F1501.978704525288
+aF49.37000887311446
+asg17
+(itiddlywiki
+Tiddler
+p115
+(dp116
+g21
+V\u000a$('#ui-bar').remove();\u000a$(document.head).find('#style-ui-bar').remove();
+p117
+sg23
+VUntitled Script 1
+p118
+sg25
+g26
+((I2021
+I8
+I20
+I2
+I38
+I33
+I4
+I232
+I1
+tp119
+(dp120
+tp121
+Rp122
+sg31
+(lp123
+Vscript
+p124
+asg33
+g26
+((I2021
+I8
+I19
+I21
+I54
+I32
+I3
+I231
+I1
+tp125
+(dp126
+tp127
+Rp128
+sbsa(dp129
+g14
+I00
+sg15
+(lp130
+F287.28482697426796
+aF3.212067435669921
+asg17
+(itiddlywiki
+Tiddler
+p131
+(dp132
+g21
+V\u000a\u000a<<if visited() lt 3>>\u000a<span style="font-size: 200%">OKINAWA ONLINE</span>\u000a<<elseif visited() gte 3 and visited() lt 4>>\u000a\u000a<span style="font-size: 200%"><span style="color: red">O</span>KINA<span style="color: red">W</span>A ON<span style="color: red">L</span>INE</span>\u000a\u000a<<elseif visited() gte 4>>\u000a\u000a<span style="font-size: 200%"><span style="color: red; border-bottom: 2px solid red">O</span>KINA<span style="color: red; border-bottom: 2px solid red;">W</span>A ON<span style="color: red; border-bottom: 2px solid red">L</span>INE</span>\u000a\u000a<<endif>>\u000a\u000a<<if !hasVisited("help") and $textlv lt 3>>\u000a<br>Written by Chris Marker\u000a<br>Adapted for Twine by P.B. Parjeter\u000a<<endif>>\u000a\u000a<<if $textlv gte 0.5>><<br>>\u000aAvailable commands:<<sp>>OWL<<sp>>MAIL<<sp>>LOAD<<sp>>SAVE<<sp>>DELETE<<sp>>START\u000a<<endif>>\u000a\u000a<<if $textlv gte 0.6 and $textlv lt 1>>\u000a<<sp>><<hov "(NOUN)" "To progress, you need to enter the correct noun.">><<endif>>\u000a\u000a<span style="font-size: 75%">\u000a\u000a\u000a\u000a<br>\u000a\u000a\u000a<<if $textlv gte 1.1>><hr><<redred "ONE">><<sp>>\u000aKINJO, Shigeaki<<sp>>TOKITSU, Kenji<<sp>><<if !hasVisited("laura")>>?????<<else>>LAURA<<endif>> (Belkhodja, Catherine L.)<<endif>>\u000a\u000a<<if $textlv gte 2.2>><hr><<redred "TWO">><<sp>>NAPOLEON (Bonaparte, Napoleon)<<sp>>YAHARA, Hiromichi<<sp>><<if !hasVisited("flag")>>????<<else>>FLAG<<endif>><<sp>>TOMORI, Lion of<<endif>>\u000a\u000a<<if $textlv gte 3.3>><hr><<redred "THREE">><<sp>>PYLE, Ernie<<sp>>SAIPAN<<sp>>COCOLOCO (Parrot)<<sp>><<if hasVisited("sesame")>>OPEN-SESAME (Password)<<else>>????-?????? (Password)<<endif>> <<endif>>\u000a\u000a\u000a<<if $textlv gte 4.4>><hr><<redred "FOUR">><<sp>>HAYES, Ira<<sp>>GUSTAVE<<sp>>KINJO.NEW<<sp>><<if hasVisited("harakiri")>>HARAKIRI (Suicide method)<<else>>???????? (Suicide method)<<endif>><<endif>>\u000a\u000a\u000a\u000a\u000a\u000a<<if $textlv gte 5.5>><hr><<redred "FIVE">><<sp>>HARFANG (Owl)<<sp>><<if hasVisited("lauranew")>>LAURA.NEW<<else>>?????.NEW<<endif>><<endif>></span>\u000a<<br>>\u000a<<if $textlv lt 0.5>>ENTER PASSWORD:<<endif>><span id="subc"></span><<textbox "$cmd" "" "handler">>\u000a\u000a<<br>>\u000a\u000a<<if $error eq true>>Application \u201cUNKNOWN\u201d. System unexpectedly quit. Type 14 error. Type REPAIR to continue.<<endif>>
+p133
+sg23
+Vtitle
+p134
+sg25
+g26
+((I2022
+I9
+I3
+I14
+I15
+I49
+I5
+I246
+I1
+tp135
+(dp136
+tp137
+Rp138
+sg31
+(lp139
+sg33
+g26
+((I2021
+I8
+I19
+I21
+I54
+I40
+I3
+I231
+I1
+tp140
+(dp141
+tp142
+Rp143
+sbsa(dp144
+g14
+I00
+sg15
+(lp145
+F1780.6211180124221
+aF48.012422360248436
+asg17
+(itiddlywiki
+Tiddler
+p146
+(dp147
+g21
+Vbody {background-color: black}\u000a\u000a@font-face {\u000a    font-family: "Electrolize";\u000a    src: url("./img/elec.ttf")\u000a}\u000a\u000abody {font-family: "Electrolize"; font-size: 130%}\u000a\u000abody {cursor:default}\u000a\u000a.hover {border-bottom: 2px dashed red; cursor: help}\u000a\u000aa, a:hover {background-color: white; text-decoration: none; color: black; padding: 3px; vertical-align:middle}\u000a\u000a\u000abody{\u000auser-select: none;\u000a-moz-user-select: none;\u000a}\u000a\u000a#textbox-cmd {text-transform: uppercase;}
+p148
+sg23
+VUntitled Stylesheet 1
+p149
+sg25
+g26
+((I2021
+I8
+I21
+I17
+I9
+I49
+I5
+I233
+I1
+tp150
+(dp151
+tp152
+Rp153
+sg31
+(lp154
+Vstylesheet
+p155
+asg33
+g26
+((I2021
+I8
+I19
+I21
+I55
+I46
+I3
+I231
+I1
+tp156
+(dp157
+tp158
+Rp159
+sbsa(dp160
+g14
+I00
+sg15
+(lp161
+F710.0
+aF10.0
+asg17
+(itiddlywiki
+Tiddler
+p162
+(dp163
+g21
+V<<prog 0.5>>\u000a\u000aWelcome to OWL.\u000aOptional World Link.\u000aThis terminal will give you access\u000ato all available networks:\u000aRadio, television,\u000anews networks,\u000awhether they exist or not,\u000apresent or future.\u000aBits have replaced savings.\u000aGold and dollar belong\u000ain the past.\u000aRight here, feel the beating\u000aof the heart of the future.\u000aThe Knowledge-standard!\u000a<<br>>\u000a Ah, the Network! The Network's Network, that gave you\u000aa free connection\u000ato databanks worldwide.\u000aIn pre-historic times\u000aof the <span class="hover" title="The Minitel was a videotex online service accessible through telephone lines, and was the world's most successful online service prior to the World Wide Web. It was invented in Cesson-Sévigné, near Rennes in Brittany, France.">MINITEL</span>\u000apeople used pseudonyms.\u000aHere they wore virtual masks.<<n knowls>>\u000a
+p164
+sg23
+Vhelp
+p165
+sg25
+g26
+((I2021
+I8
+I21
+I2
+I13
+I15
+I5
+I233
+I1
+tp166
+(dp167
+tp168
+Rp169
+sg31
+(lp170
+sg33
+g26
+((I2021
+I8
+I19
+I21
+I58
+I14
+I3
+I231
+I1
+tp171
+(dp172
+tp173
+Rp174
+sbsa(dp175
+g14
+I00
+sg15
+(lp176
+F422.3688946001539
+aF21.012442894861344
+asg17
+(itiddlywiki
+Tiddler
+p177
+(dp178
+g21
+V\u000a\u000a\u000a\u000a<<if $textlv gte 0>>\u000a <<if $cmd.toUpperCase() eq "OWL">><<goto "help">>\u000a <<elseif $cmd.toUpperCase() eq "LOAD">><<goto "load">>\u000a<<elseif $cmd.toUpperCase() eq "REPAIR">><<goto "repair">>\u000a<<elseif $cmd.toUpperCase() eq "VERSION">><<goto "version">>\u000a <<else>><<goto "no">>\u000a <<endif>>\u000a<<endif>>\u000a\u000a<<if $textlv gte 0.5>>\u000a <<if $cmd.toUpperCase() eq "MAIL">><<goto "mail">>\u000a <<elseif $cmd.toUpperCase() eq "START">><<goto "start">>\u000a <<elseif $cmd.toUpperCase() eq "SAVE">><<goto "save">>\u000a <<elseif $cmd.toUpperCase() eq "DELETE">><<goto "delete">>\u000a\u000a\u000a\u000a <<endif>>\u000a\u000a<<endif>>\u000a\u000a<<if $textlv gte 0.6>>\u000a <<if $cmd.toUpperCase() eq "SHOE">><<goto "shoe">>\u000a  <<elseif $cmd.toUpperCase() eq "DOG" or $cmd.toUpperCase() eq "NOUN" or $cmd.toUpperCase() eq "CAULIFLOWER" or $cmd.toUpperCase() eq "SARDINE" or $cmd.toUpperCase() eq "TORTOISE">><<goto "how">>\u000a\u000a <<endif>>\u000a<<endif>>\u000a\u000a<<if $textlv gte 1.1>>\u000a <<if $cmd.toUpperCase() eq "KINJO">><<goto "kinjo">>\u000a <<elseif $cmd.toUpperCase() eq "TOKITSU">><<goto "tokitsu">>\u000a <<elseif $cmd.toUpperCase() eq "LAURA">><<goto "laura">>\u000a\u000a <<endif>>\u000a<<endif>>\u000a\u000a<<if $textlv gte 2.2>>\u000a <<if $cmd.toUpperCase() eq "NAPOLEON">><<goto "napoleon">>\u000a <<elseif $cmd.toUpperCase() eq "YAHARA">><<goto "yahara">>\u000a <<elseif $cmd.toUpperCase() eq "TOMORI">><<goto "tomori">>\u000a <<elseif $cmd.toUpperCase() eq "FLAG">><<goto "flag">>\u000a <<endif>>\u000a<<endif>>\u000a\u000a<<if $textlv gte 3.3>>\u000a <<if $cmd.toUpperCase() eq "PYLE">><<goto "pyle">>\u000a <<elseif $cmd.toUpperCase() eq "COCOLOCO">><<goto "cocoloco">>\u000a <<elseif $cmd.toUpperCase() eq "SAIPAN">><<goto "saipan">>\u000a <<elseif $cmd.toUpperCase() eq "OPEN-SESAME">><<goto "sesame">>\u000a <<endif>>\u000a<<endif>>\u000a\u000a\u000a<<if $textlv gte 4.4>>\u000a <<if $cmd.toUpperCase() eq "HAYES">><<goto "hayes">>\u000a <<elseif $cmd.toUpperCase() eq "GUSTAVE">><<goto "gustave">>\u000a\u000a <<elseif $cmd.toUpperCase() eq "KINJO.NEW">><<goto "kinjox">>\u000a <<elseif $cmd.toUpperCase() eq "BUCKNER">><<goto "buckner">>\u000a\u000a <<elseif $cmd.toUpperCase() eq "HARAKIRI">><<goto "harakiri">>\u000a <<endif>>\u000a<<endif>>\u000a\u000a<<if $textlv gte 5.5>>\u000a <<if $cmd.toUpperCase() eq "HARFANG">><<goto "endof">>\u000a <<elseif $cmd.toUpperCase() eq "LAURA.NEW">><<goto "lauranew">>\u000a <<endif>>\u000a<<endif>>\u000a\u000a\u000a
+p179
+sg23
+Vhandler
+p180
+sg25
+g26
+((I2021
+I8
+I22
+I22
+I24
+I5
+I6
+I234
+I1
+tp181
+(dp182
+tp183
+Rp184
+sg31
+(lp185
+sg33
+g26
+((I2021
+I8
+I19
+I21
+I58
+I23
+I3
+I231
+I1
+tp186
+(dp187
+tp188
+Rp189
+sbsa(dp190
+g14
+I00
+sg15
+(lp191
+F570.0
+aF10.0
+asg17
+(itiddlywiki
+Tiddler
+p192
+(dp193
+g21
+V[img[./img/belk.png][title]]<<im>>\u000a\u000a
+p194
+sg23
+Vno
+p195
+sg25
+g26
+((I2021
+I8
+I19
+I22
+I3
+I22
+I3
+I231
+I1
+tp196
+(dp197
+tp198
+Rp199
+sg31
+(lp200
+sg33
+g26
+((I2021
+I8
+I19
+I22
+I3
+I20
+I3
+I231
+I1
+tp201
+(dp202
+tp203
+Rp204
+sbsa(dp205
+g14
+I00
+sg15
+(lp206
+F574.5785270630013
+aF285.421245975486
+asg17
+(itiddlywiki
+Tiddler
+p207
+(dp208
+g21
+V<<if !hasVisited("lauranew")>>\u000a\u000a\u000aYesterday I had a strange exchange on OWL.\u000aA guy said:\u000a"I just took something to sleep.\u000aI won't wake up.\u000aI feel so calm.\u000aBefore dying,\u000aI want to make a gift\u000aof the kind my contemporaries\u000acan appreciate.\u000aOne last phone call\u000abefore I go."<<br>>\u000a"I am well-known, you see. Tomorrow my name\u000awill be in all the papers.\u000aAnd yours too, if you say\u000ayou're the last person\u000aI spoke to before I left.\u000aSo I make this gift.\u000aThe last words of\u2026\u000aYou'll see tomorrow in the papers,\u000aI'm not fooling, you see?\u201d<<br>>\u000aI answered:\u000a"I think you're fooling,\u000abecause I know about death,\u000aI know it well,\u000aI know it by heart.\u000aAnd we could still talk\u000aeven if you said\u000ayou were dead.\u000aBecause the man I loved is dead\u000aand I talk to him every night.\u000aGood night.\u201d <<n nothing>>\u000a\u000a<<else>>\u000a\u000a<<goto "cat">>\u000a\u000a<<endif>>
+p209
+sg23
+Vmail
+p210
+sg25
+g26
+((I2021
+I8
+I23
+I0
+I51
+I35
+I0
+I235
+I1
+tp211
+(dp212
+tp213
+Rp214
+sg31
+(lp215
+sg33
+g26
+((I2021
+I8
+I19
+I22
+I7
+I51
+I3
+I231
+I1
+tp216
+(dp217
+tp218
+Rp219
+sbsa(dp220
+g14
+I00
+sg15
+(lp221
+F718.6512866015987
+aF291.357586512866
+asg17
+(itiddlywiki
+Tiddler
+p222
+(dp223
+g21
+V\u000aThe next day there was\u000a<<hov "nothing" "A note from Chris Marker: The man in question died somewhat mysteriously after the trip to Okinawa. For those who love premonition signs,his last images were shot in the foreign graveyard of Naha. He said it'd be good to lie among the decaying tombs of the combatants of all the useless wars, including that of Commodore Perry's. Years before MacArthur, Perry came unasked to Shuri Castle, that World War II would turn to dust, whilst modernising Japan. As if this country needed a US soldier each century to enter a new era. Beside Perry's tomb he'd explained Oshima's comment, his: \u201cOkinawa was sacrificed!\u201d. Sute-Ishi, a term from the game Go: It means sacrificing a piece to save a game">>\u000a\u000ain the paper. At first, I thought\u000athat he was fooling,\u000athat he was a nobody.\u000aBut there's a dark space there.\u000athinking back on it.\u000aNothing in the press.\u000aBut what if the death part\u000awasn't fooling,\u000aonly the fame part?<<br>>\u000aWhat if he'd only lied\u000awhen he said\u000a\u201cI am well-known\u201d,\u000ato make me believe before he died\u000ahe was someone else,\u000aand I deprived him of that pleasure,\u000aone last joy before dying?\u000aAnd I thought I've never\u000amentioned you to a stranger before.<<br>>\u000a\u000aI was told that, if you cut life at the root, if you are cut from\u000athe root of life, you die. If in any strategic technique,\u000ayou need to consider saving yourself\u000aand sacrificing a victory card. And that, if we speak of Okinawa\u000awith respect to Japan's main island,\u000athat was the sacrifice. <<n title>>
+p224
+sg23
+Vnothing
+p225
+sg25
+g26
+((I2021
+I8
+I21
+I2
+I19
+I58
+I5
+I233
+I1
+tp226
+(dp227
+tp228
+Rp229
+sg31
+(lp230
+sg33
+g26
+((I2021
+I8
+I19
+I22
+I8
+I2
+I3
+I231
+I1
+tp231
+(dp232
+tp233
+Rp234
+sbsa(dp235
+g14
+I00
+sg15
+(lp236
+F570.0
+aF148.64241348713398
+asg17
+(itiddlywiki
+Tiddler
+p237
+(dp238
+g21
+VI don't know how to start.<<br>>\u000a\u000aI want to tease the computer, like we used to, fool about with it, turn its neurons inside out.<<br>>\u000a\u000aIn LOGO, for instance, a noun for a verb.<<br>>\u000a\u000a\u201cDog\u201d and the computer is foxed, It doesn't know what to answer and confesses: \u201cI don't know how to dog\u201d.\u000a\u201cSardine\u201d: It doesn't know how to sardine, Or \u201cCauliflower\u201d: \u201cI don't know how to cauliflower\u201d.<<br>>\u000a\u000aSo humiliating for a computer not knowing how to cauliflower.<<br>>\u000a\u000a\u201cTortoise\u201d: \u201cI don't know how to tortoise\u201d. \u201cShoe\u201d: \u201cI don't know how to <<redhint "shoe">>.\u000a\u000a<<n "title">>\u000a\u000a<<prog 0.6>>\u000a
+p239
+sg23
+Vstart
+p240
+sg25
+g26
+((I2021
+I8
+I23
+I0
+I55
+I6
+I0
+I235
+I1
+tp241
+(dp242
+tp243
+Rp244
+sg31
+(lp245
+sg33
+g26
+((I2021
+I8
+I19
+I22
+I9
+I27
+I3
+I231
+I1
+tp246
+(dp247
+tp248
+Rp249
+sbsa(dp250
+g14
+I00
+sg15
+(lp251
+F290.0
+aF1270.0
+asg17
+(itiddlywiki
+Tiddler
+p252
+(dp253
+g21
+VSaved game deleted.\u000a\u000a<<run Save.slots.delete(0)>> <<n "title">>
+p254
+sg23
+Vdelete
+p255
+sg25
+g26
+((I2021
+I8
+I19
+I22
+I11
+I7
+I3
+I231
+I1
+tp256
+(dp257
+tp258
+Rp259
+sg31
+(lp260
+sg33
+g26
+((I2021
+I8
+I19
+I22
+I10
+I57
+I3
+I231
+I1
+tp261
+(dp262
+tp263
+Rp264
+sbsa(dp265
+g14
+I00
+sg15
+(lp266
+F290.0
+aF1130.0
+asg17
+(itiddlywiki
+Tiddler
+p267
+(dp268
+g21
+VGame saved.\u000a\u000a<<run Save.slots.save(0)>> <<n "title">>
+p269
+sg23
+Vsave
+p270
+sg25
+g26
+((I2021
+I8
+I19
+I22
+I11
+I14
+I3
+I231
+I1
+tp271
+(dp272
+tp273
+Rp274
+sg31
+(lp275
+sg33
+g26
+((I2021
+I8
+I19
+I22
+I11
+I13
+I3
+I231
+I1
+tp276
+(dp277
+tp278
+Rp279
+sbsa(dp280
+g14
+I00
+sg15
+(lp281
+F290.0
+aF1410.0
+asg17
+(itiddlywiki
+Tiddler
+p282
+(dp283
+g21
+VGame loaded.\u000a\u000a<<run Save.slots.load(0)>> <<n "title">>
+p284
+sg23
+Vload
+p285
+sg25
+g26
+((I2021
+I8
+I19
+I22
+I11
+I25
+I3
+I231
+I1
+tp286
+(dp287
+tp288
+Rp289
+sg31
+(lp290
+sg33
+g26
+((I2021
+I8
+I19
+I22
+I11
+I22
+I3
+I231
+I1
+tp291
+(dp292
+tp293
+Rp294
+sbsa(dp295
+g14
+I00
+sg15
+(lp296
+F710.0
+aF150.0
+asg17
+(itiddlywiki
+Tiddler
+p297
+(dp298
+g21
+VI don't know how to <<print $cmd>> <<n "title">>\u000a\u000a
+p299
+sg23
+Vhow
+p300
+sg25
+g26
+((I2021
+I8
+I20
+I0
+I12
+I35
+I4
+I232
+I1
+tp301
+(dp302
+tp303
+Rp304
+sg31
+(lp305
+sg33
+g26
+((I2021
+I8
+I19
+I22
+I14
+I24
+I3
+I231
+I1
+tp306
+(dp307
+tp308
+Rp309
+sbsa(dp310
+g14
+I00
+sg15
+(lp311
+F579.5031055900618
+aF466.82342502218273
+asg17
+(itiddlywiki
+Tiddler
+p312
+(dp313
+g21
+VI remember an abandoned shoe, one night. It was in a crosswalk, alone, derelict. No one had picked it up. No one had run over it. Another night, it was still there. As if the citizens of Paris had no interest or found superfluous to deal with abandoned shoes. Maybe an unknown woman left her shoe every night in the crosswalk.<<n whymat>>
+p314
+sg23
+Vshoe
+p315
+sg25
+g26
+((I2021
+I8
+I19
+I22
+I18
+I47
+I3
+I231
+I1
+tp316
+(dp317
+tp318
+Rp319
+sg31
+(lp320
+sg33
+g26
+((I2021
+I8
+I19
+I22
+I17
+I37
+I3
+I231
+I1
+tp321
+(dp322
+tp323
+Rp324
+sbsa(dp325
+g14
+I00
+sg15
+(lp326
+F715.4303460514639
+aF462.75066548358467
+asg17
+(itiddlywiki
+Tiddler
+p327
+(dp328
+g21
+VWhy do material objects\u000adisplay such endless,\u000awillful mockery?<<br>>\u000a\u000aIf it could be turned to energy,\u000athe world could do without oil.\u000aWhy is it whenever I ask friends\u000ato taste my Tarte Tatin,\u000amy speciality, my triumph,\u000aall the teaspoons dematerialise?\u000aAnd why at coffee time\u000ado we stir the sugar with forks?\u000aSo shaming.<<br>>\u000aAnd why does a monkey\u000asteal one of my socks every night,\u000ajust one,\u000ato see me scrabble in the morning\u000aand leave with odd socks?\u000aShame again.<<n isthat>>\u000a\u000a
+p329
+sg23
+Vwhymat
+p330
+sg25
+g26
+((I2021
+I8
+I19
+I22
+I18
+I58
+I3
+I231
+I1
+tp331
+(dp332
+tp333
+Rp334
+sg31
+(lp335
+sg33
+g26
+((I2021
+I8
+I19
+I22
+I18
+I55
+I3
+I231
+I1
+tp336
+(dp337
+tp338
+Rp339
+sbsa(dp340
+g14
+I00
+sg15
+(lp341
+F855.4303460514639
+aF462.75066548358467
+asg17
+(itiddlywiki
+Tiddler
+p342
+(dp343
+g21
+V\u000aIs that what <span class="hover" title="Mitsuru Ushijima was commanding general of the 32nd Army, which fought in the Battle of Okinawa during the final stages of the war. Ushijima's troops were defeated, and at the end of the battle he committed suicide.">General Ushijima</span> thought\u000awhen he saw victory slip away?\u000aWhen war displayed\u000athe stubborn willfulness\u000aof material objects?\u000aAll that strategy,\u000aall that loyalty to the Emperor,\u000aand the malignity of objects\u000astole an army as neatly\u000aas monkeys steal socks.<<n genimg>>\u000a
+p344
+sg23
+Visthat
+p345
+sg25
+g26
+((I2021
+I8
+I19
+I22
+I19
+I10
+I3
+I231
+I1
+tp346
+(dp347
+tp348
+Rp349
+sg31
+(lp350
+sg33
+g26
+((I2021
+I8
+I19
+I22
+I19
+I5
+I3
+I231
+I1
+tp351
+(dp352
+tp353
+Rp354
+sbsa(dp355
+g14
+I00
+sg15
+(lp356
+F995.4303460514641
+aF462.75066548358467
+asg17
+(itiddlywiki
+Tiddler
+p357
+(dp358
+g21
+V[img[./img/general.jpg][madgod]]<<im>>
+p359
+sg23
+Vgenimg
+p360
+sg25
+g26
+((I2021
+I8
+I19
+I22
+I19
+I22
+I3
+I231
+I1
+tp361
+(dp362
+tp363
+Rp364
+sg31
+(lp365
+sg33
+g26
+((I2021
+I8
+I19
+I22
+I19
+I15
+I3
+I231
+I1
+tp366
+(dp367
+tp368
+Rp369
+sbsa(dp370
+g14
+I00
+sg15
+(lp371
+F1133.5667650526832
+aF464.61424648236664
+asg17
+(itiddlywiki
+Tiddler
+p372
+(dp373
+g21
+VWhat can these be but\u000athe playthings of a mad God\u000awho made us to build them for him?\u000aImagine Neanderthal man\u000aglimpsing with this vision in his head:\u000aa flash of city at night,\u000aall motion and light.<<br>>\u000aHe cannot tell what it means,\u000ahe has had a poetic vision,\u000aall motion and light,\u000aA sea of lights,\u000ahe cannot unravel the images\u000athat land in his mind,\u000alike birds, swift,\u000aunreachable birds.<<br>>\u000aThoughts, memories, visions\u000aare the same to him,\u000aa scary hallucination.<<n sky>>
+p374
+sg23
+Vmadgod
+p375
+sg25
+g26
+((I2021
+I8
+I21
+I2
+I23
+I24
+I5
+I233
+I1
+tp376
+(dp377
+tp378
+Rp379
+sg31
+(lp380
+sg33
+g26
+((I2021
+I8
+I19
+I22
+I19
+I31
+I3
+I231
+I1
+tp381
+(dp382
+tp383
+Rp384
+sbsa(dp385
+g14
+I00
+sg15
+(lp386
+F1463.9875776397523
+aF459.5439219165917
+asg17
+(itiddlywiki
+Tiddler
+p387
+(dp388
+g21
+V\u000aSuch was William Gibson's vision\u000awhen he wrote <span class="hover" title="Neuromancer is a 1984 science fiction novel by American-Canadian writer William Gibson, considered one of the earliest and best-known works in the cyberpunk genre. Set in the future, the novel follows Henry Case, a washed-up hacker hired for one last job, which brings him up against a powerful artificial intelligence." >Neuromancer</span>\u000aand invented Cyberspace:\u000aHe saw a <span class="hover" title="The Sargasso Sea is a region of the Atlantic Ocean; unlike other seas, it is bounded by currents rather than land. It is unique in that its algue not only floats freely but reproduces vegetatively (ie. from a single parent without producing seeds or spore).">Sargasso Sea</span>,\u000afull of binary algae.\u000aOn that image we Neanderthals\u000agrafted our own visions,\u000aour thoughts and memories,\u000aour pitiful scraps of information.\u000aBut none of us knows\u000awhat a city is.<<br>>\u000aThis is the stuff you used to write.\u000aYou wrote at night, late,\u000asitting at the computer,\u000abefore you logged out.\u000aI'd find it in the morning\u000awhen I logged in.\u000aYou had been working at your game,\u000aand I was about to work on my book.\u000aComputer at night, barnow's delight.\u000aComputer in the morning,\u000atomcat's warning.<<br>>\u000aYou said we were two eights,\u000aeight hours for you,\u000aeight hours for me,\u000aeight hours for us both. <<n "forboth">>\u000a\u000a
+p389
+sg23
+Vwgib
+p390
+sg25
+g26
+((I2021
+I8
+I22
+I12
+I1
+I42
+I6
+I234
+I1
+tp391
+(dp392
+tp393
+Rp394
+sg31
+(lp395
+sg33
+g26
+((I2021
+I8
+I19
+I22
+I19
+I47
+I3
+I231
+I1
+tp396
+(dp397
+tp398
+Rp399
+sbsa(dp400
+g14
+I00
+sg15
+(lp401
+F1610.6069210292817
+aF463.10736468500437
+asg17
+(itiddlywiki
+Tiddler
+p402
+(dp403
+g21
+VIt's Sunday, like Pearl Harbour.\u000aThe Americans expect a bloodbath,\u000alike in the other islands.\u000aThey land on the beach.\u000aNo reaction.\u000aNo reception committee.\u000aThey reach the Japanese forts,\u000afind them abandoned,\u000ayet intact: the bombs\u000adidn't work.\u000aSo why did the Japanese leave?\u000aUshijima, watching\u000afrom the Shuri heights,\u000awaits for planes to decimate\u000athose idiot Yanks\u000atrapped on the beaches.\u000aNo planes.\u000a<<br>>\u000aI thought the game I was making would\u000arectify this malignant fate.\u000aThe 9th Division stuck in Formosa?\u000aSo I create a \u201cFormosa\u201d sub-program,\u000aI ask for the 9th Division's intervention.\u000aYou're kidding! \u201cAccess denied\u201d.\u000aIf I insist,\u000athe sub-program vanishes.\u000aIf I insist again,\u000athe system crashes.\u000aThe beginning is strange.\u000aLanding April 1st sounds foolish.<<n type>>
+p404
+sg23
+Vforboth
+p405
+sg25
+g26
+((I2021
+I8
+I19
+I22
+I20
+I5
+I3
+I231
+I1
+tp406
+(dp407
+tp408
+Rp409
+sg31
+(lp410
+sg33
+g26
+((I2021
+I8
+I19
+I22
+I20
+I1
+I3
+I231
+I1
+tp411
+(dp412
+tp413
+Rp414
+sbsa(dp415
+g14
+I00
+sg15
+(lp416
+F1745.8562555456967
+aF450.7187222715171
+asg17
+(itiddlywiki
+Tiddler
+p417
+(dp418
+g21
+V\u000aFor both sides, nothing\u000agoes as planned.\u000aI'll sort this mess out.\u000aPut the Japanese\u000aback in their bunkers,\u000abring in planes.\u000aSounds easier to move symbols\u000athan real planes\u2026\u000aBut no. \u201cRequest denied\u201d.\u000aAnd here I am with my codes\u000athat don't enter,\u000amy access denied,\u000amy type 14 errors\u2026\u000aAnd my calling on you.\u000a<<br>>\u000a//Application \u201cUNKNOWN\u201d.\u000aSystem unexpectedly quit.\u000aType 14 error.//\u000aType 13 would be prettier,\u000abut it's always type 14.\u000a<<br>> \u000a\u000aOne day I'll give Chris\u000aall this stuff\u000afor him to try to do something.\u000aA game that won't work,\u000aa woman going loony\u2026\u000aWe'll see what he can do, \u000athe editing wunderkind. <<n "title">>\u000a\u000a\u000a<<err>>\u000a<<prog 1>>\u000a\u000a
+p419
+sg23
+Vtype
+p420
+sg25
+g26
+((I2021
+I8
+I21
+I3
+I1
+I33
+I5
+I233
+I1
+tp421
+(dp422
+tp423
+Rp424
+sg31
+(lp425
+sg33
+g26
+((I2021
+I8
+I19
+I22
+I20
+I11
+I3
+I231
+I1
+tp426
+(dp427
+tp428
+Rp429
+sbsa(dp430
+g14
+I00
+sg15
+(lp431
+F95.7089618456078
+aF701.8722271517302
+asg17
+(itiddlywiki
+Tiddler
+p432
+(dp433
+g21
+V<<if $debug eq "on">><div style="position: fixed; top:0; left:0"><<print $textlv>><<print $error>></div><<endif>>
+p434
+sg23
+VPassageFooter
+p435
+sg25
+g26
+((I2021
+I8
+I21
+I2
+I18
+I6
+I5
+I233
+I1
+tp436
+(dp437
+tp438
+Rp439
+sg31
+(lp440
+sg33
+g26
+((I2021
+I8
+I19
+I23
+I7
+I30
+I3
+I231
+I1
+tp441
+(dp442
+tp443
+Rp444
+sbsa(dp445
+g14
+I00
+sg15
+(lp446
+F634.84449353538
+aF889.7251604131557
+asg17
+(itiddlywiki
+Tiddler
+p447
+(dp448
+g21
+V<<silently>><<prog 1.1>><<set $jnum to 300>><<set $unum to 95>><</silently>>\u000a<span style="font-size:200%">LEVEL ONE</span>\u000a<<br>>\u000a\u000a\u000a<<set $hits to 0>>\u000a<<set $missiles to 60>>\u000a\u000a\u000a\u000a<style> #grid > a, #grid > a:hover, .planeico {all: revert; display:inline-block; width: 30px} #grid >  a {background-color: black; color: white} </style>\u000a\u000aAt Formosa, Japan lost over 300 planes, while the Americans lost less than 100. And here I am, with a solitaire version of <<hov "Battleship" "The game of Battleship is thought to have its origins in the French game L'Attaque played during World War I, although parallels have also been drawn to E. I. Horsman's 1890 game Basilinda.">> with flying formations rather than sturdy ships. As if this will reach a virtual ceasefire...in any case, I have <span id="miss"><<print $missiles>></span> missiles left. There are SOLO, TRIPLE, QUADRUPLE, and SIX-PLANE formations that I need to find.\u000a\u000a\u000a\u000a<<widget "pln">>\u000a\u000a<<linkreplace "\u2591">>\u000a  <span class="planeico">\u2708</span>\u000a  <<set $missiles -= 1>>\u000a  <<replace "#miss">><<print $missiles>><</replace>>\u000a  <<set $hits += 1>>\u000a  <<if $missiles eq 0>><<replace "#grid">><<br>>OUT OF MISSILES<<br>><</replace>><<endif>>\u000a  <<if $hits eq 14>><<replace "#grid">><<br>>BATTLE SUCCESS<</replace>><<replace "#button">><<br>>[[CEASEFIRE ACHIEVED: CONTINUE|title]]<</replace>>  <<endif>>\u000a<</linkreplace>>\u000a\u000a\u000a<</widget>>\u000a\u000a<<widget "nop">>\u000a   <<linkreplace "\u2591">><span class="planeico">_</span>\u000a   <<set $missiles -= 1>> \u000a   <<replace "#miss">><<print $missiles>><</replace>>\u000a   <<if $missiles eq 0>><<replace "#grid">><<br>>OUT OF MISSILES<<br>><</replace>><<endif>>\u000a   <<if $hits eq 14>><<replace "#grid">><<br>>BATTLE SUCCESS<</replace>> <<replace "#button">><<br>>[[CEASEFIRE ACHIEVED: CONTINUE|title]]<</replace>>  <<endif>>\u000a<</linkreplace>><</widget>>\u000a\u000a\u000a<span id="grid">\u000a\u000a<<br>>\u000a\u000a<<print either("<<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <br>\u000a<<nop>> <<nop>> <<nop>> <<nop>> <<pln>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <br>\u000a<<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<pln>> <br>\u000a<<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<pln>> <br>\u000a<<nop>> <<nop>> <<nop>> <<nop>> <<pln>> <<pln>> <<pln>> <<nop>> <<nop>> <<pln>> <br>\u000a<<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<pln>> <br>\u000a<<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<pln>> <br>\u000a<<nop>> <<pln>> <<pln>> <<pln>> <<pln>> <<nop>> <<nop>> <<nop>> <<nop>> <<pln>> <br>\u000a<<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <br>",\u000a\u000a"<<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<pln>> <<nop>> <<nop>> <<nop>> <<nop>><br>\u000a<<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>><br>\u000a<<nop>> <<pln>> <<pln>> <<pln>> <<pln>> <<pln>> <<pln>> <<nop>> <<nop>> <<nop>><br>\u000a<<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>><br>\u000a<<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>><br>\u000a<<nop>> <<nop>> <<pln>> <<pln>> <<pln>> <<pln>> <<nop>> <<nop>> <<nop>> <<nop>><br>\u000a<<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<pln>> <<nop>> <<nop>> <<nop>><br>\u000a<<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<pln>> <<nop>> <<nop>> <<nop>><br>\u000a<<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<pln>> <<nop>> <<nop>> <<nop>><br>",\u000a\u000a"<<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <br>\u000a<<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <br>\u000a<<nop>> <<nop>> <<pln>> <<pln>> <<pln>> <<pln>> <<pln>> <<pln>> <<nop>> <<nop>> <br>\u000a<<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <br>\u000a<<nop>> <<nop>> <<nop>> <<nop>> <<pln>> <<pln>> <<pln>> <<nop>> <<nop>> <<nop>> <br>\u000a<<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <br>\u000a<<nop>> <<pln>> <<pln>> <<pln>> <<pln>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <br>\u000a<<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <br>\u000a<<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<pln>> <<nop>> <<nop>> <<nop>> <<nop>> <br>"\u000a\u000a\u000a)>>\u000a</span>\u000a<br>\u000a\u000a<span id="button">[[CLICK HERE TO RETRY|oneb]]</span>\u000a
+p449
+sg23
+Voneb
+p450
+sg25
+g26
+((I2021
+I8
+I22
+I21
+I25
+I1
+I6
+I234
+I1
+tp451
+(dp452
+tp453
+Rp454
+sg31
+(lp455
+sg33
+g26
+((I2021
+I8
+I19
+I23
+I34
+I46
+I3
+I231
+I1
+tp456
+(dp457
+tp458
+Rp459
+sbsa(dp460
+g14
+I00
+sg15
+(lp461
+F265.57586512866015
+aF153.57586512866015
+asg17
+(itiddlywiki
+Tiddler
+p462
+(dp463
+g21
+V
+p464
+sg23
+S'Untitled Passage 1'
+p465
+sg25
+g26
+((I2021
+I8
+I20
+I0
+I49
+I34
+I4
+I232
+I1
+tp466
+(dp467
+tp468
+Rp469
+sg31
+(lp470
+sg33
+g469
+sbsa(dp471
+g14
+I00
+sg15
+(lp472
+F953.0257320319429
+aF743.9574090505756
+asg17
+(itiddlywiki
+Tiddler
+p473
+(dp474
+g21
+VShigeaki Kinjo told me: "The battle was lost in advance,\u000aa battle the Japanese army\u000ahad no chance of winning.\u000aIt was inscribed\u000ain the context of defeat."<<br>>\u000a"And because that was the context,\u000athe purpose was to fix the aftermath,\u000aand reinforce the \u201cTennosei\u201d,\u000athe imperial system,\u000awhich had to survive\u000ato the military defeat.\u000aAnother direct consequence\u000ainscribed in this context of defeat,\u000awas that no effort was made\u000ato protect the civilian population,\u000aso civilian casualties\u000afar outnumbered\u000amilitary casualties."<<br>>\u000a"It's true that Okinawa\u000awas a <span class="hover" title="The desparate battle led the Imperial Japanese Army to commit countless atrocities. Soldiers used civilians as human shields and confiscated food, executing those who hid it, leading to mass starvation. They forced civilians out of their shelters and killed more than 1,000 civilians in an act to prevent spying.">horrendous</span> battle.\u000aNothing remains, no culture heritage,\u000ano culture from the past.\u000aEverything was destroyed,\u000autterly destroyed.\u000aI who love so much the past,\u000ain Okinawa I feel a deep despair."\u000a<<br>>\u000a"In a way, the people of Okinawa\u000aare resentful, even today.\u000aThere is a profound\u000afeeling of injustice\u000aon account of those events.\u000aI think the war isn't over yet."<<n kpic>>
+p475
+sg23
+Vkinjo
+p476
+sg25
+g26
+((I2021
+I8
+I20
+I0
+I57
+I51
+I4
+I232
+I1
+tp477
+(dp478
+tp479
+Rp480
+sg31
+(lp481
+sg33
+g26
+((I2021
+I8
+I20
+I0
+I54
+I44
+I4
+I232
+I1
+tp482
+(dp483
+tp484
+Rp485
+sbsa(dp486
+g14
+I00
+sg15
+(lp487
+F957.776397515528
+aF879.2067435669915
+asg17
+(itiddlywiki
+Tiddler
+p488
+(dp489
+g21
+VKenji Tokitsu, an author and martial artist, said: "I feel the Japanese\u000ahave changed a lot. I feel they want to bury\u000atheir whole past, World War II.\u000aJapanese people tend to avoid facing that issue.\u000a<<br>>\u000aIt's a tragedy that's affected\u000amy whole life.\u000aYet it contains a depth,\u000aa kind of life\u000aso strong and vivid\u000athat today we cannot approach\u000athat kind of intensity.\u000aThere's some kind of madness,\u000ain fact,\u000aabout World War II.\u000aIt's not nostalgia,\u000aI'm not nostalgic\u000aabout that era.<<br>>\u000aBut those who lived through it\u000afind something missing today.\u000aSome of that was worthwhile.\u000aWhich is not to belittle\u000athe <span class="hover" title="The desparate battle led the Imperial Japanese Army to commit countless atrocities. Soldiers used civilians as human shields and confiscated food, executing those who hid it, leading to mass starvation. They forced civilians out of their shelters and killed more than 1,000 civilians in an act to prevent spying.">atrocities</span>\u000aperpetrated by the Japanese military.<<br>>\u000aBut having to define who one is,\u000ahaving to fight to the very end,\u000ameans facing\u000asomething which alters\u000ayour whole perception of life\u000ain the face of something crucial."<<n tokimg>>
+p490
+sg23
+Vtokitsu
+p491
+sg25
+g26
+((I2021
+I8
+I20
+I1
+I20
+I6
+I4
+I232
+I1
+tp492
+(dp493
+tp494
+Rp495
+sg31
+(lp496
+sg33
+g26
+((I2021
+I8
+I20
+I0
+I54
+I47
+I4
+I232
+I1
+tp497
+(dp498
+tp499
+Rp500
+sbsa(dp501
+g14
+I00
+sg15
+(lp502
+F972.7098491570539
+aF1014.9653948535931
+asg17
+(itiddlywiki
+Tiddler
+p503
+(dp504
+g21
+V<<if $textlv lt 5.1>>\u000a\u000a\u000aThat's when you started\u000acalling me Laura. We loved <span class="hover" title="Laura is a 1944 American film noir noted for its plot twist, in which the investigating detective falls in love with a murder victim's portrait---only for the same victim to show up alive.">the film</span>.\u000aWe didn't know about the song yet.<<n laurap>>\u000a\u000a<<prog 1.8>>\u000a\u000a<<else>>\u000a\u000a\u000a\u000a\u000aI don't know how to LAURA. <<n title>>\u000a\u000a<<endif>>\u000a\u000a\u000a
+p505
+sg23
+Vlaura
+p506
+sg25
+g26
+((I2021
+I8
+I23
+I2
+I52
+I15
+I0
+I235
+I1
+tp507
+(dp508
+tp509
+Rp510
+sg31
+(lp511
+sg33
+g26
+((I2021
+I8
+I20
+I0
+I54
+I49
+I4
+I232
+I1
+tp512
+(dp513
+tp514
+Rp515
+sbsa(dp516
+g14
+I00
+sg15
+(lp517
+F1100.322981366459
+aF731.233135948866
+asg17
+(itiddlywiki
+Tiddler
+p518
+(dp519
+g21
+V[img[./img/kinjo.png]]<<cacheaudio "kinjo" "./img/kinjo.mp3">><<audio "kinjo" play>>\u000a<br>\u000a\u000a\u000a\u000a\u000a<<progdyn "tragedy" 136>>\u000a\u000a<br>\u000a\u000a<div id="srt"></div>\u000a\u000a\u000a\u000a<<timed 2s>><<replace "#srt">>\u000aI wondered what your experience of the battle was. Where were you when this mass suicide or death occurred?\u000a<</replace>><</timed>>\u000a\u000a<<timed 11s>><<replace "#srt">>There was a command from the Japanese army that told people to move to the northern part.<</replace>><</timed>>\u000a\u000a<<timed 22s>> <<replace "#srt">>\u000aUsually non-military people should go away, but we were led to just beside the Japanese .... so we became a target. <</replace>><</timed>>\u000a\u000a<<timed 41s>><<replace "#srt">>\u000aThe American soldiers invasion started, so on the 28th the American soldiers were moving toward the Japanese soldiers, to attack. \u000a<</replace>><</timed>>\u000a\u000a<<timed 52s>><<replace "#srt">>\u000aSo they found the few soldiers that were there, about three or four hundred soldiers from Korea...also came that were not soldiers.\u000a<</replace>><</timed>>\u000a\u000a<<timed 64s>><<replace "#srt">>\u000aLaborers were they? / Laborers, laborers!\u000a<</replace>><</timed>>\u000a\u000a<<timed 69s>><<replace "#srt">>\u000aSo, American soldiers did not attack. They did not ... they thought there was no necessity to attack. \u000a<</replace>><</timed>>\u000a\u000a<<timed 85s>><<replace "#srt">>\u000aWithout attacking they moved from the place where the soldiers were. But American soldiers came to the nearest spot. Mass suicide happened.\u000a<</replace>><</timed>>\u000a\u000a<<timed 105s>><<replace "#srt">>\u000aSo that is the point: Japanese soldiers did not attack. They were safe but the people, non-military people, they committed suicide or killed each other. \u000a<</replace>><</timed>>\u000a\u000a<<timed 118s>><<replace "#srt">>\u000aWere you there when that happened?\u000a<</replace>><</timed>>\u000a\u000a<<timed 122s>><<replace "#srt">>\u000aYes. I killed my younger brother.\u000a<</replace>><</timed>>\u000a\u000a<<timed 128s>><<replace "#srt">>\u000aAt the beginning we killed our mother. So that's the beginning.<<if visited() lt 2>><<endif>>\u000a<</replace>><</timed>>\u000a\u000a\u000a<<audiotag>>\u000a
+p520
+sg23
+Vkpic
+p521
+sg25
+g26
+((I2021
+I8
+I22
+I12
+I23
+I8
+I6
+I234
+I1
+tp522
+(dp523
+tp524
+Rp525
+sg31
+(lp526
+Vnobr
+p527
+asg33
+g26
+((I2021
+I8
+I20
+I0
+I56
+I56
+I4
+I232
+I1
+tp528
+(dp529
+tp530
+Rp531
+sbsa(dp532
+g14
+I00
+sg15
+(lp533
+F1287.669920141968
+aF727.3274179236903
+asg17
+(itiddlywiki
+Tiddler
+p534
+(dp535
+g21
+V<<audio ":all" stop>>\u000aThere is a little book entitled\u000a\u201cThe Tragedy of Okinawa\u201d.\u000aThe print is odd,\u000awith characters spaced\u000alike in a primer.\u000aIt's very thin,\u000athe lines are double spaced.<<br>>\u000aIt's like it intends\u000ato teach how to read,\u000aand how not to read.\u000aNo book can explain\u000ahow a 16 years old boy\u000akills his mother\u000abecause an invisible camera\u000aspies on him,\u000aand he cannot disobey.<<br>>\u000aThe boy's name was Kinjo,\u000ahe lived in Tokashiki Island,\u000awhere you used to go whale-watching.\u000aWhat could he tell us now, Kinjo?\u000aWhat could we say to him?\u000aKnow what?<<br>>\u000aWhen I began to choke,\u000aamong this horror\u000awhere everyone is a persecutor.<<n tokyo>>\u000a
+p536
+sg23
+Vtragedy
+p537
+sg25
+g26
+((I2021
+I8
+I22
+I12
+I21
+I28
+I6
+I234
+I1
+tp538
+(dp539
+tp540
+Rp541
+sg31
+(lp542
+sg33
+g26
+((I2021
+I8
+I20
+I0
+I57
+I8
+I4
+I232
+I1
+tp543
+(dp544
+tp545
+Rp546
+sbsa(dp547
+g14
+I00
+sg15
+(lp548
+F1107.7905944986683
+aF866.1401952085176
+asg17
+(itiddlywiki
+Tiddler
+p549
+(dp550
+g21
+V[img[./img/toki.jpg][tokyo]]<<im>>
+p551
+sg23
+Vtokimg
+p552
+sg25
+g26
+((I2021
+I8
+I21
+I2
+I43
+I49
+I5
+I233
+I1
+tp553
+(dp554
+tp555
+Rp556
+sg31
+(lp557
+sg33
+g26
+((I2021
+I8
+I20
+I1
+I20
+I14
+I4
+I232
+I1
+tp558
+(dp559
+tp560
+Rp561
+sbsa(dp562
+g14
+I00
+sg15
+(lp563
+F1494.7027506654813
+aF735.8118899733805
+asg17
+(itiddlywiki
+Tiddler
+p564
+(dp565
+g21
+V\u000aArranging all of this data. That's where Chris came in. At that point in his life he was more ready for other people's images than his own.\u000aThe challenge fired him up.\u000aHe began with the trip to Tokyo.\u000aHe loved the city, and the Game offered him\u000aa new way to look at World War II.\u000a<<br>>\u000aHe was set in his old ways from the start. He had become so Japanese that he shared their collective amnesia. As if the War had never happened.\u000a<<br>>\u000aAnd me, I had loved Okinawa. I loved the ice in summer.\u000aI loved Naha, a spiritless city full of ghosts,\u000aand they loved ghosts.\u000aI had loved the jungle figs indoors,\u000aand birdsong at traffic lights\u000athat got the blind across.\u000aIt was Japan, yet that Japan\u000athat hadn't lost its memory.\u000a<<br>>\u000aThere were cats too,\u000afor they loved cats.\u000aThere were tags,\u000aand owls and karate.\u000aAnd their cult-film: a ghost story.<<br>>\u000aThat's when you started calling me <<redhint "Laura">>.\u000a<<n title>>
+p566
+sg23
+Vtokyo
+p567
+sg25
+g26
+((I2021
+I8
+I21
+I2
+I43
+I44
+I5
+I233
+I1
+tp568
+(dp569
+tp570
+Rp571
+sg31
+(lp572
+sg33
+g26
+((I2021
+I8
+I20
+I1
+I20
+I32
+I4
+I232
+I1
+tp573
+(dp574
+tp575
+Rp576
+sbsa(dp577
+g14
+I00
+sg15
+(lp578
+F1130.8695652173903
+aF991.0381543921911
+asg17
+(itiddlywiki
+Tiddler
+p579
+(dp580
+g21
+V<span title="Clip from 'Last Year at Marienbad'">[img[./img/laura.jpg][fall]]</span><<im>>\u000a\u000a
+p581
+sg23
+Vlaurap
+p582
+sg25
+g26
+((I2021
+I8
+I23
+I1
+I5
+I45
+I0
+I235
+I1
+tp583
+(dp584
+tp585
+Rp586
+sg31
+(lp587
+sg33
+g26
+((I2021
+I8
+I20
+I1
+I21
+I16
+I4
+I232
+I1
+tp588
+(dp589
+tp590
+Rp591
+sbsa(dp592
+g14
+I00
+sg15
+(lp593
+F1298.5306122448967
+aF1017.6805678793252
+asg17
+(itiddlywiki
+Tiddler
+p594
+(dp595
+g21
+VI was amazed you could fall for an image,\u000athen have a real lady\u000aappear in its stead.<<br>>\u000aCan one be as lovely as an image?\u000aCan one be as memorable\u000aas a song?\u000aI remember the film's composer, David Raksin,\u000acommissioned to write the song\u000aover the weekend\u000afor Mr Preminger.\u000aYou don't keep Mr Preminger waiting.\u000aHe'd got a letter from his wife\u000awhich he couldn't decipher.\u000aHe wasn't short-sighted,\u000abut something odd inside him\u000aprevented him from being able\u000ato read it.<<br>>\u000aHe used to compose by placing\u000aa sheet of paper\u000aon the piano to focus his attention,\u000aso the music flowed from a void,\u000anot from an idea.\u000aAnd he took his wife's letter\u000athat he couldn't decipher\u000aand put it on the piano.\u000aThen the notes started to flow.\u000aAnd as they flowed,\u000aas they fell,\u000ahe began to decipher the words.\u000aThey said his wife was leaving him.\u000a<<n andme>>
+p596
+sg23
+Vfall
+p597
+sg25
+g26
+((I2021
+I8
+I20
+I1
+I21
+I30
+I4
+I232
+I1
+tp598
+(dp599
+tp600
+Rp601
+sg31
+(lp602
+sg33
+g26
+((I2021
+I8
+I20
+I1
+I21
+I27
+I4
+I232
+I1
+tp603
+(dp604
+tp605
+Rp606
+sbsa(dp607
+g14
+I00
+sg15
+(lp608
+F1440.9086069210273
+aF1020.2271517302565
+asg17
+(itiddlywiki
+Tiddler
+p609
+(dp610
+g21
+VAnd me too, when\u000aI decipher your programme,\u000aI don't understand it fully.\u000aIt seems complicated,\u000aI'm afraid I'll mess it up,\u000aI'm afraid I'll find\u000athings hidden\u000athat flow out without my noticing.\u000aLike in a storm when there's a fog\u000aand suddenly the sun pierces through\u000aand truth appears.\u000a<<br>>\u000aI'm afraid of discovering that something's\u000agoing to happen ,\u000asomething that suddenly\u000awill seem as potent as a song\u000asuddenly not ours anymore,\u000abut everyone's to share,\u000ajust as Laura's <span class="hover" title="Composed for the film: 'Laura is the face in the misty light, footsteps that you hear down the hall, The laugh that floats on the summer night that you can never quite recall, And you see Laura on a train that is passing through, those eyes how familiar they seem, She gave your very first kiss to you, that was Laura but she's only a dream.'">song</span> has become ours now.<<br>>\u000aCan you hear my footsteps echoing as I step haphazardly through your lines of code? Well, I've really done it this time. Time to restore the system once again I suppose.<<n title>>\u000a\u000a<<err>><<prog 2>>\u000a
+p611
+sg23
+Vandme
+p612
+sg25
+g26
+((I2021
+I8
+I22
+I12
+I34
+I44
+I6
+I234
+I1
+tp613
+(dp614
+tp615
+Rp616
+sg31
+(lp617
+sg33
+g26
+((I2021
+I8
+I20
+I1
+I21
+I35
+I4
+I232
+I1
+tp618
+(dp619
+tp620
+Rp621
+sbsa(dp622
+g14
+I00
+sg15
+(lp623
+F229.4321206743567
+aF986.9653948535936
+asg17
+(itiddlywiki
+Tiddler
+p624
+(dp625
+g21
+V<<if $error eq true>>\u000a<<set $error to false>>\u000a<<goto "levels">>\u000a<<else>>\u000aSystem is already functional.<<n title>>\u000a<<endif>>
+p626
+sg23
+Vrepair
+p627
+sg25
+g26
+((I2021
+I8
+I20
+I1
+I47
+I44
+I4
+I232
+I1
+tp628
+(dp629
+tp630
+Rp631
+sg31
+(lp632
+sg33
+g26
+((I2021
+I8
+I20
+I1
+I39
+I35
+I4
+I232
+I1
+tp633
+(dp634
+tp635
+Rp636
+sbsa(dp637
+g14
+I00
+sg15
+(lp638
+F1521.1748003549246
+aF189.04347826086962
+asg17
+(itiddlywiki
+Tiddler
+p639
+(dp640
+g21
+VConfig.passages.nobr = true;
+p641
+sg23
+VUntitled Script 2
+p642
+sg25
+g26
+((I2021
+I8
+I20
+I2
+I38
+I38
+I4
+I232
+I1
+tp643
+(dp644
+tp645
+Rp646
+sg31
+(lp647
+Vscript
+p648
+asg33
+g26
+((I2021
+I8
+I20
+I2
+I38
+I35
+I4
+I232
+I1
+tp649
+(dp650
+tp651
+Rp652
+sbsa(dp653
+g14
+I00
+sg15
+(lp654
+F1715.3096716947646
+aF173.77107364685008
+asg17
+(itiddlywiki
+Tiddler
+p655
+(dp656
+g21
+Vwindow.onbeforeunload = function () {\u000a    window.sessionStorage.setItem('twine-reload-flag', 'true');\u000a};\u000a\u000apostdisplay['refresh-taker'] = function (t) {\u000a\u000a    delete postdisplay[t];\u000a    var refresh = sessionStorage.getItem('twine-reload-flag');\u000a\u000a    if (refresh === 'true' && \u000a        passage() !== 'Start') { // your starting passage here \u000a\u000a        Engine.restart(); // passage to forward player to\u000a    } \u000a\u000a};\u000a
+p657
+sg23
+VUntitled Script 3
+p658
+sg25
+g26
+((I2021
+I8
+I20
+I2
+I53
+I1
+I4
+I232
+I1
+tp659
+(dp660
+tp661
+Rp662
+sg31
+(lp663
+Vscript
+p664
+asg33
+g26
+((I2021
+I8
+I20
+I2
+I53
+I0
+I4
+I232
+I1
+tp665
+(dp666
+tp667
+Rp668
+sbsa(dp669
+g14
+I00
+sg15
+(lp670
+F1917.5900621118014
+aF156.8021295474712
+asg17
+(itiddlywiki
+Tiddler
+p671
+(dp672
+g21
+V// moving and rightclick\u000a\u000adocument.documentElement.setAttribute("oncontextmenu","return false;")\u000a\u000adocument.documentElement.setAttribute("draggable","false;")\u000a\u000adocument.documentElement.setAttribute("ondragstart","return false;")\u000a\u000a
+p673
+sg23
+VUntitled Script 4
+p674
+sg25
+g26
+((I2021
+I8
+I20
+I2
+I53
+I27
+I4
+I232
+I1
+tp675
+(dp676
+tp677
+Rp678
+sg31
+(lp679
+Vscript
+p680
+asg33
+g26
+((I2021
+I8
+I20
+I2
+I53
+I25
+I4
+I232
+I1
+tp681
+(dp682
+tp683
+Rp684
+sbsa(dp685
+g14
+I00
+sg15
+(lp686
+F1790.6566104702704
+aF1181.1002661934344
+asg17
+(itiddlywiki
+Tiddler
+p687
+(dp688
+g21
+VWhat you left me with would be a pretty\u000amodern idea of a puzzle,\u000aone that would only\u000adepict itself.<<br>>\u000aStrategy games are made\u000ato win back lost battles,\u000aaren't they?<<br>>\u000aDid you really believe a player\u000awould be capable of spending his nights\u000awatching history repeating itself,\u000aand convincing himself that\u000ahis own history would also\u000ajust have a single way\u000ato be played?\u000a<<br>>\u000aIt's like Julius Caesar\u000amoving to Bora Bora.\u000a<<br>>\u000aOr Napoleon in the South Pole. St Helena was no fun anyway. Strange to think that\u000athe first ever mention of Okinawa\u000awas on account of him.<<n napoleonb>>
+p689
+sg23
+Vnapoleon
+p690
+sg25
+g26
+((I2021
+I8
+I21
+I3
+I35
+I25
+I5
+I233
+I1
+tp691
+(dp692
+tp693
+Rp694
+sg31
+(lp695
+sg33
+g26
+((I2021
+I8
+I20
+I2
+I59
+I0
+I4
+I232
+I1
+tp696
+(dp697
+tp698
+Rp699
+sbsa(dp700
+g14
+I00
+sg15
+(lp701
+F1165.6574977817204
+aF1339.769299023956
+asg17
+(itiddlywiki
+Tiddler
+p702
+(dp703
+g21
+V<<set $pieces to 0>>\u000a\u000a\u000a<<widget r>><<linkreplace "\u2591">>\u2592<<set $pieces += 1>><</linkreplace>><</widget>>\u000a\u000a<style> * {vertical-align: baseline; margin:0px; padding:0px} a, a:hover {vertical-align: baseline; background-color: transparent; color: blue; padding: 0px}</style>\u000a\u000a\u000a<div style="letter-spacing: 2px; color: blue">\u000a\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591 <br>\u000a\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591<<r>>\u2591\u2591\u2591\u2591\u2591\u2591 <br>\u000a\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591<<r>><<r>><<r>>\u2591\u2591\u2591\u2591\u2591 <br>\u000a\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591<<r>><<r>><<r>>\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591<<r>><<r>><<r>><<r>><<r>>\u2591\u2591\u2591\u2591\u2591 <br>\u000a\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591<<r>><<r>><<r>><<r>><<r>>\u2591<<r>><<r>><<r>><<r>><<r>><<r>>\u2591\u2591\u2591\u2591\u2591\u2591 <br>\u000a\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591<<r>><<r>><<r>><<r>><<r>><<r>><<r>><<r>><<r>><<r>>\u2591\u2591\u2591\u2591\u2591\u2591\u2591 <br> \u000a\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591<<r>><<r>><<r>><<r>><<r>><<r>><<r>>\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591 <br>\u000a\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591<<r>><<r>><<r>><<r>><<r>><<r>><<r>>\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591 <br>\u000a\u2591\u2591\u2591\u2591\u2591\u2591\u2591<<r>><<r>><<r>><<r>><<r>><<r>><<r>><<r>>\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591 <br>\u000a\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591<<r>><<r>><<r>><<r>><<r>>\u2591<<r>><<r>>\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591 <br>\u000a\u2591\u2591\u2591\u2591\u2591\u2591\u2591<<r>><<r>><<r>><<r>><<r>><<r>><<r>>\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591 <br>\u000a\u2591\u2591\u2591\u2591\u2591\u2591<<r>><<r>><<r>><<r>>\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591 <br>\u000a\u2591\u2591\u2591\u2591\u2591<<r>><<r>><<r>><<r>><<r>><<r>>\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591 <br>\u000a\u2591\u2591\u2591\u2591\u2591\u2591<<r>><<r>><<r>><<r>>\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591 <br>\u000a\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591 <br>\u000a\u000a</div>\u000a\u000a<<repeat 2s>>\u000a<<if $pieces gt 75 and $debug eq "off">><<prog 2.2>><<endif>>\u000a<<if $pieces gt 2 and $debug eq "on">><<prog 2.2>><<endif>>\u000a<<timed 5s>><<if $textlv eq 2.2>><<goto "twoc">><<endif>><</timed>>\u000a<</repeat>>
+p704
+sg23
+Vtwod
+p705
+sg25
+g26
+((I2021
+I8
+I23
+I1
+I8
+I9
+I0
+I235
+I1
+tp706
+(dp707
+tp708
+Rp709
+sg31
+(lp710
+sg33
+g26
+((I2021
+I8
+I20
+I2
+I59
+I15
+I4
+I232
+I1
+tp711
+(dp712
+tp713
+Rp714
+sbsa(dp715
+g14
+I00
+sg15
+(lp716
+F844.4188110026624
+aF1308.7133984028387
+asg17
+(itiddlywiki
+Tiddler
+p717
+(dp718
+g21
+V<span style="font-size:200%">LEVEL TWO</span>\u000a<br>\u000a\u000a\u000aOur grandmothers' puzzles\u000ashowed the Mona Lisa,\u000aor the Night Watch.\u000aI imagine the perfect gift\u000afor the century's end might be an Yves Klein puzzle\u2014with pieces all the same. I had the discouraging thought that you'd left me in a huge puzzle and that, in the end, there'd probably be no image.<<n klein>>\u000a\u000a<<audiotag>>
+p719
+sg23
+Vtwob
+p720
+sg25
+g26
+((I2021
+I8
+I23
+I1
+I13
+I36
+I0
+I235
+I1
+tp721
+(dp722
+tp723
+Rp724
+sg31
+(lp725
+sg33
+g26
+((I2021
+I8
+I20
+I3
+I1
+I44
+I4
+I232
+I1
+tp726
+(dp727
+tp728
+Rp729
+sbsa(dp730
+g14
+I00
+sg15
+(lp731
+F1290.3950600205153
+aF1359.2815046899977
+asg17
+(itiddlywiki
+Tiddler
+p732
+(dp733
+g21
+V\u000a<span id="nolinkmap">[img[./img/map3.jpg]]</span> \u000a\u000a\u000a\u000a<<timed 2s>><<replace "#nolinkmap">> \u000a[img[./img/map3.jpg][crocodile]]<<im>> <</replace>>\u000a\u000a<</timed>>\u000a\u000a<<prog 2.2>>\u000a
+p734
+sg23
+Vtwoc
+p735
+sg25
+g26
+((I2021
+I8
+I21
+I16
+I59
+I53
+I5
+I233
+I1
+tp736
+(dp737
+tp738
+Rp739
+sg31
+(lp740
+sg33
+g26
+((I2021
+I8
+I20
+I3
+I12
+I0
+I4
+I232
+I1
+tp741
+(dp742
+tp743
+Rp744
+sbsa(dp745
+g14
+I00
+sg15
+(lp746
+F1426.8234250221822
+aF1365.732031943212
+asg17
+(itiddlywiki
+Tiddler
+p747
+(dp748
+g21
+VSeen from the sky, Okinawa's main island\u000alooks like a beast.\u000aNot a green crocodile\u000alike Cuba,\u000arather a crouched beast,\u000aready to jump, to unfurl\u000ainto who knows what form:\u000aa lizard, a dragon? \u000aAs if all History's fierceness,\u000awas in that island,\u000awhere people are so peaceble\u000athey infuriate History\u000afor having something\u000ato do with them.<<n spain>>
+p749
+sg23
+Vcrocodile
+p750
+sg25
+g26
+((I2021
+I8
+I21
+I3
+I34
+I1
+I5
+I233
+I1
+tp751
+(dp752
+tp753
+Rp754
+sg31
+(lp755
+sg33
+g26
+((I2021
+I8
+I20
+I3
+I12
+I25
+I4
+I232
+I1
+tp756
+(dp757
+tp758
+Rp759
+sbsa(dp760
+g14
+I00
+sg15
+(lp761
+F1922.3425022182782
+aF1179.7426796805685
+asg17
+(itiddlywiki
+Tiddler
+p762
+(dp763
+g21
+V\u000aAn English Captain came to Napoleon\u000aafter going around the Pacific,\u000aand described a strange little island,\u000awherein \u201cthe natives had no weapons\u201d.\u000a\u201cNo cannons?\u201d, says the Emperor,\u000asomewhat disgusted.\u000a\u201cNo cannons, no pistols,\u000ano muskets,\u000ano weapons at all.\u201d\u000a\u201cHow do they wage war?\u201d\u000a\u201cThey don't.\u000aThey're not interested.\u201d<<br>>\u000aNapoleon, outraged,\u000aconcluded that people\u000awho don't love war\u000aare most \u201cdespicable\u201d.\u000aSo thought the island,\u000athe big dragon\u000ahidden in the island,\u000aready to pounce like a cat,\u000alike a tiger\u000awaiting for the proper time.\u000aTravellers enraged him,\u000atravellers of all times,\u000awith tales of Okinawan's gentleness.<<n gentle>>\u000a
+p764
+sg23
+Vnapoleonb
+p765
+sg25
+g26
+((I2021
+I8
+I21
+I3
+I35
+I16
+I5
+I233
+I1
+tp766
+(dp767
+tp768
+Rp769
+sg31
+(lp770
+sg33
+g26
+((I2021
+I8
+I20
+I3
+I17
+I58
+I4
+I232
+I1
+tp771
+(dp772
+tp773
+Rp774
+sbsa(dp775
+g14
+I00
+sg15
+(lp776
+F2069.471162377993
+aF1179.0647737355814
+asg17
+(itiddlywiki
+Tiddler
+p777
+(dp778
+g21
+VGentleness! Is history written\u000awith gentleness?\u000aDo you honour gentleness\u000awhen you're a dragon?\u000aSo Okinawans hated violence?\u000aThey had it coming.\u000aA peaceful isle\u000aout of the world,\u000aout of History, would become the stage\u000aof the bloodiest battle of all time.<<br>>\u000aA happy, life-loving woman\u000aended up to be chosen\u000ato encounter death.\u000aI can recognise myself\u000ain that little island,\u000abecause my most unique,\u000amy most intimate suffering\u000ais also the most banal,\u000athe easiest to name.\u000a<<br>>\u000aSo I can as well give it a name\u000athat sounds like a song,\u000alike a movie,\u000a<<hov "Okinawa mon amour..." "A reference to 'Hiroshima Mon Amour,' directed by Alain Resnais, 1959">><<n title>>
+p779
+sg23
+Vgentle
+p780
+sg25
+g26
+((I2021
+I8
+I21
+I17
+I5
+I54
+I5
+I233
+I1
+tp781
+(dp782
+tp783
+Rp784
+sg31
+(lp785
+sg33
+g26
+((I2021
+I8
+I20
+I3
+I18
+I12
+I4
+I232
+I1
+tp786
+(dp787
+tp788
+Rp789
+sbsa(dp790
+g14
+I00
+sg15
+(lp791
+F1978.68145519077
+aF1343.5013309671701
+asg17
+(itiddlywiki
+Tiddler
+p792
+(dp793
+g21
+V\u000aThe Americans landed\u000ain the Kerama islands.\u000aThey bombed Naha from there...Look, we had a swim\u000aover there yesterday...I'm sure you've read\u000aabout it in the papers,\u000amass suicide in the Kerama islands.<<br>>\u000a\u000aI read page after page on Okinawa\u000aand I feel like crying.\u000aThe only place in the world,\u000athe Nazi camps aside, where people\u000acontinued to die after the battle.\u000aThe islanders weren't true Japanese,\u000abut were Japanese enough to die.\u000a\u201cNo one falls into enemy hands alive,\u000ait is shameful,\u201d was how it went.<<br>>\u000a\u000aThey were imbued with army orders\u000astating that,\u000aif necessary, meaning\u000awhen encountering the enemy,\u000athe first grenade was for the enemy\u000aand the second they had to use\u000afor suicide.<<n flaggirl>>\u000a
+p794
+sg23
+Vyahara2
+p795
+sg25
+g26
+((I2021
+I8
+I22
+I12
+I45
+I19
+I6
+I234
+I1
+tp796
+(dp797
+tp798
+Rp799
+sg31
+(lp800
+sg33
+g26
+((I2021
+I8
+I20
+I3
+I19
+I25
+I4
+I232
+I1
+tp801
+(dp802
+tp803
+Rp804
+sbsa(dp805
+g14
+I00
+sg15
+(lp806
+F1832.7417923691219
+aF1349.4409937888202
+asg17
+(itiddlywiki
+Tiddler
+p807
+(dp808
+g21
+V\u000a\u000aThe south of Okinawa\u000ais an anthill\u000awith thousand of caves and tunnels\u000afortified by High Command.\u000aThe frontline is at Shuri,\u000awhere Ushijima's headquarters were.\u000aWith him, General Cho,\u000aa hardline nationalist,\u000ainvolved in the coup d'etat\u000ain Manchuria in 1931,\u000athe Sino-Japanese prelude\u000ato World War Two.<<br>>\u000aThere is also <<hov "Colonel Yahara" " Colonel Hiromichi Yahara (1902-1981) was the senior staff officer in charge of operations of the 32nd Japanese Army at Okinawa during the American invasion of that island during World War II.">>,\u000aa man as reflective\u000aas Cho is loud.\u000aHe too plays by the book.\u000aReading the archives, you find proof\u000athe three of them know:\u000atheir mission's suicidal.\u000aThe battle cannot be won.\u000aYet there were bombastic bulletins\u000aand tracts proclaiming victory.\u000aDoubters received drastic punishment.\u000aIn April and May,\u000aCho launched mad counter-attacks.\u000aSince the battle is lost,\u000asamurai spirit is what counts.<<br>>\u000aThe Japanese soldiers practising\u000abayonet drill\u000aon live prisoners,\u000aor choking babies in caves\u000aso the enemy don't hear them,\u000adon't sound so samurai-like.\u000aBut those committing suicide\u000awith grenades\u000ain the subterranean Navy HQ\u000aare truly in the grand tradition.\u000aBut <<hov "Maginot Lines" "The Maginot Line , named after the French Minister of War André Maginot, is a line of concrete fortifications, obstacles and weapon installations built by France in the 1930s to deter invasion by Germany and force them to move around the fortifications.">> never hold.\u000aOutside, the US attack progresses.<<n yahara2>>\u000a
+p809
+sg23
+Vyahara
+p810
+sg25
+g26
+((I2021
+I8
+I21
+I3
+I25
+I57
+I5
+I233
+I1
+tp811
+(dp812
+tp813
+Rp814
+sg31
+(lp815
+sg33
+g26
+((I2021
+I8
+I20
+I3
+I21
+I37
+I4
+I232
+I1
+tp816
+(dp817
+tp818
+Rp819
+sbsa(dp820
+g14
+I00
+sg15
+(lp821
+F2126.8287488908604
+aF1337.054125998226
+asg17
+(itiddlywiki
+Tiddler
+p822
+(dp823
+g21
+V\u000aTwo months later, one of the most famous\u000aimages of that battle\u000ashowed a girl with a <<hov "flag" "I put a FLAG in the program that'll prompt a quote. Too bad for those who don't get it.">>; that is to say, a little girl\u000awaving a white <<redhint "flag">>,\u000aat the head of a line\u000aof civilians and soldiers.<<n flagpic>>
+p824
+sg23
+Vflaggirl
+p825
+sg25
+g26
+((I2021
+I8
+I21
+I17
+I22
+I6
+I5
+I233
+I1
+tp826
+(dp827
+tp828
+Rp829
+sg31
+(lp830
+sg33
+g26
+((I2021
+I8
+I20
+I3
+I21
+I52
+I4
+I232
+I1
+tp831
+(dp832
+tp833
+Rp834
+sbsa(dp835
+g14
+I00
+sg15
+(lp836
+F2255.4605146406384
+aF1340.1082519964523
+asg17
+(itiddlywiki
+Tiddler
+p837
+(dp838
+g21
+V<a title="From the publisher of the autobiography: 'Separated from her family in the confusion and horror of World War II, seven-year-old Tomiko Higa struggles to survive on the battlefield of Okinawa, Japan. There, as some of the fiercest fighting of the war rages around her, she must live alone, with nothing to fall back on but her own wits and daring. Fleeing from encroaching enemy forces, searching desperately for her lost sisters, taking scraps of food from the knapsacks of dead soldiers, risking death at every turn, Tomiko somehow finds the strength and courage to survive.'">[img[./img/flag.jpg][tv]]<<im>></a>
+p839
+sg23
+Vflagpic
+p840
+sg25
+g26
+((I2021
+I8
+I23
+I1
+I9
+I59
+I0
+I235
+I1
+tp841
+(dp842
+tp843
+Rp844
+sg31
+(lp845
+sg33
+g26
+((I2021
+I8
+I20
+I3
+I22
+I11
+I4
+I232
+I1
+tp846
+(dp847
+tp848
+Rp849
+sbsa(dp850
+g14
+I00
+sg15
+(lp851
+F1849.0328305235141
+aF1513.7089618456084
+asg17
+(itiddlywiki
+Tiddler
+p852
+(dp853
+g21
+V\u000aAnother famous photo shows\u000athe Tomori lion\u000asurrounded by infantry men.<<br>>\u000aI wonder what the first GI thought\u000awhen he saw that critter.\u000aThe lion still guards\u000aits village,\u000asince its mission was to protect it.\u000aVisitors never fail\u000ato leave coins in its mouth,\u000afor good luck.\u000a<<n lionpic>>\u000a\u000a
+p854
+sg23
+Vtomori
+p855
+sg25
+g26
+((I2021
+I8
+I20
+I3
+I43
+I15
+I4
+I232
+I1
+tp856
+(dp857
+tp858
+Rp859
+sg31
+(lp860
+sg33
+g26
+((I2021
+I8
+I20
+I3
+I23
+I5
+I4
+I232
+I1
+tp861
+(dp862
+tp863
+Rp864
+sbsa(dp865
+g14
+I00
+sg15
+(lp866
+F2004.4755989352277
+aF1506.921029281278
+asg17
+(itiddlywiki
+Tiddler
+p867
+(dp868
+g21
+V<a title="Soldiers use the stone lion as cover.">[img[./img/lion.jpg][thatkinjo]]<<im>></a>
+p869
+sg23
+Vlionpic
+p870
+sg25
+g26
+((I2021
+I8
+I22
+I12
+I50
+I4
+I6
+I234
+I1
+tp871
+(dp872
+tp873
+Rp874
+sg31
+(lp875
+sg33
+g26
+((I2021
+I8
+I20
+I3
+I23
+I22
+I4
+I232
+I1
+tp876
+(dp877
+tp878
+Rp879
+sbsa(dp880
+g14
+I00
+sg15
+(lp881
+F2155.1677018633545
+aF1506.4117125110913
+asg17
+(itiddlywiki
+Tiddler
+p882
+(dp883
+g21
+V\u000a\u000aThey chuck coins in the tunnels too.\u000aIn a bunker like this,\u000aYahara writes in his diary\u000athat before the final rout,\u000ahe took the time\u000ato destroy all his papers\u000aand rearrange the furniture\u000a\u201cto leave a good impression\u201d.<<br>>\u000a\u000a\u000aI found one Kinjo\u000ain one of your listings,\u000aI was obsessed by that boy\u000awho had killed his family\u000ato obey a tacit order\u000aengraved on his child's mind.\u000a\u201cNo one falls into\u000aenemy hands alive\u201d.<<br>>\u000aHe is in Yahara's book,\u000aone of the many boys of Okinawa. Not even soldiers,\u000athey're just trying to help out,\u000aobeying orders.\u000aYahara describes him\u000agoing out by night,\u000aunder fire,\u000ato get sugar-cane\u000afor survival.<<br>>\u000aThen he ran home and\u000ahid under the bed, like a puppy.\u000aAnd Yahara thinks of his own son\u000aand he starts to have doubts\u000aabout the War.<<br>>\u000aBut the other Kinjo,\u000awill I ever get to understand him?<<n isl>>
+p884
+sg23
+Vthatkinjo
+p885
+sg25
+g26
+((I2021
+I8
+I21
+I17
+I15
+I48
+I5
+I233
+I1
+tp886
+(dp887
+tp888
+Rp889
+sg31
+(lp890
+sg33
+g26
+((I2021
+I8
+I20
+I3
+I25
+I10
+I4
+I232
+I1
+tp891
+(dp892
+tp893
+Rp894
+sbsa(dp895
+g14
+I00
+sg15
+(lp896
+F2489.6433007985806
+aF1497.2493345164157
+asg17
+(itiddlywiki
+Tiddler
+p897
+(dp898
+g21
+V\u000aUnavoidably, one calls\u000aon all those myths\u000athe knotted threads of man:\u000athe <<hov "Parcae" "In ancient Roman religion and myth, the Parcae were the female personifications of destiny who directed the lives (and deaths) of humans and gods">>, the <<hov "Norns" "Deities in Norse mythology responsible for shaping the course of human destinies.">>,\u000aall the figures devised by men to say\u000alife's thread unravels\u000aand breaks.<<br>>\u000aDo they spin Kinjo's life still?\u000aWhat would Kinjo think before\u000afractal islands and Klein blue?\u000aBefore the Goddess of Mercy?\u000aA few visits to Heiwa Dori,\u000aNaha's indoors market,\u000aand you become aware:\u000ait is run by women.\u000aAll are connected with the War.\u000aThey are widows and orphans.\u000aSometimes survivors.<<br>>\u000aMost little girls of that age\u000aexperienced mobilization, propaganda,\u000aa feeling that they too must fight.\u000aThe nurses at Himeyuri-no-to\u000abecame a symbol.\u000aAn obligatory tourist pilgrimage\u000ain Okinawa.\u000aIt starts with a cheerful song,\u000awhich was their favourite.\u000aThen the photo sessions.<<br>>\u000aAnd faces peering into a hole\u000athat looks like a simple hole\u000ain the ground.<<n title>>
+p899
+sg23
+Vmyths
+p900
+sg25
+g26
+((I2021
+I8
+I21
+I17
+I16
+I50
+I5
+I233
+I1
+tp901
+(dp902
+tp903
+Rp904
+sg31
+(lp905
+sg33
+g26
+((I2021
+I8
+I20
+I3
+I25
+I20
+I4
+I232
+I1
+tp906
+(dp907
+tp908
+Rp909
+sbsa(dp910
+g14
+I00
+sg15
+(lp911
+F1856.498669032831
+aF1697.8314108252002
+asg17
+(itiddlywiki
+Tiddler
+p912
+(dp913
+g21
+VI put a flag in the program\u000athat'll prompt a quote.\u000aYou know it.\u000aIt was in the Keepsake\u000awhere I saved sentences for tough times.\u000aIt's <<hov "Rabbi Huna's" "Rabbi Huna mentions the name of Rabbi Joseph in an old rabbinic commentary, the Middrach Rabba about Leviticus, 27:5.">> admonition.\u000aMaybe most people won't understand.\u000a<<br>>\u000aIt's the one that goes: \u201cGod always sides with the persecuted.\u000aIf a just man persecutes a just man,\u000aGod sides with the persecuted;\u000aif a bad man persecutes\u000aa just man,\u000aGod sides with the persecuted;\u000aif a bad man persecutes a bad man,\u000aGod sides with the persecuted;\u000aand even if a just man persecutes a bad man,\u000aGod sides with the persecuted\u201d.\u000a<<n flag2>>\u000a\u000a\u000a<<err>>\u000a<<prog 3>>
+p914
+sg23
+Vflag
+p915
+sg25
+g26
+((I2021
+I8
+I21
+I3
+I34
+I36
+I5
+I233
+I1
+tp916
+(dp917
+tp918
+Rp919
+sg31
+(lp920
+sg33
+g26
+((I2021
+I8
+I20
+I3
+I25
+I49
+I4
+I232
+I1
+tp921
+(dp922
+tp923
+Rp924
+sbsa(dp925
+g14
+I00
+sg15
+(lp926
+F1556.472049689442
+aF1358.9440993788837
+asg17
+(itiddlywiki
+Tiddler
+p927
+(dp928
+g21
+V\u000aIn Spain when there's a bullfight it's to challenge death, you stare at the sun, stare at death in the face, like in the Falangists' fascist anthem, <<hov "Cara al Sol" "With the lyrics: 'Facing the Sun with a new shirt / That yesterday you sewed in red / Is how Death will find me, if she takes me / And I don't see you again. / I will march along with my companions / Who stand guard over the bright stars, With impassive ways, and who are ever Present in our strife. / If you hear that I fell, I'm at the post that waits me there.  /  Victorious flags will return / At the joyful pace of harmony, And my bundle of arrows will / Bear five roses that day. / One day, spring will laugh again, something longed for in sky, land and sea. / ¡Stand up, squads, to victory, for in Spain the dawn rises again!">>.<<br>>\u000aIn Okinawa, it's the opposite: They say that before death is a time for playing, not a time for killing. \u2013 It's a brave animal. \u2013 But it's not in shape. \u2013 Can it do better? \u2013 It's really brave. It has no luck. It's a brave beast.<<n title>>\u000a
+p929
+sg23
+Vspain
+p930
+sg25
+g26
+((I2021
+I8
+I22
+I12
+I40
+I3
+I6
+I234
+I1
+tp931
+(dp932
+tp933
+Rp934
+sg31
+(lp935
+sg33
+g26
+((I2021
+I8
+I20
+I3
+I33
+I49
+I4
+I232
+I1
+tp936
+(dp937
+tp938
+Rp939
+sbsa(dp940
+g14
+I00
+sg15
+(lp941
+F122.18278615794127
+aF1686.1224489795902
+asg17
+(itiddlywiki
+Tiddler
+p942
+(dp943
+g21
+V<span style="font-size:200%">LEVEL THREE</span><<br>>\u000a\u000aI tried the <<hov "Marienbad game" "Otherwise known as Nim, this game was popularized by the 1961 film 'last year at Marienbad.' Nim became one of the first 'computer games' in 1962, when a Polish engineer created a mainframe to play the game.">>, where each player takes turns trying to remove the last matchstick. \u000a\u000a<<widget "tr">>\u000a<<set $take to $args[1]>>\u000a<<link $args[0]>><<set $take to $args[1]>>\u000a  <<set $ncount to $ncount - $take>>\u000a  <<append "#prompt">><<br>>You took <<print $take>> matchstick[s]. <<if $ncount eq 0>>You took the last matchstick; you have won.<<else>>There are <<print $ncount>> matchstick[s] left.<<br>><<endif>>\u000a  <</append>><<remove "#trs">>\u000a\u000a  <<timed 2s>>\u000a  <<set $pctake to 4 - $take>>\u000a  <<append "#prompt">>The computer took <<print $pctake>> matchstick[s]. <<set $ncount to $ncount - $pctake>> <<br>><<linkreplace "NEXT TURN">><<append "#prompt">> \u000a<<if $ncount lt 11 and visited() gt 1>>I've already won, but you can keep playing if you like. [[. . .|threec]]\u000a<<elseif $ncount eq 0>> There are no matchsticks left; the computer has won. [[TRY AGAIN|threeb]]<<else>>There are <<print $ncount>> matchstick[s]. How many matchsticks do you want to take? <<trx>><<endif>>\u000a<</append>>\u000a<</linkreplace>>\u000a\u000a<</append>>. \u000a\u000a\u000a  <</timed>>\u000a\u000a<</link>>\u000a<</widget>>\u000a\u000a<<widget "trx">>\u000a<div id="trs"><<tr "ONE" 1>> <<tr "TWO" 2>><<tr "THREE" 3>></div> \u000a<</widget>>\u000a\u000a<br><<linkreplace "START GAME">>\u000a<<set $ncount to 12>><<append "#prompt">>There are <<print $ncount>> matchstick[s]. How many matchsticks do you want to take? <<trx>> <</append>>\u000a<</linkreplace>>\u000a\u000a\u000a\u000a\u000a<<br>>\u000a<div id="prompt"></div>
+p944
+sg23
+Vthreeb
+p945
+sg25
+g26
+((I2021
+I8
+I21
+I17
+I25
+I14
+I5
+I233
+I1
+tp946
+(dp947
+tp948
+Rp949
+sg31
+(lp950
+sg33
+g26
+((I2021
+I8
+I20
+I18
+I6
+I22
+I4
+I232
+I1
+tp951
+(dp952
+tp953
+Rp954
+sbsa(dp955
+g14
+I00
+sg15
+(lp956
+F331.2511091393077
+aF1703.7710736468484
+asg17
+(itiddlywiki
+Tiddler
+p957
+(dp958
+g21
+V"I've already won, but you can keep playing you like." That's what the computer told me after a few attempts. \u000a<<n "threed">>
+p959
+sg23
+Vthreec
+p960
+sg25
+g26
+((I2021
+I8
+I20
+I22
+I5
+I57
+I4
+I232
+I1
+tp961
+(dp962
+tp963
+Rp964
+sg31
+(lp965
+sg33
+g26
+((I2021
+I8
+I20
+I18
+I58
+I7
+I4
+I232
+I1
+tp966
+(dp967
+tp968
+Rp969
+sbsa(dp970
+g14
+I00
+sg15
+(lp971
+F610.9139307897075
+aF1736.3531499556325
+asg17
+(itiddlywiki
+Tiddler
+p972
+(dp973
+g21
+VI delved into the game's code and found out that, in order to win, you simply need to take the maximum possible number of matchsticks each turn. \u000a<<br>>\u000aIn this implementation, it is impossible to win because the computer is always capable of taking four matchsticks, while the player can only take three.<<br>>\u000a"I've already won, but you can keep playing you like." \u000aDeath could say the same thing.<<n title>>\u000a\u000a<<prog 3.3>>
+p974
+sg23
+Vdeath
+p975
+sg25
+g26
+((I2021
+I8
+I23
+I1
+I14
+I33
+I0
+I235
+I1
+tp976
+(dp977
+tp978
+Rp979
+sg31
+(lp980
+sg33
+g26
+((I2021
+I8
+I20
+I19
+I19
+I36
+I4
+I232
+I1
+tp981
+(dp982
+tp983
+Rp984
+sbsa(dp985
+g14
+I00
+sg15
+(lp986
+F459.5421472937008
+aF1716.1579414374432
+asg17
+(itiddlywiki
+Tiddler
+p987
+(dp988
+g21
+V\u000a<span title="Clip from Last Year at Marienbad.">\u000a<video src="./img/nim.mp4" autoplay></video></span>\u000a\u000a<<br>>\u000a<<progdyn "death" 46>>\u000a
+p989
+sg23
+Vthreed
+p990
+sg25
+g26
+((I2021
+I8
+I23
+I1
+I14
+I20
+I0
+I235
+I1
+tp991
+(dp992
+tp993
+Rp994
+sg31
+(lp995
+sg33
+g26
+((I2021
+I8
+I20
+I19
+I32
+I20
+I4
+I232
+I1
+tp996
+(dp997
+tp998
+Rp999
+sbsa(dp1000
+g14
+I00
+sg15
+(lp1001
+F1147.1606033717833
+aF1888.4028393966275
+asg17
+(itiddlywiki
+Tiddler
+p1002
+(dp1003
+g21
+VIf some future ethnologist\u000agets to see these images,\u000ahe'll ponder the funeral rites\u000aof the strange tribes\u000aof the late 20th Century,\u000aI'll provide the details.<<br>>\u000aYes, it was customary for such tribes\u000ato address a familiar\u000aand protective spirit,\u000aknown as a computer\u000ato some of them,\u000aand as an electronic calculator\u000ato others.<<br>>\u000aThey'd consult on everything,\u000ait kept their memory.\u000aIn fact, they no longer had a memory,\u000ait was their memory.\u000aIt was accompanied\u000aby a whole ritual.<<n title>>
+p1004
+sg23
+Vethn
+p1005
+sg25
+g26
+((I2021
+I8
+I20
+I23
+I5
+I2
+I4
+I232
+I1
+tp1006
+(dp1007
+tp1008
+Rp1009
+sg31
+(lp1010
+sg33
+g26
+((I2021
+I8
+I20
+I20
+I15
+I20
+I4
+I232
+I1
+tp1011
+(dp1012
+tp1013
+Rp1014
+sbsa(dp1015
+g14
+I00
+sg15
+(lp1016
+F847.133984028393
+aF6.787932564329951
+asg17
+(itiddlywiki
+Tiddler
+p1017
+(dp1018
+g21
+V\u000aThe Knowledge-standard\u2026\u000aWhen you saw the knowledge\u000aavailable on the net,\u000ayou could smile.\u000aBut that was exactly their game:\u000ato circulate information\u000aever further and faster\u000aIn past times, to lend\u000aweight to money,\u000athey sought a dense, rare material\u000ato act as a pledge\u000ainside coffers.\u000aThey chose gold.<<br>>\u000aNow money has become\u000ainvisible and volatile,\u000aso the new power needed a pledge\u000athat was invisible and volatile too.\u000aThey found Knowledge.\u000aAtoms of knowledge\u000acrossed through our screen.<<br>>\u000aIt was into Knowledge's black holes\u000awhere this century's dreams\u000aof power fell, this unending century.<<n suicide>>
+p1019
+sg23
+Vknowls
+p1020
+sg25
+g26
+((I2021
+I8
+I20
+I23
+I45
+I1
+I4
+I232
+I1
+tp1021
+(dp1022
+tp1023
+Rp1024
+sg31
+(lp1025
+sg33
+g26
+((I2021
+I8
+I20
+I20
+I15
+I38
+I4
+I232
+I1
+tp1026
+(dp1027
+tp1028
+Rp1029
+sbsa(dp1030
+g14
+I00
+sg15
+(lp1031
+F916.2005323868685
+aF2052.8393966282165
+asg17
+(itiddlywiki
+Tiddler
+p1032
+(dp1033
+g21
+V\u000aA future ethnologist\u000adoesn't know what escapes him,\u000aby not following me in the morning,\u000abetween powering on the computer\u000aand the moment when I\u000acome back to work on it.<<br>>\u000aBut in the future,\u000ahe could send a spy camera\u000aand then he will see me\u000ahaving breakfast with two cups,\u000ahanging out two towels,\u000aplacing two toothbrushes\u000ain a glass..<<br>>\u000aPardon me, dear ethnologist,\u000athis is not really for you.\u000aIt's for Gloria,\u000awhen she comes to clean for me,\u000aand for passing friends.\u000aIt re-assures them.\u000aThey think : \u201cLaura has got someone\u000ain her life. She plays the mystery girl,\u000abut I know the tell-tale signs\u201d.\u000aIf they had any suspicion\u000aabout my encounters with you,\u000athey'd be aghast.<<br>>\u000aIn <<hov "The Girl with the Golden Eyes" "An 1835 novella by Honoré de Balzac. The story follows the decadent heir Henri de Marsay, who becomes enamored of the Paquita Valdes and plots to seduce her, but becomes disillusioned when he discovers she is also involved with another lover. When he attempts to kill her, he discovers that she is already dead by the hand of her lover, his half-sister. She declares that Paquita came from a land where women are no more than chattels, able to be bought and used in any way. In the last lines of the story, de Marsay tells a friend that the girl has died of tuberculosis.">>,\u000aMarsay refers to screen-women,\u000awomen you display\u000ato hide the one that matters.\u000aI've got a screen-man,\u000awith my cups\u000aand my towels\u000aand my toothbrushes.\u000aOnly that he is hidden\u000aand you're invisible.\u000aYou can't make a better\u000aménage à trois.<<br>>\u000aWell. Back to the grind.<<n "title">>
+p1034
+sg23
+Vethn2
+p1035
+sg25
+g26
+((I2021
+I8
+I21
+I17
+I34
+I55
+I5
+I233
+I1
+tp1036
+(dp1037
+tp1038
+Rp1039
+sg31
+(lp1040
+sg33
+g26
+((I2021
+I8
+I20
+I20
+I16
+I6
+I4
+I232
+I1
+tp1041
+(dp1042
+tp1043
+Rp1044
+sbsa(dp1045
+g14
+I00
+sg15
+(lp1046
+F983.2315882874883
+aF4.2413487133984304
+asg17
+(itiddlywiki
+Tiddler
+p1047
+(dp1048
+g21
+VSometimes the screen tore into black\u000ashapes reminiscent of other forms,\u000athose where the century\u000ahad made the blueprints\u000afor its own suicide,\u000aengraving images in our minds\u000aimages of ruins:\u000aThe ruins of Coventry and\u000aBerlin, of Dresden and Stalingrad.\u000aThe ruins of Okinawa.<<br>>\u000aI had spent time cyberlooking\u000afor Okinawa witnesses and informants,\u000abut, like in any other network,\u000aI found all sorts of things.\u000aRumour had it initiates could\u000aplug into other people's\u000anervous system. So they said anyway.\u000a\u000a<<n title>>
+p1049
+sg23
+Vsuicide
+p1050
+sg25
+g26
+((I2021
+I8
+I20
+I23
+I44
+I30
+I4
+I232
+I1
+tp1051
+(dp1052
+tp1053
+Rp1054
+sg31
+(lp1055
+sg33
+g26
+((I2021
+I8
+I20
+I20
+I18
+I21
+I4
+I232
+I1
+tp1056
+(dp1057
+tp1058
+Rp1059
+sbsa(dp1060
+g14
+I00
+sg15
+(lp1061
+F327.1783496007098
+aF1866.6814551907723
+asg17
+(itiddlywiki
+Tiddler
+p1062
+(dp1063
+g21
+VI wish I could bring good news,\u000abut the truth is that\u000athe Network is not\u000awhat it was.\u000aYou said there is something\u000airretrievably vulgar about success.\u000aOWL must be a success.\u000aYou wonder how some people\u000aplug in.<<br>>\u000aA few days ago a man\u000ain an <<hov "Oberon mask" "Oberon, King of Fairies, most notably used in Shakespeare's 'A Midsummer Night's Dream'; in the play, Bottom the weaver is transformed into a donkey.">> asked me\u000aif I was his baby donkey.\u000aI felt a whiff of nostalgia.\u000aI remembered the time when\u000ayou were all just weirdos\u000ain Washington DC,\u000aand thought that the only secrecy\u000aleft this over-bugged world meant\u000apenetrating the most open network,\u000ahowever, with passwords\u000ato discourage the morons.<<br>>\u000aBut there's no discouraging morons.\u000aYou were part Robin Hood,\u000apart secret society,\u000aYou were on raids for information,\u000alike leaving Sherwood for supplies.<<n pyle2>>\u000a\u000a\u000a\u000a\u000a\u000a
+p1064
+sg23
+Vpyle
+p1065
+sg25
+g26
+((I2021
+I8
+I21
+I17
+I29
+I53
+I5
+I233
+I1
+tp1066
+(dp1067
+tp1068
+Rp1069
+sg31
+(lp1070
+sg33
+g26
+((I2021
+I8
+I20
+I20
+I19
+I11
+I4
+I232
+I1
+tp1071
+(dp1072
+tp1073
+Rp1074
+sbsa(dp1075
+g14
+I00
+sg15
+(lp1076
+F471.082519964508
+aF1897.9059449866888
+asg17
+(itiddlywiki
+Tiddler
+p1077
+(dp1078
+g21
+VThen you retreated back\u000ato your impenetrable lair.\u000aI have to go out too,\u000ato gather knowledge\u000aabout Okinawa,\u000aand I feel like a hunted spy,\u000aI'm afraid they're after me.\u000aAnd I wonder if it isn't true.\u000aUnder those pussy-hound masks,\u000aI discern true enemies,\u000apeople who want to know too much\u000aor who already know too much.<<br>>\u000a\u201cOkinawa?\u000aRings a bell. Wasn't there\u000aa strategy about that?\u000aWritten by some peculiar guy?\u000aRemind me his name\u2026\u201d\u000aSure I'll give your name!\u000aNow, I don't mention Okinawa.<<n timeache>>\u000a
+p1079
+sg23
+Vpyle2
+p1080
+sg25
+g26
+((I2021
+I8
+I20
+I23
+I16
+I49
+I4
+I232
+I1
+tp1081
+(dp1082
+tp1083
+Rp1084
+sg31
+(lp1085
+sg33
+g26
+((I2021
+I8
+I20
+I20
+I19
+I23
+I4
+I232
+I1
+tp1086
+(dp1087
+tp1088
+Rp1089
+sbsa(dp1090
+g14
+I00
+sg15
+(lp1091
+F647.9077196095832
+aF1889.5918367346944
+asg17
+(itiddlywiki
+Tiddler
+p1092
+(dp1093
+g21
+V\u000a\u000aHow come he knew about the Game?\u000aTo whom did you talk?\u000aHow stiffing suddenly\u000athese unasked questions.\u000aI get time-ache like headaches.\u000aHere. It spins you inside.\u000aYou want to excise it, to get out,\u000aand leave your head to its aches,\u000ayou want to go for a stroll.<<br>>\u000aTime should take care of itself,\u000aleave me to here and now,\u000atalking to cats,\u000afeeling early spring sun\u000aon my skin.\u000aNo way. Time drills into me.\u000aI suffer electric shocks,\u000atime neuralgia,\u000athe image of a silent house,\u000aa garden in snow,\u000aa rainy day,\u000afondling a horse over a gate.<<br>>\u000aIt is in me but not mine,\u000aa migraine of time,\u000awhere time is just\u000apointless pain,\u000awithout sentiment or nostalgia,\u000athe sting of time,\u000athe sting of an invisible insect\u000ayou can do nothing about.<<n pylex>>\u000a\u000a\u000a\u000a\u000a\u000a
+p1094
+sg23
+Vtimeache
+p1095
+sg25
+g26
+((I2021
+I8
+I20
+I23
+I23
+I29
+I4
+I232
+I1
+tp1096
+(dp1097
+tp1098
+Rp1099
+sg31
+(lp1100
+sg33
+g26
+((I2021
+I8
+I20
+I20
+I20
+I53
+I4
+I232
+I1
+tp1101
+(dp1102
+tp1103
+Rp1104
+sbsa(dp1105
+g14
+I00
+sg15
+(lp1106
+F500.9494232475607
+aF2184.3566992014134
+asg17
+(itiddlywiki
+Tiddler
+p1107
+(dp1108
+g21
+V\u000aI was in <<hov "Vézelay" "Vézelay is a fortified town in Eastern France. Famous for Vézelay Abbey, a UNESCO heritage site.">> for two days.\u000aI realised I'd forgotten the clue\u000awhich distinguishes genuine capitals\u000afrom restored ones.<<br>>\u000aOr was it the other way round?\u000aI had the question, but\u000awhere there should have been the answer\u000athere was a blank.\u000aCould an angel scan my memory\u000aand find the clue\u000awhich distinguishes\u000aremembrance from oblivion?<<br>>\u000aAn angel, like in the Jewish legend\u000ayou used to love so much:\u000aOne second before birth,\u000awe know all about everything.\u000aPlato used to say the same.\u000aBut, one second later,\u000aan angel gives us a pat\u000aand erases our memory, so man has\u000athe honour of rediscovery,\u000aif he's up to it.<<br>>\u000aDoes another angel come later\u000awhen, willy-nilly, we've gathered\u000aour scraps of memory,\u000alike refugees, and erase\u000athe lot pat by pat?\u000aIf I forgot the clue\u000ato the capitals,\u000aso vivid last time\u000aI was there,\u000awhat clues to you will I lose,\u000aone by one?\u000aThe Gershwin <<hov "song" "No, no they can't take that away from me /  The way you this /the way you that / They can't take that away. / But, yes, angels can. / They can take everything one day.">>\u000awe loved,\u000asung by <<hov "Sarah Vaughan" "Sarah Lois Vaughan (1924-1990) was an American jazz singer. Nicknamed 'Sassy' and 'The Divine One' she won four Grammy Awards, including the Lifetime Achievement Award.">>.<<n cocoloco2>>
+p1109
+sg23
+Vcocoloco
+p1110
+sg25
+g26
+((I2021
+I8
+I22
+I21
+I39
+I0
+I6
+I234
+I1
+tp1111
+(dp1112
+tp1113
+Rp1114
+sg31
+(lp1115
+sg33
+g26
+((I2021
+I8
+I20
+I20
+I21
+I22
+I4
+I232
+I1
+tp1116
+(dp1117
+tp1118
+Rp1119
+sbsa(dp1120
+g14
+I00
+sg15
+(lp1121
+F664.537710736469
+aF2205.568766637083
+asg17
+(itiddlywiki
+Tiddler
+p1122
+(dp1123
+g21
+VHere's a piece Florence wrote.\u000ait's in her book of short stories,\u000aTo Be Read in an Elevator\u2026\u000aCocoloco.\u000aIt was on an endless tour\u000ain South America\u000athat she bought Cocoloco,\u000athe prettiest of parrots.<<br>>\u000aEveryday, to exorcise\u000aawful shows,\u000ashabby theaters,\u000adangerous and dirty hotels,\u000ashe devised an act with Cocoloco,\u000awhich exhaustion and fever\u000ahelped her consider brilliant.\u000aPerhaps it was, after all.\u000a<<br>>\u000aShe gathered up scraps\u000aof news from a Europe\u000ashe loathed\u000aand now regarded as Paradise Lost.\u000aShe conceived comic, poetic scenes,\u000awith political satire\u2026\u000aCocoloco was very good as Yeltsin\u2026\u000aA zaniness reproduced before\u000astartled Indians,\u000astartled but friendly.\u000aEach night took her closer to home.\u000aCloser, in her delirium,\u000ato a triumphal return, with her\u000aand Cocoloco\u000aas kings of TV.<<n cocoloco4>>
+p1124
+sg23
+Vcocoloco2
+p1125
+sg25
+g26
+((I2021
+I8
+I21
+I17
+I39
+I49
+I5
+I233
+I1
+tp1126
+(dp1127
+tp1128
+Rp1129
+sg31
+(lp1130
+sg33
+g26
+((I2021
+I8
+I20
+I20
+I27
+I22
+I4
+I232
+I1
+tp1131
+(dp1132
+tp1133
+Rp1134
+sbsa(dp1135
+g14
+I00
+sg15
+(lp1136
+F429.8489300926124
+aF2038.0829533529284
+asg17
+(itiddlywiki
+Tiddler
+p1137
+(dp1138
+g21
+VWe were convinced\u000athis was what war was,\u000athat everyone was\u000adoing this to everyone,\u000abecause they must not shame,\u000aa superior race,\u000aa model for humanity,\u000aand because they were nice,\u000aand because they were helpful\u000aand wanted to do what\u000awas expected of them,\u000aand wanted to prove\u000aNapoleon wrong.\u000a<<br>>They killed themselves\u2026\u000ain their thousands, whole families.<<br>>\u000aWith a grenade, if the Army\u000ahas supplied grenades,\u000awith sticks if they had no grenades.\u000a<<br>>\u000aOr by jumping off cliffs,\u000alike the women of Saipan had done. \u000a<<n cliff>>
+p1139
+sg23
+Vsaipan
+p1140
+sg25
+g26
+((I2021
+I8
+I22
+I21
+I32
+I11
+I6
+I234
+I1
+tp1141
+(dp1142
+tp1143
+Rp1144
+sg31
+(lp1145
+sg33
+g26
+((I2021
+I8
+I20
+I20
+I27
+I41
+I4
+I232
+I1
+tp1146
+(dp1147
+tp1148
+Rp1149
+sbsa(dp1150
+g14
+I00
+sg15
+(lp1151
+F562.8924083534832
+aF2057.7555559638504
+asg17
+(itiddlywiki
+Tiddler
+p1152
+(dp1153
+g21
+V<span title="At the Suicide Cliffs in northern Saipan, numerous Japanese civilians and soldiers committed suicide by jumping to their deaths in order to avoid capture by the United States. The precise number of suicides there is not known, but are estimated to be in the hundreds or thousands."><video src="./img/cliff.mp4" autoplay></video></span>\u000a<<br>>\u000a<<progdyn "batman" 27>>
+p1154
+sg23
+Vcliff
+p1155
+sg25
+g26
+((I2021
+I8
+I22
+I21
+I36
+I49
+I6
+I234
+I1
+tp1156
+(dp1157
+tp1158
+Rp1159
+sg31
+(lp1160
+sg33
+g26
+((I2021
+I8
+I20
+I20
+I28
+I7
+I4
+I232
+I1
+tp1161
+(dp1162
+tp1163
+Rp1164
+sbsa(dp1165
+g14
+I00
+sg15
+(lp1166
+F418.7616677132124
+aF2473.5640415145003
+asg17
+(itiddlywiki
+Tiddler
+p1167
+(dp1168
+g21
+V<<hov "Let There Be Light" "A 1946 documentary by John Huston, made while serving in the army. The film documented PTSD and was supressed by the U.S. government. It was not released until the 1980s." >>; a film that wouldn't be seen for decades. Demoralising, the army censors said.<<br>>\u000aMore moralising was John Wayne\u000ain The Sands of Iwo Jima.\u000aThat got shown in wartime\u000awith unexpected results.\u000aThe Star turned up in cowboy garb\u000aat a naval hospital,\u000aand got booed!\u000a<<br>>\u000aAn episode in a war of images\u000athat soon coincided with real war. It started here,\u000aat Iwo Jima, with that famous scene of the flag being raised. Whose side are you on, comrade?<<n ira>>
+p1169
+sg23
+Vhayes
+p1170
+sg25
+g26
+((I2021
+I8
+I23
+I1
+I18
+I2
+I0
+I235
+I1
+tp1171
+(dp1172
+tp1173
+Rp1174
+sg31
+(lp1175
+sg33
+g26
+((I2021
+I8
+I20
+I20
+I28
+I30
+I4
+I232
+I1
+tp1176
+(dp1177
+tp1178
+Rp1179
+sbsa(dp1180
+g14
+I00
+sg15
+(lp1181
+F769.7167671601825
+aF2632.5074167780776
+asg17
+(itiddlywiki
+Tiddler
+p1182
+(dp1183
+g21
+VAt the end of the original shot,\u000ayou can tell he doesn't die.\u000aHe gets up again.\u000aYou feel he'll get over it\u000alike the napalm girl in Saigon.\u000aThat ending has always been cut\u000ain all documentaries.\u000aA born symbol doesn't get out\u000aof it so easily!\u000aHe testifies against war,\u000ayou cannot weaken his testimony\u000afor the sake of a few frames.<<br>>\u000aTruth? What is truth?\u000aThe truth is, most didn't get up.\u000aSo what's so special about this one?\u000aThe ethics of imagery?\u000aIs napalm ethical?\u000aAre you in favour of napalm?<<n oshima>>
+p1184
+sg23
+Vbornsymbol
+p1185
+sg25
+g26
+((I2021
+I8
+I22
+I21
+I55
+I18
+I6
+I234
+I1
+tp1186
+(dp1187
+tp1188
+Rp1189
+sg31
+(lp1190
+sg33
+g26
+((I2021
+I8
+I20
+I20
+I30
+I42
+I4
+I232
+I1
+tp1191
+(dp1192
+tp1193
+Rp1194
+sbsa(dp1195
+g14
+I00
+sg15
+(lp1196
+F1006.7999874630794
+aF2661.2945647040247
+asg17
+(itiddlywiki
+Tiddler
+p1197
+(dp1198
+g21
+V\u000aFilm director Nagisa Oshima said: "I remember the fear and I have really experienced the feeling\u000aof being a part of Japan at war.\u000aThat is why I particularly feel,\u000asince my job is film-making,\u000athat Japanese war films are rubbish.\u000aThey deal only with themselves,\u000ahow they suffered from the war,\u000ahow brave and painful it was,\u000aThey never show the other side."\u000a<<br>>\u000aBut \u2013 as in the books and films \u2013\u000athe smell of battle is missing.\u000aTill we get smellies, like talkies,\u000awar films don't exist. Just as well,\u000aI swear there'd be no audience.<<n smell>>
+p1199
+sg23
+Voshima
+p1200
+sg25
+g26
+((I2021
+I8
+I21
+I18
+I33
+I19
+I5
+I233
+I1
+tp1201
+(dp1202
+tp1203
+Rp1204
+sg31
+(lp1205
+sg33
+g26
+((I2021
+I8
+I20
+I20
+I30
+I53
+I4
+I232
+I1
+tp1206
+(dp1207
+tp1208
+Rp1209
+sbsa(dp1210
+g14
+I00
+sg15
+(lp1211
+F1149.6839766251262
+aF2667.7435442958626
+asg17
+(itiddlywiki
+Tiddler
+p1212
+(dp1213
+g21
+V\u000a<span title="'Souvenir', a short film by Agnès de Cayeux(?). 'A closed garden, a fountain sealed; a reference to Song of Solomon 4:12."><video onloadstart="this.volume=0.05"  src="./img/souvenir.mp4" autoplay></video></span>\u000a<<br>>\u000a<<progdyn "title" 163>>\u000a<<audiotag>>\u000a\u000a
+p1214
+sg23
+Vsmell
+p1215
+sg25
+g26
+((I2021
+I8
+I23
+I1
+I49
+I54
+I0
+I235
+I1
+tp1216
+(dp1217
+tp1218
+Rp1219
+sg31
+(lp1220
+sg33
+g26
+((I2021
+I8
+I20
+I20
+I31
+I15
+I4
+I232
+I1
+tp1221
+(dp1222
+tp1223
+Rp1224
+sbsa(dp1225
+g14
+I00
+sg15
+(lp1226
+F607.1404686431024
+aF2633.173808208878
+asg17
+(itiddlywiki
+Tiddler
+p1227
+(dp1228
+g21
+V<video src="./img/fire.mp4" autoplay muted></video>\u000a<<br>>\u000a<<progdyn "bornsymbol" 7>>
+p1229
+sg23
+Vburn
+p1230
+sg25
+g26
+((I2021
+I8
+I21
+I18
+I32
+I54
+I5
+I233
+I1
+tp1231
+(dp1232
+tp1233
+Rp1234
+sg31
+(lp1235
+sg33
+g26
+((I2021
+I8
+I20
+I20
+I41
+I5
+I4
+I232
+I1
+tp1236
+(dp1237
+tp1238
+Rp1239
+sbsa(dp1240
+g14
+I00
+sg15
+(lp1241
+F446.36320110843644
+aF2797.947770751576
+asg17
+(itiddlywiki
+Tiddler
+p1242
+(dp1243
+g21
+V<<hov "Once again" "Once again, as in Chris Marker's 'Sans Soleil:' As for the students, some massacred each other in the mountains in the name of revolutionary purity, while others had studied capitalism so thoroughly to fight it that they now provide it with its best executives. Like everywhere else the movement had its postures and its careerists, including, and there are some, those who made a career of martyrdom.">>, Oshima pointed the way. Laura went on to study\u000ahow each side depicted the enemy.<<br>>\u000aIt was not always pleasant.<<n western>>
+p1244
+sg23
+Vkinjox
+p1245
+sg25
+g26
+((I2021
+I8
+I22
+I22
+I7
+I58
+I6
+I234
+I1
+tp1246
+(dp1247
+tp1248
+Rp1249
+sg31
+(lp1250
+sg33
+g26
+((I2021
+I8
+I20
+I20
+I49
+I20
+I4
+I232
+I1
+tp1251
+(dp1252
+tp1253
+Rp1254
+sbsa(dp1255
+g14
+I00
+sg15
+(lp1256
+F590.2673714722335
+aF2807.4508763416434
+asg17
+(itiddlywiki
+Tiddler
+p1257
+(dp1258
+g21
+VShoji Kinjo told her: "We were taught that Westerners\u000awere demons. We were told\u000aif US troops captured us\u000athey'd cut off our noses and ears,\u000acut off our fingers.\u000aThey would drive tanks over our bodies,\u000aand rape our women. We would suffer horribly, then die."<<br>>\u000a\u000a"We were so imbued with all this\u000athat it seemed better\u000ato suppress our loved ones,\u000athan leave them to the enemy,\u000aFor them, it would be a consolation\u000ato die by the hand of a loved one.\u000aFilled with this thought,\u000awe lamented and, lamenting,\u000ainterrupted our mother's life."<<n recog>>
+p1259
+sg23
+Vwestern
+p1260
+sg25
+g26
+((I2021
+I8
+I22
+I3
+I3
+I17
+I6
+I234
+I1
+tp1261
+(dp1262
+tp1263
+Rp1264
+sg31
+(lp1265
+sg33
+g26
+((I2021
+I8
+I20
+I20
+I50
+I55
+I4
+I232
+I1
+tp1266
+(dp1267
+tp1268
+Rp1269
+sbsa(dp1270
+g14
+I00
+sg15
+(lp1271
+F909.4092775382651
+aF2820.011430214202
+asg17
+(itiddlywiki
+Tiddler
+p1272
+(dp1273
+g21
+V"It was terribly shocking,\u000abut telepathically\u000aall of us thought\u000athis was the thing to do\u000aand others began to kill\u000athe people they loved most.\u000aThey began with children,\u000awith the weak and the old,\u000awith those who lacked the strength\u000ato take their own lives.\u000aSo husbands killed wives,\u000aparents killed children,\u000abrothers killed sisters.\u000a"<<br>>\u000a"They killed them because\u000athey loved them. Such was the tragedy\u000aof those mass suicides.\u000aIt was a real butchery,\u000aand the waters of the river\u000awhere they threw the bodies\u000aindiscriminately\u000abecame rivers of blood."<<br>>\u000a"As for my own family,\u000amy brother, who was\u000atwo years my senior,\u000aand I raised our hand\u000afor the first time\u000aagainst the mother who had borne us.\u000aAt 19, my brother\u000acould not help moaning.\u000aHe suffered so much.\u000aMy father went off to die.\u000aWe also killed our younger\u000abrother and sister."<<n third>>
+p1274
+sg23
+Vshocking
+p1275
+sg25
+g26
+((I2021
+I8
+I22
+I22
+I5
+I32
+I6
+I234
+I1
+tp1276
+(dp1277
+tp1278
+Rp1279
+sg31
+(lp1280
+sg33
+g26
+((I2021
+I8
+I20
+I20
+I51
+I39
+I4
+I232
+I1
+tp1281
+(dp1282
+tp1283
+Rp1284
+sbsa(dp1285
+g14
+I00
+sg15
+(lp1286
+F1122.9985550116864
+aF2836.405065781011
+asg17
+(itiddlywiki
+Tiddler
+p1287
+(dp1288
+g21
+VAfterwards, he sought\u000aa glorious death in war\u000acrossing enemy lines:<<br>>\u000aHe was captured alongside soldiers\u000awho had called capture dishonourable.\u000aMass suicides accompanied\u000athe advance of US troops.\u000aTogether with Japanese executions\u000aand casualities of war,\u000asome 150,000 civilians died in Okinawa,\u000aa third of the population.\u000aNo other group suffered so,\u000aexcept in the Nazi camps.<<br>>\u000aEuropeans, surviving this,\u000amight have turned to Buddhism.\u000aKinjo found Christianity.\u000aHe became a minister.\u000aHe offers his memory\u000ato help others decipher theirs.\u000aHe wants Japan to acknowledge\u000aits war crimes,\u000aand mass suicides taught\u000ain school books,\u000anot ignored, or called madness.\u000aHe wants what nations and men\u000aare least capable of:\u000athat memory be faced,\u000aand forgiveness asked.<<n minister>>\u000a
+p1289
+sg23
+Vthird
+p1290
+sg25
+g26
+((I2021
+I8
+I22
+I3
+I4
+I59
+I6
+I234
+I1
+tp1291
+(dp1292
+tp1293
+Rp1294
+sg31
+(lp1295
+sg33
+g26
+((I2021
+I8
+I20
+I20
+I51
+I59
+I4
+I232
+I1
+tp1296
+(dp1297
+tp1298
+Rp1299
+sbsa(dp1300
+g14
+I00
+sg15
+(lp1301
+F1278.9539624778565
+aF2833.0516272600225
+asg17
+(itiddlywiki
+Tiddler
+p1302
+(dp1303
+g21
+VKinjo told me: "If you look in the Bible,\u000ayou'll see confessing your mistakes\u000aand expressing repentance,\u000acleanses people of their past.\u000aBut Japanese mentality,\u000athe way of thought,\u000aconsiders that errors\u000acommitted in the past\u000aremain errors forever. They cannot be erased."<<br>>\u000a"I decided that\u000amy mission must be\u000ato proclaim the value of human life\u000ato counter the notion,\u000athe ideology of the past,\u000athat held life in such contempt,\u000afor such was the lie they taught.\u000aThat was the motivation\u000afor my becoming a missionary,\u000aa Christian minister."<<n buckner>>
+p1304
+sg23
+Vminister
+p1305
+sg25
+g26
+((I2021
+I8
+I22
+I3
+I5
+I23
+I6
+I234
+I1
+tp1306
+(dp1307
+tp1308
+Rp1309
+sg31
+(lp1310
+sg33
+g26
+((I2021
+I8
+I20
+I20
+I52
+I7
+I4
+I232
+I1
+tp1311
+(dp1312
+tp1313
+Rp1314
+sbsa(dp1315
+g14
+I00
+sg15
+(lp1316
+F1420.467075989955
+aF2830.7398513077856
+asg17
+(itiddlywiki
+Tiddler
+p1317
+(dp1318
+g21
+VWith or without Kinjo, the war came to a close. After the retreat from Shuri,\u000aGeneral Buckner\u000asent Ushijima,\u000ain his Southern bastion,\u000aan offer of honorable surrender.\u000aThe Japanese general reacted\u000awith an outburst of laughter.\u000aWas it laughter,\u000aborne on the wind,\u000athat prompted a frontline gunner?<<br>>\u000aUnknowningly, he aimed\u000aat Buckner,\u000awho was examining the ground,\u000aand Simon Bolivar Buckner,\u000aonly US general\u000ato die in combat,\u000afailed to convince his enemies,\u000aand died a few days before them.\u000aIt is said that Ushijima prayed\u000afor Buckner when he died.\u000aThen he and Cho\u000aarranged the ending,\u000athe only end they could conceive: suicide, or <<redhint "harakiri">>.<<n title>>
+p1319
+sg23
+Vbuckner
+p1320
+sg25
+g26
+((I2021
+I8
+I22
+I22
+I6
+I50
+I6
+I234
+I1
+tp1321
+(dp1322
+tp1323
+Rp1324
+sg31
+(lp1325
+sg33
+g26
+((I2021
+I8
+I20
+I20
+I52
+I20
+I4
+I232
+I1
+tp1326
+(dp1327
+tp1328
+Rp1329
+sbsa(dp1330
+g14
+I00
+sg15
+(lp1331
+F557.0751253421967
+aF2976.9755648909927
+asg17
+(itiddlywiki
+Tiddler
+p1332
+(dp1333
+g21
+VHarakiri is not,\u000ain the European sense,\u000asuicide, but the act\u000aof giving oneself death.\u000aThe act of living through harshest pain\u000aat the end.\u000aThat's what harakiri is.\u000aSo to perform harakiri ,\u000ayou must be in good health,\u000avery well-balanced,\u000awith enough energy\u000ato make a gift of death.\u000aPulling a trigger is not enough,\u000anor is swallowing pills,\u000anor stepping out into the void.\u000aYou must touch yourself\u000ato the end,\u000awith living energy.\u000a<<br>>\u000aAnd the Game, is that the only way to end it? As it bleeds out error codes, to release it from its simulacra of suffering, through self-destruction?\u000a<<br>>\u000aThe computer, it doesn't know how to harakiri, you bet.<<n title>>\u000a\u000a<<err>>\u000a<<prog 5>>
+p1334
+sg23
+Vharakiri
+p1335
+sg25
+g26
+((I2021
+I8
+I22
+I22
+I7
+I20
+I6
+I234
+I1
+tp1336
+(dp1337
+tp1338
+Rp1339
+sg31
+(lp1340
+sg33
+g26
+((I2021
+I8
+I20
+I20
+I52
+I32
+I4
+I232
+I1
+tp1341
+(dp1342
+tp1343
+Rp1344
+sbsa(dp1345
+g14
+I00
+sg15
+(lp1346
+F1134.2610511344315
+aF2233.044613068439
+asg17
+(itiddlywiki
+Tiddler
+p1347
+(dp1348
+g21
+VToo exhausted to take notes,\u000ashe rehearsed sketches in her head,\u000awith brilliant repartee\u2026\u000aYes, that was a blank,\u000abut it would come back,\u000ashe knew.\u000aAnd Cocoloco on her hand\u000awould look so funny in close-up.<<br>>\u000aThen Cocoloco died of parrot-disease,\u000aand, back in France,\u000ashe realised she'd forgotten it all.<<n title>>
+p1349
+sg23
+Vcocoloco3
+p1350
+sg25
+g26
+((I2021
+I8
+I21
+I17
+I40
+I2
+I5
+I233
+I1
+tp1351
+(dp1352
+tp1353
+Rp1354
+sg31
+(lp1355
+sg33
+g26
+((I2021
+I8
+I20
+I20
+I53
+I38
+I4
+I232
+I1
+tp1356
+(dp1357
+tp1358
+Rp1359
+sbsa(dp1360
+g14
+I00
+sg15
+(lp1361
+F1000.5412599822539
+aF1885.6876663708967
+asg17
+(itiddlywiki
+Tiddler
+p1362
+(dp1363
+g21
+V<span title="Photo of Ernie Pyle shortly after his death">[img[./img/pyle.jpg][ethn]]</span><<im>>
+p1364
+sg23
+Vpylepic
+p1365
+sg25
+g26
+((I2021
+I8
+I22
+I21
+I44
+I36
+I6
+I234
+I1
+tp1366
+(dp1367
+tp1368
+Rp1369
+sg31
+(lp1370
+sg33
+g26
+((I2021
+I8
+I20
+I21
+I2
+I33
+I4
+I232
+I1
+tp1371
+(dp1372
+tp1373
+Rp1374
+sbsa(dp1375
+g14
+I00
+sg15
+(lp1376
+F901.2273797725421
+aF2213.5853369892097
+asg17
+(itiddlywiki
+Tiddler
+p1377
+(dp1378
+g21
+V<video src="./img/parrot.mp4" autoplay></video>\u000a<<br>>\u000a<<progdyn "cocoloco3" 96>>
+p1379
+sg23
+Vcocoloco4
+p1380
+sg25
+g26
+((I2021
+I8
+I21
+I17
+I39
+I58
+I5
+I233
+I1
+tp1381
+(dp1382
+tp1383
+Rp1384
+sg31
+(lp1385
+sg33
+g26
+((I2021
+I8
+I20
+I21
+I10
+I11
+I4
+I232
+I1
+tp1386
+(dp1387
+tp1388
+Rp1389
+sbsa(dp1390
+g14
+I00
+sg15
+(lp1391
+F646.788278410448
+aF3322.7516922142463
+asg17
+(itiddlywiki
+Tiddler
+p1392
+(dp1393
+g21
+V<style>.macro-timed > span {background-color: red}</style>\u000a\u000a\u000a<<set $errscore to 0>>\u000a\u000a<<widget "kbc">>\u000a<<replace "#kbc">><span id="kbc"><<print $errscore>></span><</replace>>\u000a<<if $errscore gte 10000>><<goto "fiveyes">><<endif>>\u000a<</widget>>\u000a\u000a\u000a\u000a<span style="font-size:200%">LEVEL FIVE</span><<br>>\u000aThe Game is still throwing up error messages, almost indecipherable now. Nothing left to do but shoot down the symbols as they appear and reappear. [KILOBYTES RECOVERED <span id="kbc"><<print $errscore>></span>/10000]\u000a<<br>>\u000a\u000aSYSTEM FAILURE IMMINENT, REBOOTING IN FORTY SECONDS\u000a<br>\u000a<<progdyn "fivere" 40 "noskip">>\u000a<<br>>\u000a\u000a<<repeat 0.3s>>\u000a<<print either("\u000a<<linkreplace 'Â'>><<set $errscore -= 1000>><<kbc>><</linkreplace>>",\u000a"<<linkreplace '»'>><<set $errscore -= 100>><<kbc>><</linkreplace>>",\u000a"<<linkreplace 'æ'>><<set $errscore += 0>><<kbc>><</linkreplace>>",\u000a"<<linkreplace '¿'>><<set $errscore += 10>><<kbc>><</linkreplace>>",\u000a"<<linkreplace 'Ø'>><<set $errscore += 100>><<kbc>><</linkreplace>>",\u000a"<<linkreplace '¢'>><<set $errscore += 1000>><<kbc>><</linkreplace>>",\u000a)>>\u000a<</repeat>>\u000a<span style="position: absolute; top: 0; right: 0; padding: 3px">[[ERROR TABLE|errt]]</span>\u000a\u000a<<prog 5.5>>\u000a
+p1394
+sg23
+Vfiveb
+p1395
+sg25
+g26
+((I2021
+I8
+I23
+I1
+I31
+I22
+I0
+I235
+I1
+tp1396
+(dp1397
+tp1398
+Rp1399
+sg31
+(lp1400
+sg33
+g26
+((I2021
+I8
+I20
+I21
+I16
+I25
+I4
+I232
+I1
+tp1401
+(dp1402
+tp1403
+Rp1404
+sbsa(dp1405
+g14
+I00
+sg15
+(lp1406
+F797.1347837975419
+aF3370.267220164557
+asg17
+(itiddlywiki
+Tiddler
+p1407
+(dp1408
+g21
+VThe end of the battle is written\u000ain the deep, by Okinawa,\u000awhere Oshima,\u000asurveyor of memories,\u000afilmed underwater graveyards.\u000aOkinawa was\u000athe Japanese' sute-ishi,\u000atheir sacrificial pawn.\u000aIf the price was high enough,\u000athe US\u000awould shrink from invading\u000aJapan's main island\u000aand peace could be made.<<br>>\u000aThe reality was,\u000ait made the case\u000afor the Atom Bomb.\u000aWithout Okinawa's resistance,\u000aHiroshima would not have been,\u000aand the century would've been different.\u000aWhich means that in all respects,\u000aour lives were fashioned by events\u000athat took place in that little island,\u000abetween the moment\u000awhen Kinjo killed his family,\u000aand general Ushijima's\u000aself-death.<<n history>>\u000a\u000a\u000a<<prog 5.5>>
+p1409
+sg23
+Vendof
+p1410
+sg25
+g26
+((I2021
+I8
+I23
+I1
+I33
+I1
+I0
+I235
+I1
+tp1411
+(dp1412
+tp1413
+Rp1414
+sg31
+(lp1415
+sg33
+g26
+((I2021
+I8
+I20
+I21
+I16
+I37
+I4
+I232
+I1
+tp1416
+(dp1417
+tp1418
+Rp1419
+sbsa(dp1420
+g14
+I00
+sg15
+(lp1421
+F1100.1841414424186
+aF3363.6644881963684
+asg17
+(itiddlywiki
+Tiddler
+p1422
+(dp1423
+g21
+VAm I going mad?\u000aI used to see you\u000aeverywhere,\u000aI recognised you from afar,\u000aI went back to the places we loved,\u000athe Jardin des Plantes,\u000athe little farm\u000aat the Bois de Boulogne,\u000athe shore beneath the Golden Gate\u000awhere Kim Novak feigns suicide\u000ain Alfred Hitchcock's Vertigo\u2026\u000aI'd see a man from behind,\u000alooking at parrots,\u000aor sitting among goats,\u000aor leaning against a rail,\u000aand it would be you.<<br>>\u000aThen I'd come closer,\u000ahe'd turn round, be someone else.\u000aI'd wonder how anyone\u000acould replace you so fast.\u000aIn my moment of distraction,\u000anot more than a split second\u2026\u000aNow it's the same in the Network.<<br>>\u000aSomeone calls, it's you,\u000aI know by tell-tale signs,\u000aa special word only we would use.\u000aThen I'd question him,\u000aand he'd shy away,\u000anot like you anymore.\u000aThen another sign.\u000aIs this a game?\u000aIs it you teasing me?<<br>>\u000aOne day, one woman\u000aknows too much,\u000atoo much about you, about me,\u000aabout the Game, about everything.\u000aWe are plugged into the masks gallery.\u000aI ask her to show me hers\u000aand on the screen I see this.<<n maskimg>>\u000a
+p1424
+sg23
+Vmad
+p1425
+sg25
+g26
+((I2021
+I8
+I23
+I1
+I33
+I30
+I0
+I235
+I1
+tp1426
+(dp1427
+tp1428
+Rp1429
+sg31
+(lp1430
+sg33
+g26
+((I2021
+I8
+I20
+I21
+I16
+I46
+I4
+I232
+I1
+tp1431
+(dp1432
+tp1433
+Rp1434
+sbsa(dp1435
+g14
+I00
+sg15
+(lp1436
+F2002.755939636885
+aF3428.853444465219
+asg17
+(itiddlywiki
+Tiddler
+p1437
+(dp1438
+g21
+V<<timed 2s>>I never saw Laura again. <<next 2s>>When I arrived at her computer, the program had been left open. <<br>>Mechanically, I typed in her name. "I don't know how to <<redhint "Laura">>,\u201d the machine told me. <<n title>><</timed>>
+p1439
+sg23
+Vneversaw
+p1440
+sg25
+g26
+((I2021
+I8
+I23
+I1
+I53
+I3
+I0
+I235
+I1
+tp1441
+(dp1442
+tp1443
+Rp1444
+sg31
+(lp1445
+sg33
+g26
+((I2021
+I8
+I20
+I21
+I16
+I56
+I4
+I232
+I1
+tp1446
+(dp1447
+tp1448
+Rp1449
+sbsa(dp1450
+g14
+I00
+sg15
+(lp1451
+F1061.571470721423
+aF3702.541893312956
+asg17
+(itiddlywiki
+Tiddler
+p1452
+(dp1453
+g21
+VFor days, I continued to search through the computer's records for any trace of Laura. The game of cat and mouse, I reflected. Though the computer "mouse" looks more like a turtle, in my opinion. <<br>>\u000a \u000aBut I am not a virtual cat. I am a real live cat that has marked the imaginations of everyone who has seen it.<<n tech>>
+p1454
+sg23
+Vgame
+p1455
+sg25
+g26
+((I2021
+I8
+I22
+I22
+I34
+I36
+I6
+I234
+I1
+tp1456
+(dp1457
+tp1458
+Rp1459
+sg31
+(lp1460
+sg33
+g26
+((I2021
+I8
+I20
+I21
+I17
+I9
+I4
+I232
+I1
+tp1461
+(dp1462
+tp1463
+Rp1464
+sbsa(dp1465
+g14
+I00
+sg15
+(lp1466
+F892.382473383357
+aF3699.148814342237
+asg17
+(itiddlywiki
+Tiddler
+p1467
+(dp1468
+g21
+V[img[./img/mouse.jpg][game]]<<im>>
+p1469
+sg23
+Vmouse
+p1470
+sg25
+g26
+((I2021
+I8
+I22
+I22
+I32
+I17
+I6
+I234
+I1
+tp1471
+(dp1472
+tp1473
+Rp1474
+sg31
+(lp1475
+sg33
+g26
+((I2021
+I8
+I20
+I21
+I17
+I14
+I4
+I232
+I1
+tp1476
+(dp1477
+tp1478
+Rp1479
+sbsa(dp1480
+g14
+I00
+sg15
+(lp1481
+F1377.0408584765246
+aF3740.2153627007106
+asg17
+(itiddlywiki
+Tiddler
+p1482
+(dp1483
+g21
+V<<timed 3s>>END OF GAME. \u000a\u000a<<br>><<link "RESTART?">><<run Engine.restart()>><</link>><</timed>>
+p1484
+sg23
+Vendofgame
+p1485
+sg25
+g26
+((I2021
+I8
+I23
+I0
+I51
+I53
+I0
+I235
+I1
+tp1486
+(dp1487
+tp1488
+Rp1489
+sg31
+(lp1490
+sg33
+g26
+((I2021
+I8
+I20
+I21
+I21
+I54
+I4
+I232
+I1
+tp1491
+(dp1492
+tp1493
+Rp1494
+sbsa(dp1495
+g14
+I00
+sg15
+(lp1496
+F718.611399736509
+aF3715.4398524966286
+asg17
+(itiddlywiki
+Tiddler
+p1497
+(dp1498
+g21
+V[img[./img/cat.jpg][mouse]]<<im>>
+p1499
+sg23
+Vcat
+p1500
+sg25
+g26
+((I2021
+I8
+I22
+I22
+I32
+I10
+I6
+I234
+I1
+tp1501
+(dp1502
+tp1503
+Rp1504
+sg31
+(lp1505
+sg33
+g26
+((I2021
+I8
+I20
+I21
+I33
+I31
+I4
+I232
+I1
+tp1506
+(dp1507
+tp1508
+Rp1509
+sbsa(dp1510
+g14
+I00
+sg15
+(lp1511
+F1435.4584028177796
+aF3393.852185369195
+asg17
+(itiddlywiki
+Tiddler
+p1512
+(dp1513
+g21
+VLast night: fun dialog\u000awith a mask.\u000aA <<hov "Harfang owl" "Aka the snowy owl.">> mask,\u000aso I listened.\u000aHaving some knowledge about Harfang,\u000ain our days,\u000ashows some culture.\u000aDisappointing, as usual.<<br>>\u000aWhen he went for a date\u000aI really got him:\u000a\u201cThink of all the time we've saved\u000ain just five minutes:\u000aSix months of passion,\u000atwo years of jealousy,\u000afour years' infidelity,\u000aeight of misunderstandings,\u000areconciliation one spring,\u000aone summer of fighting,\u000aone autumn of breaking up,\u000aone winter of despair,\u000ajust work it out.\u000aBye and thanks\u000afor the time saved."<<br>>\u000aHe found nothing to say.\u000aAnd you?\u000aShall I thank you?\u000aThe list I gave him, so as to shine,\u000adid time have it in store for us?<<br>>\u000aDo I see me, in ten years time,\u000aseparated from you,\u000areading in the paper you've died,\u000aa feeling of something\u000aalready seen,\u000aalready lost,\u000athe faraway echo\u000aof something I don't know,\u000a\u2014 your absence now \u2014\u000awhich I wouldn't have known,\u000abut would have felt within me,\u000aas if my programmer foresaw it all,\u000awhat happened, what\u000amight have happened?<<n search>>
+p1514
+sg23
+Vlast
+p1515
+sg25
+g26
+((I2021
+I8
+I23
+I0
+I46
+I59
+I0
+I235
+I1
+tp1516
+(dp1517
+tp1518
+Rp1519
+sg31
+(lp1520
+sg33
+g26
+((I2021
+I8
+I20
+I21
+I35
+I31
+I4
+I232
+I1
+tp1521
+(dp1522
+tp1523
+Rp1524
+sbsa(dp1525
+g14
+I00
+sg15
+(lp1526
+F1578.3539064940182
+aF3415.0841865104835
+asg17
+(itiddlywiki
+Tiddler
+p1527
+(dp1528
+g21
+V\u000aLike when you search for a word\u000athat escapes you.\u000a\u201cI had it on the tip of my tongue\u201d.\u000aI'd have your death\u000aon the tip of my memory,\u000aI'd have thought:\u000a\u201cThere was a time when\u2026\u201d\u000aBut then there was another time,\u000athe time of my list,\u000afrom jealousy to deceit,\u000aand that time would mute our time,\u000amute the echo of our life.<<br>>\u000aEverything would have been\u000aas though through a wall,\u000abarely audible\u2026\u000aLike when rescuers search\u000athrough a wall of rubble,\u000athey always come too late.\u000aAnd you?\u000aWhat would you have kept?\u000aOne day my image would\u000abegin to blur,\u000ayou'd realise the scraps\u000aof words,\u000ascraps of life\u000afilling your memory,\u000awere shifting out of focus.<<br>>\u000aMust I thank you too?\u000aThank you for this gift\u000aof a life in which\u000athere wasn't enough time\u000afor something mediocre to slip in,\u000aneither lies nor cruelty.<<n swift>>
+p1529
+sg23
+Vsearch
+p1530
+sg25
+g26
+((I2021
+I8
+I22
+I22
+I28
+I41
+I6
+I234
+I1
+tp1531
+(dp1532
+tp1533
+Rp1534
+sg31
+(lp1535
+sg33
+g26
+((I2021
+I8
+I20
+I21
+I35
+I58
+I4
+I232
+I1
+tp1536
+(dp1537
+tp1538
+Rp1539
+sbsa(dp1540
+g14
+I00
+sg15
+(lp1541
+F955.7640551321942
+aF3369.5760250824874
+asg17
+(itiddlywiki
+Tiddler
+p1542
+(dp1543
+g21
+V\u000aNow Laura saw\u000athe Game couldn't change history.<<br>>\u000aIt would repeat it, in a loop,\u000awith an obstinacy that was\u000aas respectable as it was futile.\u000aStoring the past\u000ain order not to revive it\u000awas so 20th Century.\u000aShe talked of it\u000ain a detached fashion now,\u000aas if she'd come to a limit;\u000abeyond it, the Game\u000awas not hers any more,\u000anor was History.<<br>>\u000aI knew she spent the nights\u000ain conversations with Masks.\u000aI asked what she was looking for.\u000aShe responded:\u000aLevel Five, of course,\u000ain a tone that made you think\u000ashe was cured, that for her\u000athe War was over.<<br>>\u000aNaturally, I was wrong.<<n mad>>
+p1544
+sg23
+Vhistory
+p1545
+sg25
+g26
+((I2021
+I8
+I23
+I1
+I51
+I11
+I0
+I235
+I1
+tp1546
+(dp1547
+tp1548
+Rp1549
+sg31
+(lp1550
+sg33
+g26
+((I2021
+I8
+I20
+I21
+I36
+I39
+I4
+I232
+I1
+tp1551
+(dp1552
+tp1553
+Rp1554
+sbsa(dp1555
+g14
+I00
+sg15
+(lp1556
+F1792.7781645730367
+aF3414.093678905657
+asg17
+(itiddlywiki
+Tiddler
+p1557
+(dp1558
+g21
+VSo swift that the ordinary gremlins,\u000athat sneak into everyday life,\u000ahaven't had the chance to get to us.\u000aThey met a shut door:\u000a\u201cClosed for a death\u201d.\u000aSo annoying for them.\u000aNothing for them in the will.\u000aA life, a body, untouched,\u000aon which there wasn't\u000atime enough to spot\u000athe first signs\u000aof lovelessness,\u000aabandon,\u000aor relinquishment.<<br>>\u000aA real fairy-tale, one of them\u000afalls asleep\u000aand never changes.\u000aThere's no greater gift.\u000aShall I thank you?\u000aI thank you.\u000aThank you.\u000aThank you.<<n neversaw>>
+p1559
+sg23
+Vswift
+p1560
+sg25
+g26
+((I2021
+I8
+I22
+I22
+I25
+I30
+I6
+I234
+I1
+tp1561
+(dp1562
+tp1563
+Rp1564
+sg31
+(lp1565
+sg33
+g26
+((I2021
+I8
+I20
+I21
+I38
+I40
+I4
+I232
+I1
+tp1566
+(dp1567
+tp1568
+Rp1569
+sbsa(dp1570
+g14
+I00
+sg15
+(lp1571
+F790.8826252314195
+aF3498.6707620611123
+asg17
+(itiddlywiki
+Tiddler
+p1572
+(dp1573
+g21
+VThe machines were on, as if she had just stepped out.<<br>> Our loyal screensaver cat kept watch, and the system's <<redhint mail>> page was open.<<n title>>
+p1574
+sg23
+Vlauranew
+p1575
+sg25
+g26
+((I2021
+I8
+I23
+I1
+I56
+I35
+I0
+I235
+I1
+tp1576
+(dp1577
+tp1578
+Rp1579
+sg31
+(lp1580
+sg33
+g26
+((I2021
+I8
+I20
+I21
+I40
+I29
+I4
+I232
+I1
+tp1581
+(dp1582
+tp1583
+Rp1584
+sbsa(dp1585
+g14
+I00
+sg15
+(lp1586
+F1204.118054572355
+aF3690.323614697163
+asg17
+(itiddlywiki
+Tiddler
+p1587
+(dp1588
+g21
+V\u000aI'm not afraid of technology. Those who use technology as a weapon are not the same, though. The Battle of Okinawa was an atrocity becauase it was an ancient war fought with futuristic weapons.<<br>>\u000a\u000aThose involved had no idea how to use the technology in their hands. The difference goes further because of our primitve "lizard brains." Technology advances on its own terms, independent of those who invented it.<<br>> \u000aInventors and innovators are teleguided by people who are yet to be, for purposes that we hope are clear. But in the end, those purposes are, in fact, obscure.<<n endofgame>>
+p1589
+sg23
+Vtech
+p1590
+sg25
+g26
+((I2021
+I8
+I22
+I22
+I38
+I53
+I6
+I234
+I1
+tp1591
+(dp1592
+tp1593
+Rp1594
+sg31
+(lp1595
+sg33
+g26
+((I2021
+I8
+I20
+I21
+I43
+I29
+I4
+I232
+I1
+tp1596
+(dp1597
+tp1598
+Rp1599
+sbsa(dp1600
+g14
+I00
+sg15
+(lp1601
+F707.3025732031939
+aF2052.6708074534163
+asg17
+(itiddlywiki
+Tiddler
+p1602
+(dp1603
+g21
+VI'd seen these images before.\u000aYou can see\u000athis woman turn back,\u000aand spot the camera.\u000aDo we know she would have jumped\u000aif at the last minute\u000ashe hadn't known she was watched?\u000a<<br>>\u000aI remember <<hov "the man" "In 1912, a tailor named Franz Reichelt jumped from the Eiffel Tower using a parachute of his own design, falling to his death.">> in Paris \u000aattempting a mad leap\u000awith a Batman-like parachute\u000afrom the Eiffel Tower.<<br>>\u000aIt's so obvious,\u000aat least it is to me,\u000athat at the last minute,\u000ahe knows the contraption\u000awon't work,\u000ahe knows he'll die,\u000abut the camera is there.\u000aHe can't chicken out,\u000aso he jumps and dies.<<br>>\u000aThe woman in Saipan saw the lens\u000aand knew\u000athat foreign devils\u000awould show the world\u000ashe hadn't had the guts to jump.\u000aSo she jumps. The cameraman\u000aaimed at her\u000alike a hunter\u000athrough his sights,\u000aand he shot her like a hunter.<<n ethn2>>\u000a
+p1604
+sg23
+Vbatman
+p1605
+sg25
+g26
+((I2021
+I8
+I21
+I17
+I38
+I52
+I5
+I233
+I1
+tp1606
+(dp1607
+tp1608
+Rp1609
+sg31
+(lp1610
+sg33
+g26
+((I2021
+I8
+I20
+I21
+I47
+I55
+I4
+I232
+I1
+tp1611
+(dp1612
+tp1613
+Rp1614
+sbsa(dp1615
+g14
+I00
+sg15
+(lp1616
+F1535.5427287474868
+aF2097.1321488824324
+asg17
+(itiddlywiki
+Tiddler
+p1617
+(dp1618
+g21
+V"I don't know how to OPEN-SESAME," the computer says, throwing another of those troublesome TYPE 14 errors. Time for another system repair, I suppose. <<n title>>\u000a\u000a<<err>>\u000a<<prog 4>>\u000a\u000a
+p1619
+sg23
+Vsesame
+p1620
+sg25
+g26
+((I2021
+I8
+I22
+I21
+I45
+I33
+I6
+I234
+I1
+tp1621
+(dp1622
+tp1623
+Rp1624
+sg31
+(lp1625
+sg33
+g26
+((I2021
+I8
+I20
+I22
+I33
+I11
+I4
+I232
+I1
+tp1626
+(dp1627
+tp1628
+Rp1629
+sbsa(dp1630
+g14
+I00
+sg15
+(lp1631
+F2001.7604259094937
+aF1686.6317657497777
+asg17
+(itiddlywiki
+Tiddler
+p1632
+(dp1633
+g21
+VSpeaking of flags, the computer has flagged an error again. Time to repair the system; you know the drill. <<n title>>\u000a<<err>>\u000a<<prog 3>>
+p1634
+sg23
+Vflag2
+p1635
+sg25
+g26
+((I2021
+I8
+I21
+I3
+I35
+I53
+I5
+I233
+I1
+tp1636
+(dp1637
+tp1638
+Rp1639
+sg31
+(lp1640
+sg33
+g26
+((I2021
+I8
+I20
+I22
+I36
+I47
+I4
+I232
+I1
+tp1641
+(dp1642
+tp1643
+Rp1644
+sbsa(dp1645
+g14
+I00
+sg15
+(lp1646
+F833.558118899734
+aF1892.4755989352261
+asg17
+(itiddlywiki
+Tiddler
+p1647
+(dp1648
+g21
+VI sidestep: as if Okinawa was a lethal word,\u000aan <<redhint "open-sesame">>...Only I don't know\u000awhat it would open.\u000a\u000aI shift the topic to the end of the Pacific campaign. Ernie Pyle's death. The Pullitzer-prise winning journlaist was killed in Ie Shima, a small island northwest of Okinawa. A bullet from Japanese machine guns hit him in the temple, killing him instantly.\u000a\u000a<<n pylepic>>
+p1649
+sg23
+Vpylex
+p1650
+sg25
+g26
+((I2021
+I8
+I20
+I23
+I24
+I11
+I4
+I232
+I1
+tp1651
+(dp1652
+tp1653
+Rp1654
+sg31
+(lp1655
+sg33
+g26
+((I2021
+I8
+I20
+I23
+I3
+I17
+I4
+I232
+I1
+tp1656
+(dp1657
+tp1658
+Rp1659
+sbsa(dp1660
+g14
+I00
+sg15
+(lp1661
+F1277.9982253771066
+aF471.762200532387
+asg17
+(itiddlywiki
+Tiddler
+p1662
+(dp1663
+g21
+V<span title="Japanese rockets rain down on and near U.S. positions during heavy fighting on Okinawa">[img[./img/sky.jpg][wgib]]</span><<im>>
+p1664
+sg23
+Vsky
+p1665
+sg25
+g26
+((I2021
+I8
+I21
+I2
+I24
+I30
+I5
+I233
+I1
+tp1666
+(dp1667
+tp1668
+Rp1669
+sg31
+(lp1670
+sg33
+g26
+((I2021
+I8
+I21
+I2
+I22
+I55
+I5
+I233
+I1
+tp1671
+(dp1672
+tp1673
+Rp1674
+sbsa(dp1675
+g14
+I00
+sg15
+(lp1676
+F999.1836734693877
+aF1320.9316770186335
+asg17
+(itiddlywiki
+Tiddler
+p1677
+(dp1678
+g21
+V\u000a[img[./img/klein.jpg][twod]]<<im>>
+p1679
+sg23
+Vklein
+p1680
+sg25
+g26
+((I2021
+I8
+I21
+I17
+I0
+I25
+I5
+I233
+I1
+tp1681
+(dp1682
+tp1683
+Rp1684
+sg31
+(lp1685
+sg33
+g26
+((I2021
+I8
+I21
+I17
+I0
+I17
+I5
+I233
+I1
+tp1686
+(dp1687
+tp1688
+Rp1689
+sbsa(dp1690
+g14
+I00
+sg15
+(lp1691
+F2404.125317340833
+aF1330.089185067662
+asg17
+(itiddlywiki
+Tiddler
+p1692
+(dp1693
+g21
+V\u000aOkinawa would remember that symbol:\u000aA child survivor of forced suicide\u000aput out to protect an Army in ruins.<<br>>\u000aSee that?\u000aYou'll be on American TV.<<n title>>
+p1694
+sg23
+Vtv
+p1695
+sg25
+g26
+((I2021
+I8
+I21
+I17
+I17
+I13
+I5
+I233
+I1
+tp1696
+(dp1697
+tp1698
+Rp1699
+sg31
+(lp1700
+sg33
+g26
+((I2021
+I8
+I21
+I17
+I11
+I9
+I5
+I233
+I1
+tp1701
+(dp1702
+tp1703
+Rp1704
+sbsa(dp1705
+g14
+I00
+sg15
+(lp1706
+F2331.653948535936
+aF1463.4782608695652
+asg17
+(itiddlywiki
+Tiddler
+p1707
+(dp1708
+g21
+VI only know it happened\u000ain the Kerama islands,\u000awhere we went on a day\u000aso glorious.\u000aA massacre seemed unimaginable.\u000aThe view over the archipelago.\u000a\u201cThe fractal islands on Klein blue\u201d,\u000ayou said,\u000asimple as ever.<<br>>\u000a<<hov "Kannon" "Also known as 'Guanyin', a Chinese Buddhist bodhisattva adopted by many Eastern religions.">>,\u000aGoddess of Mercy's temple,\u000aher statue behind glass\u000athat made her appear\u000ain her place,\u000ain the sky.\u000aThere was also\u000aa magical Okinawa weaver.<<n myths>>
+p1709
+sg23
+Visl
+p1710
+sg25
+g26
+((I2021
+I8
+I21
+I17
+I17
+I2
+I5
+I233
+I1
+tp1711
+(dp1712
+tp1713
+Rp1714
+sg31
+(lp1715
+sg33
+g26
+((I2021
+I8
+I21
+I17
+I15
+I6
+I5
+I233
+I1
+tp1716
+(dp1717
+tp1718
+Rp1719
+sbsa(dp1720
+g14
+I00
+sg15
+(lp1721
+F1908.3069427527403
+aF560.9378806333739
+asg17
+(itiddlywiki
+Tiddler
+p1722
+(dp1723
+g21
+V<<widget "checker">>\u000a<<if $jnum - $unum eq 0>><<remove "#planelist">>\u000a<<replace "#resetbut">><div style="text-align: center; width:100%">[[BATTLE TIED; SUCCESS|title]]</div><</replace>><<endif>>\u000a<</widget>>\u000a\u000a\u000a<<silently>><<prog 1.1>><<set $jnum to 300>><<set $unum to 95>><</silently>>\u000a<span style="font-size:200%">LEVEL ONE</span>\u000a<<br>>\u000aThe Formosa Air Battle was fought over four days in October 1944. Japan lost more than <span id="jnum">300</span> planes, while American forces lost less than <span id="unum">95</span> aircraft. And here I am, trying to end a virtual war reenactment in no one's favor. To reach anything like an armstice I need each side to have an equal number of aircraft.\u000a<<br>>\u000a<<linkreplace "START GAME">>\u000a\u000a\u000a\u000a<span id="planelist">\u000a\u000a<span id="jplaneB">\u000a<<link "+10 JPN\u2708">><<set $jnum += 10>><<replace "#jnum">><span id="jnum"><<print $jnum>></span><</replace>><<checker>><</link>>\u000a</span>\u000a\u000a<style>\u000a\u000a#jplaneB {\u000a;\u000a \u000a  position: relative;\u000a  animation: mymove 10s;\u000aanimation-timing-function: steps(4, end);\u000aanimation-fill-mode: forwards;\u000a animation-delay:  0.25s;\u000a}\u000a\u000a@keyframes mymove {\u000a  from {left: 0px;}\u000a  to {left: 90%;}\u000a}\u000a\u000a</style>\u000a<<timed 19s>><<remove "#jplaneB">><</timed>>\u000a\u000a<br>\u000a\u000a\u000a\u000a<span id="uplane">\u000a<<link "+10 USA\u2708">><<set $unum += 10>><<replace "#unum">><span id="unum"><<print $unum>></span><<checker>><</replace>>\u000a<</link>>\u000a</span>\u000a<style>\u000a#uplane {\u000a;\u000a \u000a  position: relative;\u000a  animation: mymove 35s;\u000aanimation-timing-function: steps(4, end);\u000aanimation-fill-mode: forwards;\u000aanimation-delay: 0.35s;\u000a}\u000a\u000a@keyframes mymove {\u000a  from {left: 0px;}\u000a  to {left: 90%;}\u000a\u000a}\u000a</style>\u000a<<timed 24s>><<remove "#uplane">><</timed>>\u000a\u000a\u000a<br>\u000a\u000a\u000a\u000a<span id="jplane">\u000a<<link "-5 JPN\u2708">><<set $jnum -= 5>><<replace "#jnum">><span id="jnum"><<print $jnum>></span><</replace>><<checker>><</link>>\u000a</span>\u000a<style>\u000a#jplane {\u000a; \u000a  position: relative;\u000a  animation: mymove 15s;\u000aanimation-timing-function: steps(4, end);\u000a animation-delay:  0.45s;\u000a}\u000a\u000a@keyframes mymove {\u000a  from {left: 0px;}\u000a  to {left: 90%;}\u000a}\u000a</style>\u000a<<timed 14s>><<remove "#jplane">><</timed>>\u000a\u000a\u000a\u000a\u000a<br>\u000a\u000a\u000a\u000a\u000a<span id="uplaneB">\u000a<<link "-5 USA\u2708">><<set $unum -= 5>><<replace "#unum">><span id="unum"><<print $unum>></span><<checker>><</replace>>\u000a<</link>>\u000a</span>\u000a<br>\u000a<style>\u000a#uplaneB {\u000a;\u000a  position: relative;\u000a  animation: mymove 37s;\u000aanimation-timing-function: steps(6, end);\u000aanimation-fill-mode: forwards;\u000a animation-delay:  0.25s;\u000a}\u000a\u000a@keyframes mymove {\u000a  from {left: 0px;}\u000a  to {left: 90%;}\u000a}\u000a</style>\u000a<<timed 24s>><<remove "#uplaneB">><</timed>>\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a</span>\u000a\u000a\u000a\u000a\u000a<span id="resetbut"><<br>><div style="text-align: center; width:100%">[[CLICK HERE TO RETRY|oneb]]</div></span>\u000a\u000a\u000a\u000a\u000a\u000a<</linkreplace>>
+p1724
+sg23
+VUntitled Annotation 1
+p1725
+sg25
+g26
+((I2021
+I8
+I21
+I17
+I40
+I23
+I5
+I233
+I1
+tp1726
+(dp1727
+tp1728
+Rp1729
+sg31
+(lp1730
+Vannotation
+p1731
+asg33
+g26
+((I2021
+I8
+I21
+I17
+I40
+I22
+I5
+I233
+I1
+tp1732
+(dp1733
+tp1734
+Rp1735
+sbsa(dp1736
+g14
+I00
+sg15
+(lp1737
+F2065.0328867235075
+aF823.7490864799024
+asg17
+(itiddlywiki
+Tiddler
+p1738
+(dp1739
+g21
+V\u000a\u000a\u000a<<linkreplace "-100 JPN\u2708">><<set $jnum -= 100>><<replace "#jnum">><span id="jnum"><<print $jnum>></span><</replace>><<checker>><</linkreplace>>\u000a\u000a<<linkreplace "+50 JPN\u2708">><<set $jnum += 50>><<replace "#jnum">><span id="jnum"><<print $jnum>></span><</replace>><<checker>><</linkreplace>>\u000a\u000a<<linkreplace "-10 JPN\u2708">><<set $jnum -= 10>><<replace "#jnum">><span id="jnum"><<print $jnum>></span><</replace>><<checker>><</linkreplace>>\u000a\u000a<<linkreplace "+7 JPN\u2708">><<set $jnum += 7>><<replace "#jnum">><span id="jnum"><<print $jnum>></span><</replace>><<checker>><</linkreplace>>\u000a\u000a<<linkreplace "-5 JPN\u2708">><<set $jnum -= 5>><<replace "#jnum">><span id="jnum"><<print $jnum>></span><</replace>><<checker>><</linkreplace>>\u000a\u000a<<linkreplace "+3 JPN\u2708">><<set $jnum += 3>><<replace "#jnum">><span id="jnum"><<print $jnum>></span><</replace>><<checker>><</linkreplace>>\u000a\u000a<<linkreplace "-1 JPN\u2708">><<set $jnum -= 1>><<replace "#jnum">><span id="jnum"><<print $jnum>></span><</replace>><<checker>><</linkreplace>>\u000a\u000a\u000a\u000a<<linkreplace "+100 USA\u2708">><<set $unum += 100>><<replace "#unum">><span id="unum"><<print $unum>></span><</replace>><<checker>><</linkreplace>>\u000a\u000a\u000a<<linkreplace "-50 USA\u2708">><<set $unum -= 50>><<replace "#unum">><span id="unum"><<print $unum>></span><</replace>><<checker>><</linkreplace>>\u000a\u000a<<linkreplace "+10 USA\u2708">><<set $unum += 10>><<replace "#unum">><span id="unum"><<print $unum>></span><</replace>><<checker>><</linkreplace>>\u000a\u000a<<linkreplace "-7 USA\u2708">><<set $unum -= 7>><<replace "#unum">><span id="unum"><<print $unum>></span><</replace>><<checker>><</linkreplace>>\u000a\u000a<<linkreplace "+5 USA\u2708">><<set $unum += 5>><<replace "#unum">><span id="unum"><<print $unum>></span><</replace>><<checker>><</linkreplace>>\u000a\u000a<<linkreplace "-3 USA\u2708">><<set $unum -= 3>><<replace "#unum">><span id="unum"><<print $unum>></span><</replace>><<checker>><</linkreplace>>\u000a\u000a<<linkreplace "+1 USA\u2708">><<set $unum += 1>><<replace "#unum">><span id="unum"><<print $unum>></span><</replace>><<checker>><</linkreplace>>\u000a\u000a
+p1740
+sg23
+VUntitled Annotation 2
+p1741
+sg25
+g26
+((I2021
+I8
+I21
+I17
+I59
+I24
+I5
+I233
+I1
+tp1742
+(dp1743
+tp1744
+Rp1745
+sg31
+(lp1746
+Vannotation
+p1747
+asg33
+g26
+((I2021
+I8
+I21
+I17
+I59
+I23
+I5
+I233
+I1
+tp1748
+(dp1749
+tp1750
+Rp1751
+sbsa(dp1752
+g14
+I00
+sg15
+(lp1753
+F430.44092570036736
+aF2649.82704019488
+asg17
+(itiddlywiki
+Tiddler
+p1754
+(dp1755
+g21
+VAnd the burning man, Gustave. You told me his name was Gustave.\u000aI'd seen him a hundred times.\u000aNobody had ever filmed\u000aa man burning alive so close,\u000aa lulu for war documentaries.\u000aThe unknown soldier, in full kit,\u000aholding his own flame.\u000aHe was carted around battlefields,\u000alike a war-artist on tour\u000awith a unique act.\u000aGustave in the Philippines,\u000aGustave in Okinawa.<<br>>\u000aI even saw him in a Vietnam movie,\u000astill burning 20 years later.\u000aI viewed so much newsreel\u000aI knew each and every Gustave at birth.<<n burn>>\u000a
+p1756
+sg23
+Vgustave
+p1757
+sg25
+g26
+((I2021
+I8
+I23
+I1
+I21
+I14
+I0
+I235
+I1
+tp1758
+(dp1759
+tp1760
+Rp1761
+sg31
+(lp1762
+sg33
+g26
+((I2021
+I8
+I21
+I18
+I13
+I15
+I5
+I233
+I1
+tp1763
+(dp1764
+tp1765
+Rp1766
+sbsa(dp1767
+g14
+I00
+sg15
+(lp1768
+F562.7551766138881
+aF2478.4701583434803
+asg17
+(itiddlywiki
+Tiddler
+p1769
+(dp1770
+g21
+V<span title="Private Ira Hayes.">[img[./img/ira.png][hayesb]]<<im>></span>
+p1771
+sg23
+Vira
+p1772
+sg25
+g26
+((I2021
+I8
+I23
+I1
+I18
+I51
+I0
+I235
+I1
+tp1773
+(dp1774
+tp1775
+Rp1776
+sg31
+(lp1777
+sg33
+g26
+((I2021
+I8
+I21
+I18
+I18
+I38
+I5
+I233
+I1
+tp1778
+(dp1779
+tp1780
+Rp1781
+sbsa(dp1782
+g14
+I00
+sg15
+(lp1783
+F767.7490864799024
+aF2482.2898903775867
+asg17
+(itiddlywiki
+Tiddler
+p1784
+(dp1785
+g21
+VPrivate Ira Hayes knew his side.\u000aHe was a US Marine,\u000abrave and disciplined.<<br>>\u000aHe was <<hov "told to pose" "Hayes was one of six soldiers in the photo of the flag over Iwo Jima, which gained a reputation for being staged. Another soldier, Joe Rosenthal, was confused by reporters asking him if the photo was 'posed'; this led reporters to claim he had staged the photo. Rosenthal has since denied that the photo was staged." >>, with five pals,\u000ato re-stage the picture. He didn't waver.\u000aIt was for the cause.\u000a<<br>>\u000aThose who had put up the flag\u000ain combat were gone.\u000aThey took six others.\u000aIt wasn't much,\u000ajust a set-up,\u000athere'd be more like it,\u000athe original was uninspiring anyway.\u000aHayes never got over it.\u000aHe wasn't to blame,\u000ahe had fought with the best,\u000abut he'd been asked to lie.\u000aSimple soul,\u000ahe couldn't live with that lie.\u000aHe couldn't tell the truth,\u000athe Corps honour was at stake,\u000aso he took to drink,\u000aand died in poverty.<<n title>>\u000a
+p1786
+sg23
+Vhayesb
+p1787
+sg25
+g26
+((I2021
+I8
+I23
+I1
+I19
+I58
+I0
+I235
+I1
+tp1788
+(dp1789
+tp1790
+Rp1791
+sg31
+(lp1792
+sg33
+g26
+((I2021
+I8
+I21
+I18
+I21
+I24
+I5
+I233
+I1
+tp1793
+(dp1794
+tp1795
+Rp1796
+sbsa(dp1797
+g14
+I00
+sg15
+(lp1798
+F745.4323995127888
+aF2812.1437271619984
+asg17
+(itiddlywiki
+Tiddler
+p1799
+(dp1800
+g21
+VThat's where I recognised him: Kinjo.\u000aThe boy from the Keramas.\u000a<<br>>\u000aA village elder, a leader,\u000awas snapping off a tree-branch.\u000aI watched him,\u000aintrigued.\u000aThen, on his very hand,\u000athe stick became a weapon.\u000aAs if having a seizure,\u000ahe began to beat the life out\u000aof his wife and children,\u000awhom he loved,\u000ausing just this piece of wood.<<n shocking>>
+p1801
+sg23
+Vrecog
+p1802
+sg25
+g26
+((I2021
+I8
+I21
+I18
+I40
+I34
+I5
+I233
+I1
+tp1803
+(dp1804
+tp1805
+Rp1806
+sg31
+(lp1807
+sg33
+g26
+((I2021
+I8
+I21
+I18
+I34
+I14
+I5
+I233
+I1
+tp1808
+(dp1809
+tp1810
+Rp1811
+sbsa(dp1812
+g14
+I00
+sg15
+(lp1813
+F208.72107186358096
+aF2450.6090133982943
+asg17
+(itiddlywiki
+Tiddler
+p1814
+(dp1815
+g21
+V<span style="font-size:200%">LEVEL FOUR</span><<br>>"Open sesame"...the phrase comes from "Ali Baba and the Forty Thieves." Ali Baba hears the phrase from one of his brothers, but can't remember it when it comes time to open the secret passage, confusing it with other grains.<<br>>Is that our fate as well, for what we have seen only distantly to fall into immemory?\u000a\u000a<<set $cardstaken to 0>>\u000a<<set $choiceA to null>>\u000a<<set $choiceB to null>>\u000a\u000a\u000a\u000a<style>a, a:hover, div.mems {all: revert; display: inline-block; width: 120px; border-bottom: 3px solid black; } a {background-color: white; color: black} \u000a</style>\u000a<<widget "carte">>\u000a\u000a<<if $args[0] neq true>>\u000a\u000a<<linkreplace "&nbsp;">><div class="mems"><<print $args[1]>></div>\u000a  <<if $choiceA eq null>><<set $choiceA to $args[1]>>\u000a    <<elseif $choiceA neq null and $choiceB eq null>><<set $choiceB to $args[1]>>  <<if $choiceA eq $choiceB>><<print "<<set " + $args[2] + " to true>>">><<endif>>    <<timed 0.5s>><<goto "fourb">><</timed>>\u000a  <<endif>>\u000a\u000a<</linkreplace>>\u000a\u000a<<else>><div class="mems"><<print $args[1]>></div>\u000a<<endif>>\u000a<</widget>>\u000a\u000a<<br>><<carte $rice "RICE" '$rice'>> \u000a<<carte $sesame "SESAME" '$sesame'>> \u000a<<carte $oats "OATS" '$oats'>> \u000a<<carte $flax "FLAX" '$flax'>> <br>\u000a<<carte $sesame "SESAME" '$sesame'>> \u000a<<carte $wheat "WHEAT" '$wheat'>> \u000a<<carte $flax "FLAX" '$flax'>> \u000a<<carte $corn "CORN" '$corn'>> <br> \u000a<<carte $rice "RICE" '$rice'>> \u000a<<carte $oats "OATS" '$oats'>> \u000a<<carte $barley "BARLEY" '$barley'>> \u000a<<carte $corn "CORN" '$corn'>> <br>\u000a<<carte $millet "MILLET" '$millet'>> \u000a<<carte $barley "BARLEY" '$barley'>> \u000a<<carte $wheat "WHEAT" '$wheat'>> \u000a<<carte $millet "MILLET" '$millet'>> <<br>>\u000a\u000a\u000a<<if $rice eq true and \u000a$sesame eq true and \u000a$oats eq true and \u000a$flax eq true and\u000a$corn eq true and\u000a$wheat eq true and\u000a$barley eq true and\u000a$millet eq true>>[[CONTINUE|title]]\u000a<<endif>>\u000a\u000a<<if $debug is "on">>[[SKIP|title]]<</if>>\u000a\u000a\u000a\u000a<<prog 4.4>>
+p1816
+sg23
+Vfourb
+p1817
+sg25
+g26
+((I2021
+I8
+I23
+I1
+I17
+I44
+I0
+I235
+I1
+tp1818
+(dp1819
+tp1820
+Rp1821
+sg31
+(lp1822
+sg33
+g26
+((I2021
+I8
+I21
+I18
+I53
+I59
+I5
+I233
+I1
+tp1823
+(dp1824
+tp1825
+Rp1826
+sbsa(dp1827
+g14
+I00
+sg15
+(lp1828
+F177.04019488428742
+aF452.8501827040194
+asg17
+(itiddlywiki
+Tiddler
+p1829
+(dp1830
+g21
+V<<widget "alldownx">>\u000a<<if $card1 neq "frozen">><<set $card1 to "down">>  <<replace "#card1">><div id="card1">XXXXX </div><</replace>><<endif>>\u000a<<if $card2 neq "frozen">><<set $card2 to "down">>  <<replace "#card2">><div id="card2">XXXXX </div><</replace>><<endif>>\u000a<<if $card3 neq "frozen">><<set $card3 to "down">>  <<replace "#card3">><div id="card3">XXXXX </div><</replace>><<endif>>\u000a<<if $card4 neq "frozen">><<set $card4 to "down">>  <<replace "#card4">><div id="card4">XXXXX </div><</replace>><<endif>>\u000a<<if $card5 neq "frozen">><<set $card5 to "down">>  <<replace "#card5">><div id="card5">XXXX</div><</replace>><<endif>>\u000a<<if $card6 neq "frozen">><<set $card6 to "down">>  <<replace "#card6">><div id="card6">XXXX</div><</replace>><<endif>>\u000a<<if $card7 neq "frozen">><<set $card7 to "down">>  <<replace "#card7">><div id="card7">XXXX</div><</replace>><<endif>>\u000a<<if $card8 neq "frozen">><<set $card8 to "down">>  <<replace "#card8">><div id="card8">XXXX</div><</replace>><<endif>>\u000a<<if $card9 neq "frozen">><<set $card9 to "down">>  <<replace "#card9">><div id="card9">XXXX</div><</replace>><<endif>>\u000a<<if $card10 neq "frozen">><<set $card10 to "down">> <<replace "#card10">><div id="card10">XXXX</div><</replace>><<endif>>\u000a<<if $card11 neq "frozen">><<set $card11 to "down">> <<replace "#card11">><div id="card11">XXXX</div><</replace>><<endif>> \u000a<<if $card12 neq "frozen">><<set $card12 to "down">> <<replace "#card12">><div id="card12">XXXX</div><</replace>><<endif>>\u000a<<if $card13 neq "frozen">><<set $card13 to "down">> <<replace "#card13">><div id="card13">XXXX</div><</replace>><<endif>>\u000a<<if $card14 neq "frozen">><<set $card14 to "down">> <<replace "#card14">><div id="card14">XXXX</div><</replace>><<endif>>\u000a<<if $card15 neq "frozen">><<set $card15 to "down">> <<replace "#card15">><div id="card15">XXXX</div><</replace>><<endif>>\u000a<<if $card16 neq "frozen">><<set $card16 to "down">> <<replace "#card16">><div id="card16">XXXX</div><</replace>><<endif>>\u000a<</widget>>
+p1831
+sg23
+Vmemw
+p1832
+sg25
+g26
+((I2021
+I8
+I22
+I0
+I46
+I37
+I6
+I234
+I1
+tp1833
+(dp1834
+tp1835
+Rp1836
+sg31
+(lp1837
+sg33
+g26
+((I2021
+I8
+I22
+I0
+I44
+I48
+I6
+I234
+I1
+tp1838
+(dp1839
+tp1840
+Rp1841
+sbsa(dp1842
+g14
+I00
+sg15
+(lp1843
+F2159.890377588307
+aF225.49330085261897
+asg17
+(itiddlywiki
+Tiddler
+p1844
+(dp1845
+g21
+Vimg[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {display: none;} 
+p1846
+sg23
+VUntitled Stylesheet 2
+p1847
+sg25
+g26
+((I2021
+I8
+I22
+I22
+I45
+I28
+I6
+I234
+I1
+tp1848
+(dp1849
+tp1850
+Rp1851
+sg31
+(lp1852
+Vstylesheet
+p1853
+asg33
+g26
+((I2021
+I8
+I22
+I1
+I56
+I52
+I6
+I234
+I1
+tp1854
+(dp1855
+tp1856
+Rp1857
+sbsa(dp1858
+g14
+I00
+sg15
+(lp1859
+F310.940316686967
+aF708.0219244823385
+asg17
+(itiddlywiki
+Tiddler
+p1860
+(dp1861
+g21
+V<style>#planelist a {display: inline-block; width: 150px; margin-bottom: 3px;}\u000a</style>\u000a\u000a<<widget "checker">>\u000a<<if $jnum - $unum eq 0>><<remove "#planelist">>\u000a<<replace "#resetbut">><div style="text-align: center; width:100%">[[BATTLE TIED; SUCCESS|title]]</div><</replace>><<endif>>\u000a<</widget>>\u000a\u000a\u000a<<silently>><<prog 1.1>><<set $jnum to 300>><<set $unum to 95>><</silently>>\u000a<span style="font-size:200%">LEVEL ONE</span>\u000a<<br>>\u000aThe Formosa Air Battle was fought over four days in October 1944. Japan lost more than <span id="jnum">300</span> planes, while American forces lost less than <span id="unum">95</span> aircraft. And here I am, trying to end a virtual war reenactment in no one's favor. To reach anything like an armstice I need each side to have an equal number of aircraft.\u000a<<br>>\u000a\u000a<span id="planelist">\u000a\u000a<<linkreplace "+7 JPN\u2708">><<set $jnum += 7>><<replace "#jnum">><span id="jnum"><<print $jnum>></span><</replace>><<checker>><</linkreplace>>\u000a<<linkreplace "-50 USA\u2708">><<set $unum -= 50>><<replace "#unum">><span id="unum"><<print $unum>></span><</replace>><<checker>><</linkreplace>>\u000a\u000a\u000a\u000a<<linkreplace "-7 USA\u2708">><<set $unum -= 7>><<replace "#unum">><span id="unum"><<print $unum>></span><</replace>><<checker>><</linkreplace>>\u000a\u000a\u000a\u000a\u000a<<linkreplace "+3 JPN\u2708">><<set $jnum += 3>><<replace "#jnum">><span id="jnum"><<print $jnum>></span><</replace>><<checker>><</linkreplace>>\u000a\u000a\u000a<<linkreplace "-3 USA\u2708">><<set $unum -= 3>><<replace "#unum">><span id="unum"><<print $unum>></span><</replace>><<checker>><</linkreplace>>\u000a<<linkreplace "-1 JPN\u2708">><<set $jnum -= 1>><<replace "#jnum">><span id="jnum"><<print $jnum>></span><</replace>><<checker>><</linkreplace>>\u000a<<linkreplace "+50 JPN\u2708">><<set $jnum += 50>><<replace "#jnum">><span id="jnum"><<print $jnum>></span><</replace>><<checker>><</linkreplace>>\u000a<<linkreplace "+10 USA\u2708">><<set $unum += 10>><<replace "#unum">><span id="unum"><<print $unum>></span><</replace>><<checker>><</linkreplace>>\u000a\u000a<<linkreplace "+5 USA\u2708">><<set $unum += 5>><<replace "#unum">><span id="unum"><<print $unum>></span><</replace>><<checker>><</linkreplace>>\u000a<<linkreplace "-10 JPN\u2708">><<set $jnum -= 10>><<replace "#jnum">><span id="jnum"><<print $jnum>></span><</replace>><<checker>><</linkreplace>>\u000a\u000a\u000a\u000a\u000a<<linkreplace "+100 USA\u2708">><<set $unum += 100>><<replace "#unum">><span id="unum"><<print $unum>></span><</replace>><<checker>><</linkreplace>>\u000a<<linkreplace "+1 USA\u2708">><<set $unum += 1>><<replace "#unum">><span id="unum"><<print $unum>></span><</replace>><<checker>><</linkreplace>>\u000a<<linkreplace "-100 JPN\u2708">><<set $jnum -= 100>><<replace "#jnum">><span id="jnum"><<print $jnum>></span><</replace>><<checker>><</linkreplace>>\u000a\u000a\u000a\u000a<<linkreplace "-5 JPN\u2708">><<set $jnum -= 5>><<replace "#jnum">><span id="jnum"><<print $jnum>></span><</replace>><<checker>><</linkreplace>>\u000a\u000a</span>\u000a\u000a<span id="resetbut"><<br>><div style="text-align: center; width:100%">[[CLICK HERE TO RETRY|oneb]]</div></span>\u000a\u000a<br>\u000a<<progdyn "oneb" 35>>\u000a
+p1862
+sg23
+VUntitled Passage 29
+p1863
+sg25
+g26
+((I2021
+I8
+I22
+I3
+I10
+I57
+I6
+I234
+I1
+tp1864
+(dp1865
+tp1866
+Rp1867
+sg31
+(lp1868
+Vannotation
+p1869
+asg33
+g26
+((I2021
+I8
+I22
+I3
+I10
+I51
+I6
+I234
+I1
+tp1870
+(dp1871
+tp1872
+Rp1873
+sbsa(dp1874
+g14
+I00
+sg15
+(lp1875
+F1039.8781973203409
+aF259.03775883069426
+asg17
+(itiddlywiki
+Tiddler
+p1876
+(dp1877
+g21
+VVERSION HISTORY<<br>>\u000a0001 / 23 Aug 2021 01:57:52 AM PDT\u000a
+p1878
+sg23
+Vversion
+p1879
+sg25
+g26
+((I2021
+I8
+I23
+I1
+I58
+I41
+I0
+I235
+I1
+tp1880
+(dp1881
+tp1882
+Rp1883
+sg31
+(lp1884
+sg33
+g26
+((I2021
+I8
+I22
+I12
+I53
+I57
+I6
+I234
+I1
+tp1885
+(dp1886
+tp1887
+Rp1888
+sbsa(dp1889
+g14
+I00
+sg15
+(lp1890
+F1250.4165651644346
+aF3380.304506699146
+asg17
+(itiddlywiki
+Tiddler
+p1891
+(dp1892
+g21
+V<video onloadstart="this.volume=0.1" src="./img/mask.mp4" autoplay></video>\u000a<<br>>\u000a<<progdyn "last" 40>>\u000a\u000a\u000a<<audiotag>>
+p1893
+sg23
+Vmaskimg
+p1894
+sg25
+g26
+((I2021
+I8
+I23
+I1
+I52
+I10
+I0
+I235
+I1
+tp1895
+(dp1896
+tp1897
+Rp1898
+sg31
+(lp1899
+sg33
+g26
+((I2021
+I8
+I22
+I22
+I46
+I7
+I6
+I234
+I1
+tp1900
+(dp1901
+tp1902
+Rp1903
+sbsa(dp1904
+g14
+I00
+sg15
+(lp1905
+F614.9817295980511
+aF3850.158343483556
+asg17
+(itiddlywiki
+Tiddler
+p1906
+(dp1907
+g21
+VCHAR / KILOBYTES <br>\u000a<<print "=">><<print "=">><<print "=">><<print "=">><<print "=">><<print "=">><<print "=">><<print "=">><<print "=">><<print "=">><<print "=">><<print "=">><<print "=">><<print "=">><<print "=">><br>\u000aÂ / -001000 <br>\u000a» / -000100 <br>\u000a¿ / -000000 <br>\u000aæ / +000010 <br>\u000aØ / +000100 <br>\u000a¢ / +001000\u000a<<n fiveb>>
+p1908
+sg23
+Verrt
+p1909
+sg25
+g26
+((I2021
+I8
+I23
+I1
+I27
+I48
+I0
+I235
+I1
+tp1910
+(dp1911
+tp1912
+Rp1913
+sg31
+(lp1914
+sg33
+g26
+((I2021
+I8
+I22
+I23
+I52
+I57
+I6
+I234
+I1
+tp1915
+(dp1916
+tp1917
+Rp1918
+sbsa(dp1919
+g14
+I00
+sg15
+(lp1920
+F767.9805115712545
+aF3853.7466504263084
+asg17
+(itiddlywiki
+Tiddler
+p1921
+(dp1922
+g21
+V<<timed 3s>><<goto "fiveb">><</timed>>
+p1923
+sg23
+Vreer
+p1924
+sg25
+g26
+((I2021
+I8
+I23
+I0
+I10
+I29
+I0
+I235
+I1
+tp1925
+(dp1926
+tp1927
+Rp1928
+sg31
+(lp1929
+sg33
+g26
+((I2021
+I8
+I22
+I23
+I59
+I48
+I6
+I234
+I1
+tp1930
+(dp1931
+tp1932
+Rp1933
+sbsa(dp1934
+g14
+I00
+sg15
+(lp1935
+F607.5274056029232
+aF4002.9719853836777
+asg17
+(itiddlywiki
+Tiddler
+p1936
+(dp1937
+g21
+VSystem recovery failed.\u000a<<br>>\u000a[[RETRY?|fiveb]]
+p1938
+sg23
+Vfivere
+p1939
+sg25
+g26
+((I2021
+I8
+I23
+I0
+I33
+I13
+I0
+I235
+I1
+tp1940
+(dp1941
+tp1942
+Rp1943
+sg31
+(lp1944
+sg33
+g26
+((I2021
+I8
+I23
+I0
+I17
+I42
+I0
+I235
+I1
+tp1945
+(dp1946
+tp1947
+Rp1948
+sbsa(dp1949
+g14
+I00
+sg15
+(lp1950
+F847.9293544457977
+aF3999.2448233861137
+asg17
+(itiddlywiki
+Tiddler
+p1951
+(dp1952
+g21
+VSystem recovery succeeded.\u000a<<br>>\u000a[[CONTINUE|title]]
+p1953
+sg23
+Vfiveyes
+p1954
+sg25
+g26
+((I2021
+I8
+I23
+I1
+I31
+I16
+I0
+I235
+I1
+tp1955
+(dp1956
+tp1957
+Rp1958
+sg31
+(lp1959
+sg33
+g26
+((I2021
+I8
+I23
+I1
+I30
+I30
+I0
+I235
+I1
+tp1960
+(dp1961
+tp1962
+Rp1963
+sbsa(dp1964
+g14
+I00
+sg15
+(lp1965
+F1221.8278615794143
+aF13.575865128660158
+asg17
+(itiddlywiki
+Tiddler
+p1966
+(dp1967
+g21
+Vfunction setFocusjquery() {\u000a  $('#textbox-cmd').focus();\u000a}\u000a\u000a$(document).keydown(function() {\u000a setFocusjquery();\u000a});\u000a\u000a
+p1968
+sg23
+VUntitled Script 5
+p1969
+sg25
+g26
+((I2022
+I9
+I3
+I14
+I18
+I31
+I5
+I246
+I1
+tp1970
+(dp1971
+tp1972
+Rp1973
+sg31
+(lp1974
+Vscript
+p1975
+asg33
+g26
+((I2022
+I9
+I3
+I14
+I15
+I7
+I5
+I246
+I1
+tp1976
+(dp1977
+tp1978
+Rp1979
+sbsasS'scale'
+p1980
+F0.7366013071895425
+sS'snapping'
+p1981
+I00
+ss.

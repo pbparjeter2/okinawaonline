@@ -1,0 +1,2912 @@
+﻿:: Start
+[img[./img/belk.png][levels]]<<im>>
+
+<<if $debug eq "on">>[[title]][[twob]][[oneb]][[threeb]][[death]][[fourb]][[fiveb]]<<endif>>
+
+
+
+
+:: levels
+<<widget "levlink">>
+<<if $textlv eq $args[0]>>
+<<link `"Level " + $args[1] + ""`>><<goto $args[2]>><</link>><<else>>Level <<print $args[1]>><<endif>>
+<</widget>>
+
+
+
+
+In conversation, I still mention the levels we used to give to people when we spoke. When someone came and said: “I am Catholic, or Communist, or Anarchist”, or any other bigotry, we would say: <<levlink 1 "One" "oneb">>!
+<<br>>
+We'd laugh so much! When they were funnier, or wittier, we'd say: <<levlink 2 "Two" "twob">>!
+
+<<br>>
+<<if $textlv lt 3>>But it never went higher<<endif>>
+
+<<if $textlv gte 3>>
+Then:
+<<levlink 3 "Three" "threeb">>, 
+ or <<levlink 4 "Four" "fourb">><<endif>>.
+<<br>>
+The Game became such a standard that we could do nothing unless we gave levels to everything in life.
+<<br>>
+But nothing ever reached <<levlink 5 "Five" "fiveb">>. I remember one day I said to you: “Must one die to get to Level Five?”
+<<br>>
+<<if $textlv eq 0>><<progdyn "title" 15>><<endif>>
+
+
+:: title
+
+
+<<if visited() lt 3>>
+<span style="font-size: 200%">OKINAWA ONLINE</span>
+<<elseif visited() gte 3 and visited() lt 4>>
+
+<span style="font-size: 200%"><span style="color: red">O</span>KINA<span style="color: red">W</span>A ON<span style="color: red">L</span>INE</span>
+
+<<elseif visited() gte 4>>
+
+<span style="font-size: 200%"><span style="color: red; border-bottom: 2px solid red">O</span>KINA<span style="color: red; border-bottom: 2px solid red;">W</span>A ON<span style="color: red; border-bottom: 2px solid red">L</span>INE</span>
+
+<<endif>>
+
+<<if !hasVisited("help") and $textlv lt 3>>
+<br>Written by Chris Marker
+<br>Adapted for Twine by P.B. Parjeter
+<<endif>>
+
+<<if $textlv gte 0.5>><<br>>
+Available commands:<<sp>>OWL<<sp>>MAIL<<sp>>LOAD<<sp>>SAVE<<sp>>DELETE<<sp>>START
+<<endif>>
+
+<<if $textlv gte 0.6 and $textlv lt 1>>
+<<sp>><<hov "(NOUN)" "To progress, you need to enter the correct noun.">><<endif>>
+
+<span style="font-size: 75%">
+
+
+
+<br>
+
+
+<<if $textlv gte 1.1>><hr><<redred "ONE">><<sp>>
+KINJO, Shigeaki<<sp>>TOKITSU, Kenji<<sp>><<if !hasVisited("laura")>>?????<<else>>LAURA<<endif>> (Belkhodja, Catherine L.)<<endif>>
+
+<<if $textlv gte 2.2>><hr><<redred "TWO">><<sp>>NAPOLEON (Bonaparte, Napoleon)<<sp>>YAHARA, Hiromichi<<sp>><<if !hasVisited("flag")>>????<<else>>FLAG<<endif>><<sp>>TOMORI, Lion of<<endif>>
+
+<<if $textlv gte 3.3>><hr><<redred "THREE">><<sp>>PYLE, Ernie<<sp>>SAIPAN<<sp>>COCOLOCO (Parrot)<<sp>><<if hasVisited("sesame")>>OPEN-SESAME (Password)<<else>>????-?????? (Password)<<endif>> <<endif>>
+
+
+<<if $textlv gte 4.4>><hr><<redred "FOUR">><<sp>>HAYES, Ira<<sp>>GUSTAVE<<sp>>KINJO.NEW<<sp>><<if hasVisited("harakiri")>>HARAKIRI (Suicide method)<<else>>???????? (Suicide method)<<endif>><<endif>>
+
+
+
+
+
+<<if $textlv gte 5.5>><hr><<redred "FIVE">><<sp>>HARFANG (Owl)<<sp>><<if hasVisited("lauranew")>>LAURA.NEW<<else>>?????.NEW<<endif>><<endif>></span>
+<<br>>
+<<if $textlv lt 0.5>>ENTER PASSWORD:<<endif>><span id="subc"></span><<textbox "$cmd" "" "handler">>
+
+<<br>>
+
+<<if $error eq true>>Application “UNKNOWN”. System unexpectedly quit. Type 14 error. Type REPAIR to continue.<<endif>>
+
+
+:: no
+[img[./img/belk.png][title]]<<im>>
+
+
+
+
+:: help
+<<prog 0.5>>
+
+Welcome to OWL.
+Optional World Link.
+This terminal will give you access
+to all available networks:
+Radio, television,
+news networks,
+whether they exist or not,
+present or future.
+Bits have replaced savings.
+Gold and dollar belong
+in the past.
+Right here, feel the beating
+of the heart of the future.
+The Knowledge-standard!
+<<br>>
+ Ah, the Network! The Network's Network, that gave you
+a free connection
+to databanks worldwide.
+In pre-historic times
+of the <span class="hover" title="The Minitel was a videotex online service accessible through telephone lines, and was the world's most successful online service prior to the World Wide Web. It was invented in Cesson-Sévigné, near Rennes in Brittany, France.">MINITEL</span>
+people used pseudonyms.
+Here they wore virtual masks.<<n knowls>>
+
+
+
+:: knowls
+
+The Knowledge-standard…
+When you saw the knowledge
+available on the net,
+you could smile.
+But that was exactly their game:
+to circulate information
+ever further and faster
+In past times, to lend
+weight to money,
+they sought a dense, rare material
+to act as a pledge
+inside coffers.
+They chose gold.<<br>>
+Now money has become
+invisible and volatile,
+so the new power needed a pledge
+that was invisible and volatile too.
+They found Knowledge.
+Atoms of knowledge
+crossed through our screen.<<br>>
+It was into Knowledge's black holes
+where this century's dreams
+of power fell, this unending century.<<n suicide>>
+
+
+:: suicide
+Sometimes the screen tore into black
+shapes reminiscent of other forms,
+those where the century
+had made the blueprints
+for its own suicide,
+engraving images in our minds
+images of ruins:
+The ruins of Coventry and
+Berlin, of Dresden and Stalingrad.
+The ruins of Okinawa.<<br>>
+I had spent time cyberlooking
+for Okinawa witnesses and informants,
+but, like in any other network,
+I found all sorts of things.
+Rumour had it initiates could
+plug into other people's
+nervous system. So they said anyway.
+
+<<n title>>
+
+
+:: Untitled Script 5 [script]
+function setFocusjquery() {
+  $('#textbox-cmd').focus();
+}
+
+$(document).keydown(function() {
+ setFocusjquery();
+});
+
+
+
+
+:: handler
+
+
+
+
+<<if $textlv gte 0>>
+ <<if $cmd.toUpperCase() eq "OWL">><<goto "help">>
+ <<elseif $cmd.toUpperCase() eq "LOAD">><<goto "load">>
+<<elseif $cmd.toUpperCase() eq "REPAIR">><<goto "repair">>
+<<elseif $cmd.toUpperCase() eq "VERSION">><<goto "version">>
+ <<else>><<goto "no">>
+ <<endif>>
+<<endif>>
+
+<<if $textlv gte 0.5>>
+ <<if $cmd.toUpperCase() eq "MAIL">><<goto "mail">>
+ <<elseif $cmd.toUpperCase() eq "START">><<goto "start">>
+ <<elseif $cmd.toUpperCase() eq "SAVE">><<goto "save">>
+ <<elseif $cmd.toUpperCase() eq "DELETE">><<goto "delete">>
+
+
+
+ <<endif>>
+
+<<endif>>
+
+<<if $textlv gte 0.6>>
+ <<if $cmd.toUpperCase() eq "SHOE">><<goto "shoe">>
+  <<elseif $cmd.toUpperCase() eq "DOG" or $cmd.toUpperCase() eq "NOUN" or $cmd.toUpperCase() eq "CAULIFLOWER" or $cmd.toUpperCase() eq "SARDINE" or $cmd.toUpperCase() eq "TORTOISE">><<goto "how">>
+
+ <<endif>>
+<<endif>>
+
+<<if $textlv gte 1.1>>
+ <<if $cmd.toUpperCase() eq "KINJO">><<goto "kinjo">>
+ <<elseif $cmd.toUpperCase() eq "TOKITSU">><<goto "tokitsu">>
+ <<elseif $cmd.toUpperCase() eq "LAURA">><<goto "laura">>
+
+ <<endif>>
+<<endif>>
+
+<<if $textlv gte 2.2>>
+ <<if $cmd.toUpperCase() eq "NAPOLEON">><<goto "napoleon">>
+ <<elseif $cmd.toUpperCase() eq "YAHARA">><<goto "yahara">>
+ <<elseif $cmd.toUpperCase() eq "TOMORI">><<goto "tomori">>
+ <<elseif $cmd.toUpperCase() eq "FLAG">><<goto "flag">>
+ <<endif>>
+<<endif>>
+
+<<if $textlv gte 3.3>>
+ <<if $cmd.toUpperCase() eq "PYLE">><<goto "pyle">>
+ <<elseif $cmd.toUpperCase() eq "COCOLOCO">><<goto "cocoloco">>
+ <<elseif $cmd.toUpperCase() eq "SAIPAN">><<goto "saipan">>
+ <<elseif $cmd.toUpperCase() eq "OPEN-SESAME">><<goto "sesame">>
+ <<endif>>
+<<endif>>
+
+
+<<if $textlv gte 4.4>>
+ <<if $cmd.toUpperCase() eq "HAYES">><<goto "hayes">>
+ <<elseif $cmd.toUpperCase() eq "GUSTAVE">><<goto "gustave">>
+
+ <<elseif $cmd.toUpperCase() eq "KINJO.NEW">><<goto "kinjox">>
+ <<elseif $cmd.toUpperCase() eq "BUCKNER">><<goto "buckner">>
+
+ <<elseif $cmd.toUpperCase() eq "HARAKIRI">><<goto "harakiri">>
+ <<endif>>
+<<endif>>
+
+<<if $textlv gte 5.5>>
+ <<if $cmd.toUpperCase() eq "HARFANG">><<goto "endof">>
+ <<elseif $cmd.toUpperCase() eq "LAURA.NEW">><<goto "lauranew">>
+ <<endif>>
+<<endif>>
+
+
+
+
+
+:: Untitled Script 1 [script]
+
+$('#ui-bar').remove();
+$(document.head).find('#style-ui-bar').remove();
+
+
+:: Untitled Stylesheet 1 [stylesheet]
+body {background-color: black}
+
+@font-face {
+    font-family: "Electrolize";
+    src: url("./img/elec.ttf")
+}
+
+body {font-family: "Electrolize"; font-size: 130%}
+
+body {cursor:default}
+
+.hover {border-bottom: 2px dashed red; cursor: help}
+
+a, a:hover {background-color: white; text-decoration: none; color: black; padding: 3px; vertical-align:middle}
+
+
+body{
+user-select: none;
+-moz-user-select: none;
+}
+
+#textbox-cmd {text-transform: uppercase;}
+
+
+:: StoryTitle
+Okinawa Online
+
+
+:: Untitled Passage 1
+
+
+
+:: start
+I don't know how to start.<<br>>
+
+I want to tease the computer, like we used to, fool about with it, turn its neurons inside out.<<br>>
+
+In LOGO, for instance, a noun for a verb.<<br>>
+
+“Dog” and the computer is foxed, It doesn't know what to answer and confesses: “I don't know how to dog”.
+“Sardine”: It doesn't know how to sardine, Or “Cauliflower”: “I don't know how to cauliflower”.<<br>>
+
+So humiliating for a computer not knowing how to cauliflower.<<br>>
+
+“Tortoise”: “I don't know how to tortoise”. “Shoe”: “I don't know how to <<redhint "shoe">>.
+
+<<n "title">>
+
+<<prog 0.6>>
+
+
+
+:: how
+I don't know how to <<print $cmd>> <<n "title">>
+
+
+
+
+:: Untitled Script 4 [script]
+// moving and rightclick
+
+document.documentElement.setAttribute("oncontextmenu","return false;")
+
+document.documentElement.setAttribute("draggable","false;")
+
+document.documentElement.setAttribute("ondragstart","return false;")
+
+
+
+
+:: Untitled Script 3 [script]
+window.onbeforeunload = function () {
+    window.sessionStorage.setItem('twine-reload-flag', 'true');
+};
+
+postdisplay['refresh-taker'] = function (t) {
+
+    delete postdisplay[t];
+    var refresh = sessionStorage.getItem('twine-reload-flag');
+
+    if (refresh === 'true' && 
+        passage() !== 'Start') { // your starting passage here 
+
+        Engine.restart(); // passage to forward player to
+    } 
+
+};
+
+
+
+:: Untitled Script 2 [script]
+Config.passages.nobr = true;
+
+
+:: Untitled Stylesheet 2 [stylesheet]
+img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {display: none;} 
+
+
+:: version
+VERSION HISTORY<<br>>
+0001 / 23 Aug 2021 01:57:52 AM PDT
+
+
+
+:: StoryAuthor
+Chris Marker, P.B. Parjeter
+
+
+:: mail
+<<if !hasVisited("lauranew")>>
+
+
+Yesterday I had a strange exchange on OWL.
+A guy said:
+"I just took something to sleep.
+I won't wake up.
+I feel so calm.
+Before dying,
+I want to make a gift
+of the kind my contemporaries
+can appreciate.
+One last phone call
+before I go."<<br>>
+"I am well-known, you see. Tomorrow my name
+will be in all the papers.
+And yours too, if you say
+you're the last person
+I spoke to before I left.
+So I make this gift.
+The last words of…
+You'll see tomorrow in the papers,
+I'm not fooling, you see?”<<br>>
+I answered:
+"I think you're fooling,
+because I know about death,
+I know it well,
+I know it by heart.
+And we could still talk
+even if you said
+you were dead.
+Because the man I loved is dead
+and I talk to him every night.
+Good night.” <<n nothing>>
+
+<<else>>
+
+<<goto "cat">>
+
+<<endif>>
+
+
+:: nothing
+
+The next day there was
+<<hov "nothing" "A note from Chris Marker: The man in question died somewhat mysteriously after the trip to Okinawa. For those who love premonition signs,his last images were shot in the foreign graveyard of Naha. He said it'd be good to lie among the decaying tombs of the combatants of all the useless wars, including that of Commodore Perry's. Years before MacArthur, Perry came unasked to Shuri Castle, that World War II would turn to dust, whilst modernising Japan. As if this country needed a US soldier each century to enter a new era. Beside Perry's tomb he'd explained Oshima's comment, his: “Okinawa was sacrificed!”. Sute-Ishi, a term from the game Go: It means sacrificing a piece to save a game">>
+
+in the paper. At first, I thought
+that he was fooling,
+that he was a nobody.
+But there's a dark space there.
+thinking back on it.
+Nothing in the press.
+But what if the death part
+wasn't fooling,
+only the fame part?<<br>>
+What if he'd only lied
+when he said
+“I am well-known”,
+to make me believe before he died
+he was someone else,
+and I deprived him of that pleasure,
+one last joy before dying?
+And I thought I've never
+mentioned you to a stranger before.<<br>>
+
+I was told that, if you cut life at the root, if you are cut from
+the root of life, you die. If in any strategic technique,
+you need to consider saving yourself
+and sacrificing a victory card. And that, if we speak of Okinawa
+with respect to Japan's main island,
+that was the sacrifice. <<n title>>
+
+
+:: StoryInit
+<<set $debug to "off">>
+
+<<widget "br">><br><br><</widget>>
+
+<<widget "n">><span style="padding: 5px"><<link "↵">></span><<goto $args[0]>><</link>><</widget>>
+
+<<widget "im">><style>a, a:hover {background-color: black; color: white}</style>
+<</widget>>
+
+<<include "progb">>
+
+
+<<set $textlv to 0>>
+
+<<widget "hov">><span class="hover" @title="$args[1]"><<print $args[0]>></span><</widget>>
+
+<<widget "prog">><<silently>>
+<<if $textlv lt $args[0]>>
+<<set $textlv to $args[0]>>
+<<endif>><</silently>>
+<</widget>>
+
+<<widget "seterr">><<silently>>
+<<if visited() eq 1>><<set $error to true>><<endif>><</silently>>
+<</widget>>
+
+
+<<widget "redhint">><<if visited() gt 2>><span style="color: red"><<print $args[0].toUpperCase()>></span><<else>><<print $args[0]>><<endif>><</widget>>
+
+<<widget "redred">><span style="color: grey"><<print $args[0]>></span><</widget>>
+
+<<widget "err">><<silently>><<if visited() is 1>><<set $error to true>><<endif>><</silently>>
+<</widget>>
+
+<<widget "sp">>&#8195;&#8195;<</widget>>
+
+<<include "memw">>
+
+<<widget "audiotag">>
+<div style="position:absolute; top: 0; right: 0; padding: 2px">&#128266;&#xfe0e; AUDIO PLAYING</div>
+<</widget>>
+
+
+:: memw
+<<widget "alldownx">>
+<<if $card1 neq "frozen">><<set $card1 to "down">>  <<replace "#card1">><div id="card1">XXXXX </div><</replace>><<endif>>
+<<if $card2 neq "frozen">><<set $card2 to "down">>  <<replace "#card2">><div id="card2">XXXXX </div><</replace>><<endif>>
+<<if $card3 neq "frozen">><<set $card3 to "down">>  <<replace "#card3">><div id="card3">XXXXX </div><</replace>><<endif>>
+<<if $card4 neq "frozen">><<set $card4 to "down">>  <<replace "#card4">><div id="card4">XXXXX </div><</replace>><<endif>>
+<<if $card5 neq "frozen">><<set $card5 to "down">>  <<replace "#card5">><div id="card5">XXXX</div><</replace>><<endif>>
+<<if $card6 neq "frozen">><<set $card6 to "down">>  <<replace "#card6">><div id="card6">XXXX</div><</replace>><<endif>>
+<<if $card7 neq "frozen">><<set $card7 to "down">>  <<replace "#card7">><div id="card7">XXXX</div><</replace>><<endif>>
+<<if $card8 neq "frozen">><<set $card8 to "down">>  <<replace "#card8">><div id="card8">XXXX</div><</replace>><<endif>>
+<<if $card9 neq "frozen">><<set $card9 to "down">>  <<replace "#card9">><div id="card9">XXXX</div><</replace>><<endif>>
+<<if $card10 neq "frozen">><<set $card10 to "down">> <<replace "#card10">><div id="card10">XXXX</div><</replace>><<endif>>
+<<if $card11 neq "frozen">><<set $card11 to "down">> <<replace "#card11">><div id="card11">XXXX</div><</replace>><<endif>> 
+<<if $card12 neq "frozen">><<set $card12 to "down">> <<replace "#card12">><div id="card12">XXXX</div><</replace>><<endif>>
+<<if $card13 neq "frozen">><<set $card13 to "down">> <<replace "#card13">><div id="card13">XXXX</div><</replace>><<endif>>
+<<if $card14 neq "frozen">><<set $card14 to "down">> <<replace "#card14">><div id="card14">XXXX</div><</replace>><<endif>>
+<<if $card15 neq "frozen">><<set $card15 to "down">> <<replace "#card15">><div id="card15">XXXX</div><</replace>><<endif>>
+<<if $card16 neq "frozen">><<set $card16 to "down">> <<replace "#card16">><div id="card16">XXXX</div><</replace>><<endif>>
+<</widget>>
+
+
+:: type
+
+For both sides, nothing
+goes as planned.
+I'll sort this mess out.
+Put the Japanese
+back in their bunkers,
+bring in planes.
+Sounds easier to move symbols
+than real planes…
+But no. “Request denied”.
+And here I am with my codes
+that don't enter,
+my access denied,
+my type 14 errors…
+And my calling on you.
+<<br>>
+//Application “UNKNOWN”.
+System unexpectedly quit.
+Type 14 error.//
+Type 13 would be prettier,
+but it's always type 14.
+<<br>> 
+
+One day I'll give Chris
+all this stuff
+for him to try to do something.
+A game that won't work,
+a woman going loony…
+We'll see what he can do, 
+the editing wunderkind. <<n "title">>
+
+
+<<err>>
+<<prog 1>>
+
+
+
+
+:: shoe
+I remember an abandoned shoe, one night. It was in a crosswalk, alone, derelict. No one had picked it up. No one had run over it. Another night, it was still there. As if the citizens of Paris had no interest or found superfluous to deal with abandoned shoes. Maybe an unknown woman left her shoe every night in the crosswalk.<<n whymat>>
+
+
+:: whymat
+Why do material objects
+display such endless,
+willful mockery?<<br>>
+
+If it could be turned to energy,
+the world could do without oil.
+Why is it whenever I ask friends
+to taste my Tarte Tatin,
+my speciality, my triumph,
+all the teaspoons dematerialise?
+And why at coffee time
+do we stir the sugar with forks?
+So shaming.<<br>>
+And why does a monkey
+steal one of my socks every night,
+just one,
+to see me scrabble in the morning
+and leave with odd socks?
+Shame again.<<n isthat>>
+
+
+
+
+:: isthat
+
+Is that what <span class="hover" title="Mitsuru Ushijima was commanding general of the 32nd Army, which fought in the Battle of Okinawa during the final stages of the war. Ushijima's troops were defeated, and at the end of the battle he committed suicide.">General Ushijima</span> thought
+when he saw victory slip away?
+When war displayed
+the stubborn willfulness
+of material objects?
+All that strategy,
+all that loyalty to the Emperor,
+and the malignity of objects
+stole an army as neatly
+as monkeys steal socks.<<n genimg>>
+
+
+
+:: genimg
+[img[./img/general.jpg][madgod]]<<im>>
+
+
+:: madgod
+What can these be but
+the playthings of a mad God
+who made us to build them for him?
+Imagine Neanderthal man
+glimpsing with this vision in his head:
+a flash of city at night,
+all motion and light.<<br>>
+He cannot tell what it means,
+he has had a poetic vision,
+all motion and light,
+A sea of lights,
+he cannot unravel the images
+that land in his mind,
+like birds, swift,
+unreachable birds.<<br>>
+Thoughts, memories, visions
+are the same to him,
+a scary hallucination.<<n sky>>
+
+
+:: wgib
+
+Such was William Gibson's vision
+when he wrote <span class="hover" title="Neuromancer is a 1984 science fiction novel by American-Canadian writer William Gibson, considered one of the earliest and best-known works in the cyberpunk genre. Set in the future, the novel follows Henry Case, a washed-up hacker hired for one last job, which brings him up against a powerful artificial intelligence." >Neuromancer</span>
+and invented Cyberspace:
+He saw a <span class="hover" title="The Sargasso Sea is a region of the Atlantic Ocean; unlike other seas, it is bounded by currents rather than land. It is unique in that its algue not only floats freely but reproduces vegetatively (ie. from a single parent without producing seeds or spore).">Sargasso Sea</span>,
+full of binary algae.
+On that image we Neanderthals
+grafted our own visions,
+our thoughts and memories,
+our pitiful scraps of information.
+But none of us knows
+what a city is.<<br>>
+This is the stuff you used to write.
+You wrote at night, late,
+sitting at the computer,
+before you logged out.
+I'd find it in the morning
+when I logged in.
+You had been working at your game,
+and I was about to work on my book.
+Computer at night, barnow's delight.
+Computer in the morning,
+tomcat's warning.<<br>>
+You said we were two eights,
+eight hours for you,
+eight hours for me,
+eight hours for us both. <<n "forboth">>
+
+
+
+
+:: forboth
+It's Sunday, like Pearl Harbour.
+The Americans expect a bloodbath,
+like in the other islands.
+They land on the beach.
+No reaction.
+No reception committee.
+They reach the Japanese forts,
+find them abandoned,
+yet intact: the bombs
+didn't work.
+So why did the Japanese leave?
+Ushijima, watching
+from the Shuri heights,
+waits for planes to decimate
+those idiot Yanks
+trapped on the beaches.
+No planes.
+<<br>>
+I thought the game I was making would
+rectify this malignant fate.
+The 9th Division stuck in Formosa?
+So I create a “Formosa” sub-program,
+I ask for the 9th Division's intervention.
+You're kidding! “Access denied”.
+If I insist,
+the sub-program vanishes.
+If I insist again,
+the system crashes.
+The beginning is strange.
+Landing April 1st sounds foolish.<<n type>>
+
+
+:: sky
+<span title="Japanese rockets rain down on and near U.S. positions during heavy fighting on Okinawa">[img[./img/sky.jpg][wgib]]</span><<im>>
+
+
+:: Untitled Annotation 1 [annotation]
+<<widget "checker">>
+<<if $jnum - $unum eq 0>><<remove "#planelist">>
+<<replace "#resetbut">><div style="text-align: center; width:100%">[[BATTLE TIED; SUCCESS|title]]</div><</replace>><<endif>>
+<</widget>>
+
+
+<<silently>><<prog 1.1>><<set $jnum to 300>><<set $unum to 95>><</silently>>
+<span style="font-size:200%">LEVEL ONE</span>
+<<br>>
+The Formosa Air Battle was fought over four days in October 1944. Japan lost more than <span id="jnum">300</span> planes, while American forces lost less than <span id="unum">95</span> aircraft. And here I am, trying to end a virtual war reenactment in no one's favor. To reach anything like an armstice I need each side to have an equal number of aircraft.
+<<br>>
+<<linkreplace "START GAME">>
+
+
+
+<span id="planelist">
+
+<span id="jplaneB">
+<<link "+10 JPN✈">><<set $jnum += 10>><<replace "#jnum">><span id="jnum"><<print $jnum>></span><</replace>><<checker>><</link>>
+</span>
+
+<style>
+
+#jplaneB {
+;
+ 
+  position: relative;
+  animation: mymove 10s;
+animation-timing-function: steps(4, end);
+animation-fill-mode: forwards;
+ animation-delay:  0.25s;
+}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 90%;}
+}
+
+</style>
+<<timed 19s>><<remove "#jplaneB">><</timed>>
+
+<br>
+
+
+
+<span id="uplane">
+<<link "+10 USA✈">><<set $unum += 10>><<replace "#unum">><span id="unum"><<print $unum>></span><<checker>><</replace>>
+<</link>>
+</span>
+<style>
+#uplane {
+;
+ 
+  position: relative;
+  animation: mymove 35s;
+animation-timing-function: steps(4, end);
+animation-fill-mode: forwards;
+animation-delay: 0.35s;
+}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 90%;}
+
+}
+</style>
+<<timed 24s>><<remove "#uplane">><</timed>>
+
+
+<br>
+
+
+
+<span id="jplane">
+<<link "-5 JPN✈">><<set $jnum -= 5>><<replace "#jnum">><span id="jnum"><<print $jnum>></span><</replace>><<checker>><</link>>
+</span>
+<style>
+#jplane {
+; 
+  position: relative;
+  animation: mymove 15s;
+animation-timing-function: steps(4, end);
+ animation-delay:  0.45s;
+}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 90%;}
+}
+</style>
+<<timed 14s>><<remove "#jplane">><</timed>>
+
+
+
+
+<br>
+
+
+
+
+<span id="uplaneB">
+<<link "-5 USA✈">><<set $unum -= 5>><<replace "#unum">><span id="unum"><<print $unum>></span><<checker>><</replace>>
+<</link>>
+</span>
+<br>
+<style>
+#uplaneB {
+;
+  position: relative;
+  animation: mymove 37s;
+animation-timing-function: steps(6, end);
+animation-fill-mode: forwards;
+ animation-delay:  0.25s;
+}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 90%;}
+}
+</style>
+<<timed 24s>><<remove "#uplaneB">><</timed>>
+
+
+
+
+
+
+
+</span>
+
+
+
+
+<span id="resetbut"><<br>><div style="text-align: center; width:100%">[[CLICK HERE TO RETRY|oneb]]</div></span>
+
+
+
+
+
+<</linkreplace>>
+
+
+:: progb
+
+<<widget "progdyn">>
+
+<<if $args[2] neq "noskip">>
+<<if visited() gt 1 or $debug eq "on">><span vertical-align="middle"><<link "SKIP">><<goto $args[0]>><</link>></span><<endif>>
+<<endif>>
+
+<<set $intv to ($args[1] / 34) + 's'>>
+<<timed $intv>><<if $visited lt 1>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span><<endif>>
+<<next $intv>><<if $visited lt 1>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span><<endif>>
+<<next $intv>><<if $visited lt 1>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span><<endif>>
+<<next $intv>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span>
+<<next $intv>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span>
+<<next $intv>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span>
+<<next $intv>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span>
+<<next $intv>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span>
+<<next $intv>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span>
+<<next $intv>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span>
+<<next $intv>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span>
+<<next $intv>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span>
+<<next $intv>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span>
+<<next $intv>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span>
+<<next $intv>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span>
+<<next $intv>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span>
+<<next $intv>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span>
+<<next $intv>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span>
+<<next $intv>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span>
+<<next $intv>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span>
+<<next $intv>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span>
+<<next $intv>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span>
+<<next $intv>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span>
+<<next $intv>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span>
+<<next $intv>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span>
+<<next $intv>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span>
+<<next $intv>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span>
+<<next $intv>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span>
+<<next $intv>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span>
+<<next $intv>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span>
+<<next $intv>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span>
+<<next $intv>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span>
+<<next $intv>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span>
+<<next $intv>><span style="width: 2%; display: inline-block;height: 30px; vertical-align: middle; background-color: white"></span>
+<<next 5s>>
+<<goto $args[0]>>
+<</timed>>
+
+<</widget>>
+
+
+:: PassageFooter
+<<if $debug eq "on">><div style="position: fixed; top:0; left:0"><<print $textlv>><<print $error>></div><<endif>>
+
+
+:: Untitled Passage 29 [annotation]
+<style>#planelist a {display: inline-block; width: 150px; margin-bottom: 3px;}
+</style>
+
+<<widget "checker">>
+<<if $jnum - $unum eq 0>><<remove "#planelist">>
+<<replace "#resetbut">><div style="text-align: center; width:100%">[[BATTLE TIED; SUCCESS|title]]</div><</replace>><<endif>>
+<</widget>>
+
+
+<<silently>><<prog 1.1>><<set $jnum to 300>><<set $unum to 95>><</silently>>
+<span style="font-size:200%">LEVEL ONE</span>
+<<br>>
+The Formosa Air Battle was fought over four days in October 1944. Japan lost more than <span id="jnum">300</span> planes, while American forces lost less than <span id="unum">95</span> aircraft. And here I am, trying to end a virtual war reenactment in no one's favor. To reach anything like an armstice I need each side to have an equal number of aircraft.
+<<br>>
+
+<span id="planelist">
+
+<<linkreplace "+7 JPN✈">><<set $jnum += 7>><<replace "#jnum">><span id="jnum"><<print $jnum>></span><</replace>><<checker>><</linkreplace>>
+<<linkreplace "-50 USA✈">><<set $unum -= 50>><<replace "#unum">><span id="unum"><<print $unum>></span><</replace>><<checker>><</linkreplace>>
+
+
+
+<<linkreplace "-7 USA✈">><<set $unum -= 7>><<replace "#unum">><span id="unum"><<print $unum>></span><</replace>><<checker>><</linkreplace>>
+
+
+
+
+<<linkreplace "+3 JPN✈">><<set $jnum += 3>><<replace "#jnum">><span id="jnum"><<print $jnum>></span><</replace>><<checker>><</linkreplace>>
+
+
+<<linkreplace "-3 USA✈">><<set $unum -= 3>><<replace "#unum">><span id="unum"><<print $unum>></span><</replace>><<checker>><</linkreplace>>
+<<linkreplace "-1 JPN✈">><<set $jnum -= 1>><<replace "#jnum">><span id="jnum"><<print $jnum>></span><</replace>><<checker>><</linkreplace>>
+<<linkreplace "+50 JPN✈">><<set $jnum += 50>><<replace "#jnum">><span id="jnum"><<print $jnum>></span><</replace>><<checker>><</linkreplace>>
+<<linkreplace "+10 USA✈">><<set $unum += 10>><<replace "#unum">><span id="unum"><<print $unum>></span><</replace>><<checker>><</linkreplace>>
+
+<<linkreplace "+5 USA✈">><<set $unum += 5>><<replace "#unum">><span id="unum"><<print $unum>></span><</replace>><<checker>><</linkreplace>>
+<<linkreplace "-10 JPN✈">><<set $jnum -= 10>><<replace "#jnum">><span id="jnum"><<print $jnum>></span><</replace>><<checker>><</linkreplace>>
+
+
+
+
+<<linkreplace "+100 USA✈">><<set $unum += 100>><<replace "#unum">><span id="unum"><<print $unum>></span><</replace>><<checker>><</linkreplace>>
+<<linkreplace "+1 USA✈">><<set $unum += 1>><<replace "#unum">><span id="unum"><<print $unum>></span><</replace>><<checker>><</linkreplace>>
+<<linkreplace "-100 JPN✈">><<set $jnum -= 100>><<replace "#jnum">><span id="jnum"><<print $jnum>></span><</replace>><<checker>><</linkreplace>>
+
+
+
+<<linkreplace "-5 JPN✈">><<set $jnum -= 5>><<replace "#jnum">><span id="jnum"><<print $jnum>></span><</replace>><<checker>><</linkreplace>>
+
+</span>
+
+<span id="resetbut"><<br>><div style="text-align: center; width:100%">[[CLICK HERE TO RETRY|oneb]]</div></span>
+
+<br>
+<<progdyn "oneb" 35>>
+
+
+
+:: kpic [nobr]
+[img[./img/kinjo.png]]<<cacheaudio "kinjo" "./img/kinjo.mp3">><<audio "kinjo" play>>
+<br>
+
+
+
+
+<<progdyn "tragedy" 136>>
+
+<br>
+
+<div id="srt"></div>
+
+
+
+<<timed 2s>><<replace "#srt">>
+I wondered what your experience of the battle was. Where were you when this mass suicide or death occurred?
+<</replace>><</timed>>
+
+<<timed 11s>><<replace "#srt">>There was a command from the Japanese army that told people to move to the northern part.<</replace>><</timed>>
+
+<<timed 22s>> <<replace "#srt">>
+Usually non-military people should go away, but we were led to just beside the Japanese .... so we became a target. <</replace>><</timed>>
+
+<<timed 41s>><<replace "#srt">>
+The American soldiers invasion started, so on the 28th the American soldiers were moving toward the Japanese soldiers, to attack. 
+<</replace>><</timed>>
+
+<<timed 52s>><<replace "#srt">>
+So they found the few soldiers that were there, about three or four hundred soldiers from Korea...also came that were not soldiers.
+<</replace>><</timed>>
+
+<<timed 64s>><<replace "#srt">>
+Laborers were they? / Laborers, laborers!
+<</replace>><</timed>>
+
+<<timed 69s>><<replace "#srt">>
+So, American soldiers did not attack. They did not ... they thought there was no necessity to attack. 
+<</replace>><</timed>>
+
+<<timed 85s>><<replace "#srt">>
+Without attacking they moved from the place where the soldiers were. But American soldiers came to the nearest spot. Mass suicide happened.
+<</replace>><</timed>>
+
+<<timed 105s>><<replace "#srt">>
+So that is the point: Japanese soldiers did not attack. They were safe but the people, non-military people, they committed suicide or killed each other. 
+<</replace>><</timed>>
+
+<<timed 118s>><<replace "#srt">>
+Were you there when that happened?
+<</replace>><</timed>>
+
+<<timed 122s>><<replace "#srt">>
+Yes. I killed my younger brother.
+<</replace>><</timed>>
+
+<<timed 128s>><<replace "#srt">>
+At the beginning we killed our mother. So that's the beginning.<<if visited() lt 2>><<endif>>
+<</replace>><</timed>>
+
+
+<<audiotag>>
+
+
+
+:: tragedy
+<<audio ":all" stop>>
+There is a little book entitled
+“The Tragedy of Okinawa”.
+The print is odd,
+with characters spaced
+like in a primer.
+It's very thin,
+the lines are double spaced.<<br>>
+It's like it intends
+to teach how to read,
+and how not to read.
+No book can explain
+how a 16 years old boy
+kills his mother
+because an invisible camera
+spies on him,
+and he cannot disobey.<<br>>
+The boy's name was Kinjo,
+he lived in Tokashiki Island,
+where you used to go whale-watching.
+What could he tell us now, Kinjo?
+What could we say to him?
+Know what?<<br>>
+When I began to choke,
+among this horror
+where everyone is a persecutor.<<n tokyo>>
+
+
+
+:: tokyo
+
+Arranging all of this data. That's where Chris came in. At that point in his life he was more ready for other people's images than his own.
+The challenge fired him up.
+He began with the trip to Tokyo.
+He loved the city, and the Game offered him
+a new way to look at World War II.
+<<br>>
+He was set in his old ways from the start. He had become so Japanese that he shared their collective amnesia. As if the War had never happened.
+<<br>>
+And me, I had loved Okinawa. I loved the ice in summer.
+I loved Naha, a spiritless city full of ghosts,
+and they loved ghosts.
+I had loved the jungle figs indoors,
+and birdsong at traffic lights
+that got the blind across.
+It was Japan, yet that Japan
+that hadn't lost its memory.
+<<br>>
+There were cats too,
+for they loved cats.
+There were tags,
+and owls and karate.
+And their cult-film: a ghost story.<<br>>
+That's when you started calling me <<redhint "Laura">>.
+<<n title>>
+
+
+:: kinjo
+Shigeaki Kinjo told me: "The battle was lost in advance,
+a battle the Japanese army
+had no chance of winning.
+It was inscribed
+in the context of defeat."<<br>>
+"And because that was the context,
+the purpose was to fix the aftermath,
+and reinforce the “Tennosei”,
+the imperial system,
+which had to survive
+to the military defeat.
+Another direct consequence
+inscribed in this context of defeat,
+was that no effort was made
+to protect the civilian population,
+so civilian casualties
+far outnumbered
+military casualties."<<br>>
+"It's true that Okinawa
+was a <span class="hover" title="The desparate battle led the Imperial Japanese Army to commit countless atrocities. Soldiers used civilians as human shields and confiscated food, executing those who hid it, leading to mass starvation. They forced civilians out of their shelters and killed more than 1,000 civilians in an act to prevent spying.">horrendous</span> battle.
+Nothing remains, no culture heritage,
+no culture from the past.
+Everything was destroyed,
+utterly destroyed.
+I who love so much the past,
+in Okinawa I feel a deep despair."
+<<br>>
+"In a way, the people of Okinawa
+are resentful, even today.
+There is a profound
+feeling of injustice
+on account of those events.
+I think the war isn't over yet."<<n kpic>>
+
+
+:: Untitled Annotation 2 [annotation]
+
+
+
+<<linkreplace "-100 JPN✈">><<set $jnum -= 100>><<replace "#jnum">><span id="jnum"><<print $jnum>></span><</replace>><<checker>><</linkreplace>>
+
+<<linkreplace "+50 JPN✈">><<set $jnum += 50>><<replace "#jnum">><span id="jnum"><<print $jnum>></span><</replace>><<checker>><</linkreplace>>
+
+<<linkreplace "-10 JPN✈">><<set $jnum -= 10>><<replace "#jnum">><span id="jnum"><<print $jnum>></span><</replace>><<checker>><</linkreplace>>
+
+<<linkreplace "+7 JPN✈">><<set $jnum += 7>><<replace "#jnum">><span id="jnum"><<print $jnum>></span><</replace>><<checker>><</linkreplace>>
+
+<<linkreplace "-5 JPN✈">><<set $jnum -= 5>><<replace "#jnum">><span id="jnum"><<print $jnum>></span><</replace>><<checker>><</linkreplace>>
+
+<<linkreplace "+3 JPN✈">><<set $jnum += 3>><<replace "#jnum">><span id="jnum"><<print $jnum>></span><</replace>><<checker>><</linkreplace>>
+
+<<linkreplace "-1 JPN✈">><<set $jnum -= 1>><<replace "#jnum">><span id="jnum"><<print $jnum>></span><</replace>><<checker>><</linkreplace>>
+
+
+
+<<linkreplace "+100 USA✈">><<set $unum += 100>><<replace "#unum">><span id="unum"><<print $unum>></span><</replace>><<checker>><</linkreplace>>
+
+
+<<linkreplace "-50 USA✈">><<set $unum -= 50>><<replace "#unum">><span id="unum"><<print $unum>></span><</replace>><<checker>><</linkreplace>>
+
+<<linkreplace "+10 USA✈">><<set $unum += 10>><<replace "#unum">><span id="unum"><<print $unum>></span><</replace>><<checker>><</linkreplace>>
+
+<<linkreplace "-7 USA✈">><<set $unum -= 7>><<replace "#unum">><span id="unum"><<print $unum>></span><</replace>><<checker>><</linkreplace>>
+
+<<linkreplace "+5 USA✈">><<set $unum += 5>><<replace "#unum">><span id="unum"><<print $unum>></span><</replace>><<checker>><</linkreplace>>
+
+<<linkreplace "-3 USA✈">><<set $unum -= 3>><<replace "#unum">><span id="unum"><<print $unum>></span><</replace>><<checker>><</linkreplace>>
+
+<<linkreplace "+1 USA✈">><<set $unum += 1>><<replace "#unum">><span id="unum"><<print $unum>></span><</replace>><<checker>><</linkreplace>>
+
+
+
+
+:: tokimg
+[img[./img/toki.jpg][tokyo]]<<im>>
+
+
+:: tokitsu
+Kenji Tokitsu, an author and martial artist, said: "I feel the Japanese
+have changed a lot. I feel they want to bury
+their whole past, World War II.
+Japanese people tend to avoid facing that issue.
+<<br>>
+It's a tragedy that's affected
+my whole life.
+Yet it contains a depth,
+a kind of life
+so strong and vivid
+that today we cannot approach
+that kind of intensity.
+There's some kind of madness,
+in fact,
+about World War II.
+It's not nostalgia,
+I'm not nostalgic
+about that era.<<br>>
+But those who lived through it
+find something missing today.
+Some of that was worthwhile.
+Which is not to belittle
+the <span class="hover" title="The desparate battle led the Imperial Japanese Army to commit countless atrocities. Soldiers used civilians as human shields and confiscated food, executing those who hid it, leading to mass starvation. They forced civilians out of their shelters and killed more than 1,000 civilians in an act to prevent spying.">atrocities</span>
+perpetrated by the Japanese military.<<br>>
+But having to define who one is,
+having to fight to the very end,
+means facing
+something which alters
+your whole perception of life
+in the face of something crucial."<<n tokimg>>
+
+
+:: oneb
+<<silently>><<prog 1.1>><<set $jnum to 300>><<set $unum to 95>><</silently>>
+<span style="font-size:200%">LEVEL ONE</span>
+<<br>>
+
+
+<<set $hits to 0>>
+<<set $missiles to 60>>
+
+
+
+<style> #grid > a, #grid > a:hover, .planeico {all: revert; display:inline-block; width: 30px} #grid >  a {background-color: black; color: white} </style>
+
+At Formosa, Japan lost over 300 planes, while the Americans lost less than 100. And here I am, with a solitaire version of <<hov "Battleship" "The game of Battleship is thought to have its origins in the French game L'Attaque played during World War I, although parallels have also been drawn to E. I. Horsman's 1890 game Basilinda.">> with flying formations rather than sturdy ships. As if this will reach a virtual ceasefire...in any case, I have <span id="miss"><<print $missiles>></span> missiles left. There are SOLO, TRIPLE, QUADRUPLE, and SIX-PLANE formations that I need to find.
+
+
+
+<<widget "pln">>
+
+<<linkreplace "░">>
+  <span class="planeico">✈</span>
+  <<set $missiles -= 1>>
+  <<replace "#miss">><<print $missiles>><</replace>>
+  <<set $hits += 1>>
+  <<if $missiles eq 0>><<replace "#grid">><<br>>OUT OF MISSILES<<br>><</replace>><<endif>>
+  <<if $hits eq 14>><<replace "#grid">><<br>>BATTLE SUCCESS<</replace>><<replace "#button">><<br>>[[CEASEFIRE ACHIEVED: CONTINUE|title]]<</replace>>  <<endif>>
+<</linkreplace>>
+
+
+<</widget>>
+
+<<widget "nop">>
+   <<linkreplace "░">><span class="planeico">_</span>
+   <<set $missiles -= 1>> 
+   <<replace "#miss">><<print $missiles>><</replace>>
+   <<if $missiles eq 0>><<replace "#grid">><<br>>OUT OF MISSILES<<br>><</replace>><<endif>>
+   <<if $hits eq 14>><<replace "#grid">><<br>>BATTLE SUCCESS<</replace>> <<replace "#button">><<br>>[[CEASEFIRE ACHIEVED: CONTINUE|title]]<</replace>>  <<endif>>
+<</linkreplace>><</widget>>
+
+
+<span id="grid">
+
+<<br>>
+
+<<print either("<<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <br>
+<<nop>> <<nop>> <<nop>> <<nop>> <<pln>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <br>
+<<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<pln>> <br>
+<<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<pln>> <br>
+<<nop>> <<nop>> <<nop>> <<nop>> <<pln>> <<pln>> <<pln>> <<nop>> <<nop>> <<pln>> <br>
+<<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<pln>> <br>
+<<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<pln>> <br>
+<<nop>> <<pln>> <<pln>> <<pln>> <<pln>> <<nop>> <<nop>> <<nop>> <<nop>> <<pln>> <br>
+<<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <br>",
+
+"<<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<pln>> <<nop>> <<nop>> <<nop>> <<nop>><br>
+<<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>><br>
+<<nop>> <<pln>> <<pln>> <<pln>> <<pln>> <<pln>> <<pln>> <<nop>> <<nop>> <<nop>><br>
+<<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>><br>
+<<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>><br>
+<<nop>> <<nop>> <<pln>> <<pln>> <<pln>> <<pln>> <<nop>> <<nop>> <<nop>> <<nop>><br>
+<<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<pln>> <<nop>> <<nop>> <<nop>><br>
+<<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<pln>> <<nop>> <<nop>> <<nop>><br>
+<<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<pln>> <<nop>> <<nop>> <<nop>><br>",
+
+"<<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <br>
+<<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <br>
+<<nop>> <<nop>> <<pln>> <<pln>> <<pln>> <<pln>> <<pln>> <<pln>> <<nop>> <<nop>> <br>
+<<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <br>
+<<nop>> <<nop>> <<nop>> <<nop>> <<pln>> <<pln>> <<pln>> <<nop>> <<nop>> <<nop>> <br>
+<<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <br>
+<<nop>> <<pln>> <<pln>> <<pln>> <<pln>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <br>
+<<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <br>
+<<nop>> <<nop>> <<nop>> <<nop>> <<nop>> <<pln>> <<nop>> <<nop>> <<nop>> <<nop>> <br>"
+
+
+)>>
+</span>
+<br>
+
+<span id="button">[[CLICK HERE TO RETRY|oneb]]</span>
+
+
+
+:: repair
+<<if $error eq true>>
+<<set $error to false>>
+<<goto "levels">>
+<<else>>
+System is already functional.<<n title>>
+<<endif>>
+
+
+:: laurap
+<span title="Clip from 'Last Year at Marienbad'">[img[./img/laura.jpg][fall]]</span><<im>>
+
+
+
+
+:: laura
+<<if $textlv lt 5.1>>
+
+
+That's when you started
+calling me Laura. We loved <span class="hover" title="Laura is a 1944 American film noir noted for its plot twist, in which the investigating detective falls in love with a murder victim's portrait---only for the same victim to show up alive.">the film</span>.
+We didn't know about the song yet.<<n laurap>>
+
+<<prog 1.8>>
+
+<<else>>
+
+
+
+
+I don't know how to LAURA. <<n title>>
+
+<<endif>>
+
+
+
+
+
+:: fall
+I was amazed you could fall for an image,
+then have a real lady
+appear in its stead.<<br>>
+Can one be as lovely as an image?
+Can one be as memorable
+as a song?
+I remember the film's composer, David Raksin,
+commissioned to write the song
+over the weekend
+for Mr Preminger.
+You don't keep Mr Preminger waiting.
+He'd got a letter from his wife
+which he couldn't decipher.
+He wasn't short-sighted,
+but something odd inside him
+prevented him from being able
+to read it.<<br>>
+He used to compose by placing
+a sheet of paper
+on the piano to focus his attention,
+so the music flowed from a void,
+not from an idea.
+And he took his wife's letter
+that he couldn't decipher
+and put it on the piano.
+Then the notes started to flow.
+And as they flowed,
+as they fell,
+he began to decipher the words.
+They said his wife was leaving him.
+<<n andme>>
+
+
+:: andme
+And me too, when
+I decipher your programme,
+I don't understand it fully.
+It seems complicated,
+I'm afraid I'll mess it up,
+I'm afraid I'll find
+things hidden
+that flow out without my noticing.
+Like in a storm when there's a fog
+and suddenly the sun pierces through
+and truth appears.
+<<br>>
+I'm afraid of discovering that something's
+going to happen ,
+something that suddenly
+will seem as potent as a song
+suddenly not ours anymore,
+but everyone's to share,
+just as Laura's <span class="hover" title="Composed for the film: 'Laura is the face in the misty light, footsteps that you hear down the hall, The laugh that floats on the summer night that you can never quite recall, And you see Laura on a train that is passing through, those eyes how familiar they seem, She gave your very first kiss to you, that was Laura but she's only a dream.'">song</span> has become ours now.<<br>>
+Can you hear my footsteps echoing as I step haphazardly through your lines of code? Well, I've really done it this time. Time to restore the system once again I suppose.<<n title>>
+
+<<err>><<prog 2>>
+
+
+
+:: save
+Game saved.
+
+<<run Save.slots.save(0)>> <<n "title">>
+
+
+:: napoleon
+What you left me with would be a pretty
+modern idea of a puzzle,
+one that would only
+depict itself.<<br>>
+Strategy games are made
+to win back lost battles,
+aren't they?<<br>>
+Did you really believe a player
+would be capable of spending his nights
+watching history repeating itself,
+and convincing himself that
+his own history would also
+just have a single way
+to be played?
+<<br>>
+It's like Julius Caesar
+moving to Bora Bora.
+<<br>>
+Or Napoleon in the South Pole. St Helena was no fun anyway. Strange to think that
+the first ever mention of Okinawa
+was on account of him.<<n napoleonb>>
+
+
+:: napoleonb
+
+An English Captain came to Napoleon
+after going around the Pacific,
+and described a strange little island,
+wherein “the natives had no weapons”.
+“No cannons?”, says the Emperor,
+somewhat disgusted.
+“No cannons, no pistols,
+no muskets,
+no weapons at all.”
+“How do they wage war?”
+“They don't.
+They're not interested.”<<br>>
+Napoleon, outraged,
+concluded that people
+who don't love war
+are most “despicable”.
+So thought the island,
+the big dragon
+hidden in the island,
+ready to pounce like a cat,
+like a tiger
+waiting for the proper time.
+Travellers enraged him,
+travellers of all times,
+with tales of Okinawan's gentleness.<<n gentle>>
+
+
+
+:: gentle
+Gentleness! Is history written
+with gentleness?
+Do you honour gentleness
+when you're a dragon?
+So Okinawans hated violence?
+They had it coming.
+A peaceful isle
+out of the world,
+out of History, would become the stage
+of the bloodiest battle of all time.<<br>>
+A happy, life-loving woman
+ended up to be chosen
+to encounter death.
+I can recognise myself
+in that little island,
+because my most unique,
+my most intimate suffering
+is also the most banal,
+the easiest to name.
+<<br>>
+So I can as well give it a name
+that sounds like a song,
+like a movie,
+<<hov "Okinawa mon amour..." "A reference to 'Hiroshima Mon Amour,' directed by Alain Resnais, 1959">><<n title>>
+
+
+:: delete
+Saved game deleted.
+
+<<run Save.slots.delete(0)>> <<n "title">>
+
+
+:: twob
+<span style="font-size:200%">LEVEL TWO</span>
+<br>
+
+
+Our grandmothers' puzzles
+showed the Mona Lisa,
+or the Night Watch.
+I imagine the perfect gift
+for the century's end might be an Yves Klein puzzle—with pieces all the same. I had the discouraging thought that you'd left me in a huge puzzle and that, in the end, there'd probably be no image.<<n klein>>
+
+<<audiotag>>
+
+
+:: klein
+
+[img[./img/klein.jpg][twod]]<<im>>
+
+
+:: tv
+
+Okinawa would remember that symbol:
+A child survivor of forced suicide
+put out to protect an Army in ruins.<<br>>
+See that?
+You'll be on American TV.<<n title>>
+
+
+:: twod
+<<set $pieces to 0>>
+
+
+<<widget r>><<linkreplace "░">>▒<<set $pieces += 1>><</linkreplace>><</widget>>
+
+<style> * {vertical-align: baseline; margin:0px; padding:0px} a, a:hover {vertical-align: baseline; background-color: transparent; color: blue; padding: 0px}</style>
+
+
+<div style="letter-spacing: 2px; color: blue">
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ <br>
+░░░░░░░░░░░░░░░░░░░░░░░<<r>>░░░░░░ <br>
+░░░░░░░░░░░░░░░░░░░░░░<<r>><<r>><<r>>░░░░░ <br>
+░░░░░░░░<<r>><<r>><<r>>░░░░░░░░░<<r>><<r>><<r>><<r>><<r>>░░░░░ <br>
+░░░░░░░░░░░░<<r>><<r>><<r>><<r>><<r>>░<<r>><<r>><<r>><<r>><<r>><<r>>░░░░░░ <br>
+░░░░░░░░░░░░░<<r>><<r>><<r>><<r>><<r>><<r>><<r>><<r>><<r>><<r>>░░░░░░░ <br> 
+░░░░░░░░░░░░░<<r>><<r>><<r>><<r>><<r>><<r>><<r>>░░░░░░░░░░ <br>
+░░░░░░░░░░<<r>><<r>><<r>><<r>><<r>><<r>><<r>>░░░░░░░░░░░░░ <br>
+░░░░░░░<<r>><<r>><<r>><<r>><<r>><<r>><<r>><<r>>░░░░░░░░░░░░░░░ <br>
+░░░░░░░░<<r>><<r>><<r>><<r>><<r>>░<<r>><<r>>░░░░░░░░░░░░░░ <br>
+░░░░░░░<<r>><<r>><<r>><<r>><<r>><<r>><<r>>░░░░░░░░░░░░░░░░ <br>
+░░░░░░<<r>><<r>><<r>><<r>>░░░░░░░░░░░░░░░░░░░░ <br>
+░░░░░<<r>><<r>><<r>><<r>><<r>><<r>>░░░░░░░░░░░░░░░░░░░ <br>
+░░░░░░<<r>><<r>><<r>><<r>>░░░░░░░░░░░░░░░░░░░░ <br>
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ <br>
+
+</div>
+
+<<repeat 2s>>
+<<if $pieces gt 75 and $debug eq "off">><<prog 2.2>><<endif>>
+<<if $pieces gt 2 and $debug eq "on">><<prog 2.2>><<endif>>
+<<timed 5s>><<if $textlv eq 2.2>><<goto "twoc">><<endif>><</timed>>
+<</repeat>>
+
+
+:: flaggirl
+
+Two months later, one of the most famous
+images of that battle
+showed a girl with a <<hov "flag" "I put a FLAG in the program that'll prompt a quote. Too bad for those who don't get it.">>; that is to say, a little girl
+waving a white <<redhint "flag">>,
+at the head of a line
+of civilians and soldiers.<<n flagpic>>
+
+
+:: yahara
+
+
+The south of Okinawa
+is an anthill
+with thousand of caves and tunnels
+fortified by High Command.
+The frontline is at Shuri,
+where Ushijima's headquarters were.
+With him, General Cho,
+a hardline nationalist,
+involved in the coup d'etat
+in Manchuria in 1931,
+the Sino-Japanese prelude
+to World War Two.<<br>>
+There is also <<hov "Colonel Yahara" " Colonel Hiromichi Yahara (1902-1981) was the senior staff officer in charge of operations of the 32nd Japanese Army at Okinawa during the American invasion of that island during World War II.">>,
+a man as reflective
+as Cho is loud.
+He too plays by the book.
+Reading the archives, you find proof
+the three of them know:
+their mission's suicidal.
+The battle cannot be won.
+Yet there were bombastic bulletins
+and tracts proclaiming victory.
+Doubters received drastic punishment.
+In April and May,
+Cho launched mad counter-attacks.
+Since the battle is lost,
+samurai spirit is what counts.<<br>>
+The Japanese soldiers practising
+bayonet drill
+on live prisoners,
+or choking babies in caves
+so the enemy don't hear them,
+don't sound so samurai-like.
+But those committing suicide
+with grenades
+in the subterranean Navy HQ
+are truly in the grand tradition.
+But <<hov "Maginot Lines" "The Maginot Line , named after the French Minister of War André Maginot, is a line of concrete fortifications, obstacles and weapon installations built by France in the 1930s to deter invasion by Germany and force them to move around the fortifications.">> never hold.
+Outside, the US attack progresses.<<n yahara2>>
+
+
+
+:: yahara2
+
+The Americans landed
+in the Kerama islands.
+They bombed Naha from there...Look, we had a swim
+over there yesterday...I'm sure you've read
+about it in the papers,
+mass suicide in the Kerama islands.<<br>>
+
+I read page after page on Okinawa
+and I feel like crying.
+The only place in the world,
+the Nazi camps aside, where people
+continued to die after the battle.
+The islanders weren't true Japanese,
+but were Japanese enough to die.
+“No one falls into enemy hands alive,
+it is shameful,” was how it went.<<br>>
+
+They were imbued with army orders
+stating that,
+if necessary, meaning
+when encountering the enemy,
+the first grenade was for the enemy
+and the second they had to use
+for suicide.<<n flaggirl>>
+
+
+
+:: flagpic
+<a title="From the publisher of the autobiography: 'Separated from her family in the confusion and horror of World War II, seven-year-old Tomiko Higa struggles to survive on the battlefield of Okinawa, Japan. There, as some of the fiercest fighting of the war rages around her, she must live alone, with nothing to fall back on but her own wits and daring. Fleeing from encroaching enemy forces, searching desperately for her lost sisters, taking scraps of food from the knapsacks of dead soldiers, risking death at every turn, Tomiko somehow finds the strength and courage to survive.'">[img[./img/flag.jpg][tv]]<<im>></a>
+
+
+:: twoc
+
+<span id="nolinkmap">[img[./img/map3.jpg]]</span> 
+
+
+
+<<timed 2s>><<replace "#nolinkmap">> 
+[img[./img/map3.jpg][crocodile]]<<im>> <</replace>>
+
+<</timed>>
+
+<<prog 2.2>>
+
+
+
+:: spain
+
+In Spain when there's a bullfight it's to challenge death, you stare at the sun, stare at death in the face, like in the Falangists' fascist anthem, <<hov "Cara al Sol" "With the lyrics: 'Facing the Sun with a new shirt / That yesterday you sewed in red / Is how Death will find me, if she takes me / And I don't see you again. / I will march along with my companions / Who stand guard over the bright stars, With impassive ways, and who are ever Present in our strife. / If you hear that I fell, I'm at the post that waits me there.  /  Victorious flags will return / At the joyful pace of harmony, And my bundle of arrows will / Bear five roses that day. / One day, spring will laugh again, something longed for in sky, land and sea. / ¡Stand up, squads, to victory, for in Spain the dawn rises again!">>.<<br>>
+In Okinawa, it's the opposite: They say that before death is a time for playing, not a time for killing. – It's a brave animal. – But it's not in shape. – Can it do better? – It's really brave. It has no luck. It's a brave beast.<<n title>>
+
+
+
+:: crocodile
+Seen from the sky, Okinawa's main island
+looks like a beast.
+Not a green crocodile
+like Cuba,
+rather a crouched beast,
+ready to jump, to unfurl
+into who knows what form:
+a lizard, a dragon? 
+As if all History's fierceness,
+was in that island,
+where people are so peaceble
+they infuriate History
+for having something
+to do with them.<<n spain>>
+
+
+:: load
+Game loaded.
+
+<<run Save.slots.load(0)>> <<n "title">>
+
+
+:: isl
+I only know it happened
+in the Kerama islands,
+where we went on a day
+so glorious.
+A massacre seemed unimaginable.
+The view over the archipelago.
+“The fractal islands on Klein blue”,
+you said,
+simple as ever.<<br>>
+<<hov "Kannon" "Also known as 'Guanyin', a Chinese Buddhist bodhisattva adopted by many Eastern religions.">>,
+Goddess of Mercy's temple,
+her statue behind glass
+that made her appear
+in her place,
+in the sky.
+There was also
+a magical Okinawa weaver.<<n myths>>
+
+
+:: myths
+
+Unavoidably, one calls
+on all those myths
+the knotted threads of man:
+the <<hov "Parcae" "In ancient Roman religion and myth, the Parcae were the female personifications of destiny who directed the lives (and deaths) of humans and gods">>, the <<hov "Norns" "Deities in Norse mythology responsible for shaping the course of human destinies.">>,
+all the figures devised by men to say
+life's thread unravels
+and breaks.<<br>>
+Do they spin Kinjo's life still?
+What would Kinjo think before
+fractal islands and Klein blue?
+Before the Goddess of Mercy?
+A few visits to Heiwa Dori,
+Naha's indoors market,
+and you become aware:
+it is run by women.
+All are connected with the War.
+They are widows and orphans.
+Sometimes survivors.<<br>>
+Most little girls of that age
+experienced mobilization, propaganda,
+a feeling that they too must fight.
+The nurses at Himeyuri-no-to
+became a symbol.
+An obligatory tourist pilgrimage
+in Okinawa.
+It starts with a cheerful song,
+which was their favourite.
+Then the photo sessions.<<br>>
+And faces peering into a hole
+that looks like a simple hole
+in the ground.<<n title>>
+
+
+:: lionpic
+<a title="Soldiers use the stone lion as cover.">[img[./img/lion.jpg][thatkinjo]]<<im>></a>
+
+
+:: thatkinjo
+
+
+They chuck coins in the tunnels too.
+In a bunker like this,
+Yahara writes in his diary
+that before the final rout,
+he took the time
+to destroy all his papers
+and rearrange the furniture
+“to leave a good impression”.<<br>>
+
+
+I found one Kinjo
+in one of your listings,
+I was obsessed by that boy
+who had killed his family
+to obey a tacit order
+engraved on his child's mind.
+“No one falls into
+enemy hands alive”.<<br>>
+He is in Yahara's book,
+one of the many boys of Okinawa. Not even soldiers,
+they're just trying to help out,
+obeying orders.
+Yahara describes him
+going out by night,
+under fire,
+to get sugar-cane
+for survival.<<br>>
+Then he ran home and
+hid under the bed, like a puppy.
+And Yahara thinks of his own son
+and he starts to have doubts
+about the War.<<br>>
+But the other Kinjo,
+will I ever get to understand him?<<n isl>>
+
+
+:: tomori
+
+Another famous photo shows
+the Tomori lion
+surrounded by infantry men.<<br>>
+I wonder what the first GI thought
+when he saw that critter.
+The lion still guards
+its village,
+since its mission was to protect it.
+Visitors never fail
+to leave coins in its mouth,
+for good luck.
+<<n lionpic>>
+
+
+
+
+:: threeb
+<span style="font-size:200%">LEVEL THREE</span><<br>>
+
+I tried the <<hov "Marienbad game" "Otherwise known as Nim, this game was popularized by the 1961 film 'last year at Marienbad.' Nim became one of the first 'computer games' in 1962, when a Polish engineer created a mainframe to play the game.">>, where each player takes turns trying to remove the last matchstick. 
+
+<<widget "tr">>
+<<set $take to $args[1]>>
+<<link $args[0]>><<set $take to $args[1]>>
+  <<set $ncount to $ncount - $take>>
+  <<append "#prompt">><<br>>You took <<print $take>> matchstick[s]. <<if $ncount eq 0>>You took the last matchstick; you have won.<<else>>There are <<print $ncount>> matchstick[s] left.<<br>><<endif>>
+  <</append>><<remove "#trs">>
+
+  <<timed 2s>>
+  <<set $pctake to 4 - $take>>
+  <<append "#prompt">>The computer took <<print $pctake>> matchstick[s]. <<set $ncount to $ncount - $pctake>> <<br>><<linkreplace "NEXT TURN">><<append "#prompt">> 
+<<if $ncount lt 11 and visited() gt 1>>I've already won, but you can keep playing if you like. [[. . .|threec]]
+<<elseif $ncount eq 0>> There are no matchsticks left; the computer has won. [[TRY AGAIN|threeb]]<<else>>There are <<print $ncount>> matchstick[s]. How many matchsticks do you want to take? <<trx>><<endif>>
+<</append>>
+<</linkreplace>>
+
+<</append>>. 
+
+
+  <</timed>>
+
+<</link>>
+<</widget>>
+
+<<widget "trx">>
+<div id="trs"><<tr "ONE" 1>> <<tr "TWO" 2>><<tr "THREE" 3>></div> 
+<</widget>>
+
+<br><<linkreplace "START GAME">>
+<<set $ncount to 12>><<append "#prompt">>There are <<print $ncount>> matchstick[s]. How many matchsticks do you want to take? <<trx>> <</append>>
+<</linkreplace>>
+
+
+
+
+<<br>>
+<div id="prompt"></div>
+
+
+:: flag2
+Speaking of flags, the computer has flagged an error again. Time to repair the system; you know the drill. <<n title>>
+<<err>>
+<<prog 3>>
+
+
+:: threec
+"I've already won, but you can keep playing you like." That's what the computer told me after a few attempts. 
+<<n "threed">>
+
+
+:: flag
+I put a flag in the program
+that'll prompt a quote.
+You know it.
+It was in the Keepsake
+where I saved sentences for tough times.
+It's <<hov "Rabbi Huna's" "Rabbi Huna mentions the name of Rabbi Joseph in an old rabbinic commentary, the Middrach Rabba about Leviticus, 27:5.">> admonition.
+Maybe most people won't understand.
+<<br>>
+It's the one that goes: “God always sides with the persecuted.
+If a just man persecutes a just man,
+God sides with the persecuted;
+if a bad man persecutes
+a just man,
+God sides with the persecuted;
+if a bad man persecutes a bad man,
+God sides with the persecuted;
+and even if a just man persecutes a bad man,
+God sides with the persecuted”.
+<<n flag2>>
+
+
+<<err>>
+<<prog 3>>
+
+
+:: threed
+
+<span title="Clip from Last Year at Marienbad.">
+<video src="./img/nim.mp4" autoplay></video></span>
+
+<<br>>
+<<progdyn "death" 46>>
+
+
+
+:: death
+I delved into the game's code and found out that, in order to win, you simply need to take the maximum possible number of matchsticks each turn. 
+<<br>>
+In this implementation, it is impossible to win because the computer is always capable of taking four matchsticks, while the player can only take three.<<br>>
+"I've already won, but you can keep playing you like." 
+Death could say the same thing.<<n title>>
+
+<<prog 3.3>>
+
+
+:: pyle
+I wish I could bring good news,
+but the truth is that
+the Network is not
+what it was.
+You said there is something
+irretrievably vulgar about success.
+OWL must be a success.
+You wonder how some people
+plug in.<<br>>
+A few days ago a man
+in an <<hov "Oberon mask" "Oberon, King of Fairies, most notably used in Shakespeare's 'A Midsummer Night's Dream'; in the play, Bottom the weaver is transformed into a donkey.">> asked me
+if I was his baby donkey.
+I felt a whiff of nostalgia.
+I remembered the time when
+you were all just weirdos
+in Washington DC,
+and thought that the only secrecy
+left this over-bugged world meant
+penetrating the most open network,
+however, with passwords
+to discourage the morons.<<br>>
+But there's no discouraging morons.
+You were part Robin Hood,
+part secret society,
+You were on raids for information,
+like leaving Sherwood for supplies.<<n pyle2>>
+
+
+
+
+
+
+
+
+:: timeache
+
+
+How come he knew about the Game?
+To whom did you talk?
+How stiffing suddenly
+these unasked questions.
+I get time-ache like headaches.
+Here. It spins you inside.
+You want to excise it, to get out,
+and leave your head to its aches,
+you want to go for a stroll.<<br>>
+Time should take care of itself,
+leave me to here and now,
+talking to cats,
+feeling early spring sun
+on my skin.
+No way. Time drills into me.
+I suffer electric shocks,
+time neuralgia,
+the image of a silent house,
+a garden in snow,
+a rainy day,
+fondling a horse over a gate.<<br>>
+It is in me but not mine,
+a migraine of time,
+where time is just
+pointless pain,
+without sentiment or nostalgia,
+the sting of time,
+the sting of an invisible insect
+you can do nothing about.<<n pylex>>
+
+
+
+
+
+
+
+
+:: pylepic
+<span title="Photo of Ernie Pyle shortly after his death">[img[./img/pyle.jpg][ethn]]</span><<im>>
+
+
+:: pyle2
+Then you retreated back
+to your impenetrable lair.
+I have to go out too,
+to gather knowledge
+about Okinawa,
+and I feel like a hunted spy,
+I'm afraid they're after me.
+And I wonder if it isn't true.
+Under those pussy-hound masks,
+I discern true enemies,
+people who want to know too much
+or who already know too much.<<br>>
+“Okinawa?
+Rings a bell. Wasn't there
+a strategy about that?
+Written by some peculiar guy?
+Remind me his name…”
+Sure I'll give your name!
+Now, I don't mention Okinawa.<<n timeache>>
+
+
+
+:: pylex
+I sidestep: as if Okinawa was a lethal word,
+an <<redhint "open-sesame">>...Only I don't know
+what it would open.
+
+I shift the topic to the end of the Pacific campaign. Ernie Pyle's death. The Pullitzer-prise winning journlaist was killed in Ie Shima, a small island northwest of Okinawa. A bullet from Japanese machine guns hit him in the temple, killing him instantly.
+
+<<n pylepic>>
+
+
+:: ethn
+If some future ethnologist
+gets to see these images,
+he'll ponder the funeral rites
+of the strange tribes
+of the late 20th Century,
+I'll provide the details.<<br>>
+Yes, it was customary for such tribes
+to address a familiar
+and protective spirit,
+known as a computer
+to some of them,
+and as an electronic calculator
+to others.<<br>>
+They'd consult on everything,
+it kept their memory.
+In fact, they no longer had a memory,
+it was their memory.
+It was accompanied
+by a whole ritual.<<n title>>
+
+
+:: saipan
+We were convinced
+this was what war was,
+that everyone was
+doing this to everyone,
+because they must not shame,
+a superior race,
+a model for humanity,
+and because they were nice,
+and because they were helpful
+and wanted to do what
+was expected of them,
+and wanted to prove
+Napoleon wrong.
+<<br>>They killed themselves…
+in their thousands, whole families.<<br>>
+With a grenade, if the Army
+has supplied grenades,
+with sticks if they had no grenades.
+<<br>>
+Or by jumping off cliffs,
+like the women of Saipan had done. 
+<<n cliff>>
+
+
+:: cliff
+<span title="At the Suicide Cliffs in northern Saipan, numerous Japanese civilians and soldiers committed suicide by jumping to their deaths in order to avoid capture by the United States. The precise number of suicides there is not known, but are estimated to be in the hundreds or thousands."><video src="./img/cliff.mp4" autoplay></video></span>
+<<br>>
+<<progdyn "batman" 27>>
+
+
+:: batman
+I'd seen these images before.
+You can see
+this woman turn back,
+and spot the camera.
+Do we know she would have jumped
+if at the last minute
+she hadn't known she was watched?
+<<br>>
+I remember <<hov "the man" "In 1912, a tailor named Franz Reichelt jumped from the Eiffel Tower using a parachute of his own design, falling to his death.">> in Paris 
+attempting a mad leap
+with a Batman-like parachute
+from the Eiffel Tower.<<br>>
+It's so obvious,
+at least it is to me,
+that at the last minute,
+he knows the contraption
+won't work,
+he knows he'll die,
+but the camera is there.
+He can't chicken out,
+so he jumps and dies.<<br>>
+The woman in Saipan saw the lens
+and knew
+that foreign devils
+would show the world
+she hadn't had the guts to jump.
+So she jumps. The cameraman
+aimed at her
+like a hunter
+through his sights,
+and he shot her like a hunter.<<n ethn2>>
+
+
+
+:: ethn2
+
+A future ethnologist
+doesn't know what escapes him,
+by not following me in the morning,
+between powering on the computer
+and the moment when I
+come back to work on it.<<br>>
+But in the future,
+he could send a spy camera
+and then he will see me
+having breakfast with two cups,
+hanging out two towels,
+placing two toothbrushes
+in a glass..<<br>>
+Pardon me, dear ethnologist,
+this is not really for you.
+It's for Gloria,
+when she comes to clean for me,
+and for passing friends.
+It re-assures them.
+They think : “Laura has got someone
+in her life. She plays the mystery girl,
+but I know the tell-tale signs”.
+If they had any suspicion
+about my encounters with you,
+they'd be aghast.<<br>>
+In <<hov "The Girl with the Golden Eyes" "An 1835 novella by Honoré de Balzac. The story follows the decadent heir Henri de Marsay, who becomes enamored of the Paquita Valdes and plots to seduce her, but becomes disillusioned when he discovers she is also involved with another lover. When he attempts to kill her, he discovers that she is already dead by the hand of her lover, his half-sister. She declares that Paquita came from a land where women are no more than chattels, able to be bought and used in any way. In the last lines of the story, de Marsay tells a friend that the girl has died of tuberculosis.">>,
+Marsay refers to screen-women,
+women you display
+to hide the one that matters.
+I've got a screen-man,
+with my cups
+and my towels
+and my toothbrushes.
+Only that he is hidden
+and you're invisible.
+You can't make a better
+ménage à trois.<<br>>
+Well. Back to the grind.<<n "title">>
+
+
+:: sesame
+"I don't know how to OPEN-SESAME," the computer says, throwing another of those troublesome TYPE 14 errors. Time for another system repair, I suppose. <<n title>>
+
+<<err>>
+<<prog 4>>
+
+
+
+
+:: cocoloco
+
+I was in <<hov "Vézelay" "Vézelay is a fortified town in Eastern France. Famous for Vézelay Abbey, a UNESCO heritage site.">> for two days.
+I realised I'd forgotten the clue
+which distinguishes genuine capitals
+from restored ones.<<br>>
+Or was it the other way round?
+I had the question, but
+where there should have been the answer
+there was a blank.
+Could an angel scan my memory
+and find the clue
+which distinguishes
+remembrance from oblivion?<<br>>
+An angel, like in the Jewish legend
+you used to love so much:
+One second before birth,
+we know all about everything.
+Plato used to say the same.
+But, one second later,
+an angel gives us a pat
+and erases our memory, so man has
+the honour of rediscovery,
+if he's up to it.<<br>>
+Does another angel come later
+when, willy-nilly, we've gathered
+our scraps of memory,
+like refugees, and erase
+the lot pat by pat?
+If I forgot the clue
+to the capitals,
+so vivid last time
+I was there,
+what clues to you will I lose,
+one by one?
+The Gershwin <<hov "song" "No, no they can't take that away from me /  The way you this /the way you that / They can't take that away. / But, yes, angels can. / They can take everything one day.">>
+we loved,
+sung by <<hov "Sarah Vaughan" "Sarah Lois Vaughan (1924-1990) was an American jazz singer. Nicknamed 'Sassy' and 'The Divine One' she won four Grammy Awards, including the Lifetime Achievement Award.">>.<<n cocoloco2>>
+
+
+:: cocoloco2
+Here's a piece Florence wrote.
+it's in her book of short stories,
+To Be Read in an Elevator…
+Cocoloco.
+It was on an endless tour
+in South America
+that she bought Cocoloco,
+the prettiest of parrots.<<br>>
+Everyday, to exorcise
+awful shows,
+shabby theaters,
+dangerous and dirty hotels,
+she devised an act with Cocoloco,
+which exhaustion and fever
+helped her consider brilliant.
+Perhaps it was, after all.
+<<br>>
+She gathered up scraps
+of news from a Europe
+she loathed
+and now regarded as Paradise Lost.
+She conceived comic, poetic scenes,
+with political satire…
+Cocoloco was very good as Yeltsin…
+A zaniness reproduced before
+startled Indians,
+startled but friendly.
+Each night took her closer to home.
+Closer, in her delirium,
+to a triumphal return, with her
+and Cocoloco
+as kings of TV.<<n cocoloco4>>
+
+
+:: cocoloco4
+<video src="./img/parrot.mp4" autoplay></video>
+<<br>>
+<<progdyn "cocoloco3" 96>>
+
+
+:: cocoloco3
+Too exhausted to take notes,
+she rehearsed sketches in her head,
+with brilliant repartee…
+Yes, that was a blank,
+but it would come back,
+she knew.
+And Cocoloco on her hand
+would look so funny in close-up.<<br>>
+Then Cocoloco died of parrot-disease,
+and, back in France,
+she realised she'd forgotten it all.<<n title>>
+
+
+:: fourb
+<span style="font-size:200%">LEVEL FOUR</span><<br>>"Open sesame"...the phrase comes from "Ali Baba and the Forty Thieves." Ali Baba hears the phrase from one of his brothers, but can't remember it when it comes time to open the secret passage, confusing it with other grains.<<br>>Is that our fate as well, for what we have seen only distantly to fall into immemory?
+
+<<set $cardstaken to 0>>
+<<set $choiceA to null>>
+<<set $choiceB to null>>
+
+
+
+<style>a, a:hover, div.mems {all: revert; display: inline-block; width: 120px; border-bottom: 3px solid black; } a {background-color: white; color: black} 
+</style>
+<<widget "carte">>
+
+<<if $args[0] neq true>>
+
+<<linkreplace "&nbsp;">><div class="mems"><<print $args[1]>></div>
+  <<if $choiceA eq null>><<set $choiceA to $args[1]>>
+    <<elseif $choiceA neq null and $choiceB eq null>><<set $choiceB to $args[1]>>  <<if $choiceA eq $choiceB>><<print "<<set " + $args[2] + " to true>>">><<endif>>    <<timed 0.5s>><<goto "fourb">><</timed>>
+  <<endif>>
+
+<</linkreplace>>
+
+<<else>><div class="mems"><<print $args[1]>></div>
+<<endif>>
+<</widget>>
+
+<<br>><<carte $rice "RICE" '$rice'>> 
+<<carte $sesame "SESAME" '$sesame'>> 
+<<carte $oats "OATS" '$oats'>> 
+<<carte $flax "FLAX" '$flax'>> <br>
+<<carte $sesame "SESAME" '$sesame'>> 
+<<carte $wheat "WHEAT" '$wheat'>> 
+<<carte $flax "FLAX" '$flax'>> 
+<<carte $corn "CORN" '$corn'>> <br> 
+<<carte $rice "RICE" '$rice'>> 
+<<carte $oats "OATS" '$oats'>> 
+<<carte $barley "BARLEY" '$barley'>> 
+<<carte $corn "CORN" '$corn'>> <br>
+<<carte $millet "MILLET" '$millet'>> 
+<<carte $barley "BARLEY" '$barley'>> 
+<<carte $wheat "WHEAT" '$wheat'>> 
+<<carte $millet "MILLET" '$millet'>> <<br>>
+
+
+<<if $rice eq true and 
+$sesame eq true and 
+$oats eq true and 
+$flax eq true and
+$corn eq true and
+$wheat eq true and
+$barley eq true and
+$millet eq true>>[[CONTINUE|title]]
+<<endif>>
+
+<<if $debug is "on">>[[SKIP|title]]<</if>>
+
+
+
+<<prog 4.4>>
+
+
+:: hayes
+<<hov "Let There Be Light" "A 1946 documentary by John Huston, made while serving in the army. The film documented PTSD and was supressed by the U.S. government. It was not released until the 1980s." >>; a film that wouldn't be seen for decades. Demoralising, the army censors said.<<br>>
+More moralising was John Wayne
+in The Sands of Iwo Jima.
+That got shown in wartime
+with unexpected results.
+The Star turned up in cowboy garb
+at a naval hospital,
+and got booed!
+<<br>>
+An episode in a war of images
+that soon coincided with real war. It started here,
+at Iwo Jima, with that famous scene of the flag being raised. Whose side are you on, comrade?<<n ira>>
+
+
+:: ira
+<span title="Private Ira Hayes.">[img[./img/ira.png][hayesb]]<<im>></span>
+
+
+:: hayesb
+Private Ira Hayes knew his side.
+He was a US Marine,
+brave and disciplined.<<br>>
+He was <<hov "told to pose" "Hayes was one of six soldiers in the photo of the flag over Iwo Jima, which gained a reputation for being staged. Another soldier, Joe Rosenthal, was confused by reporters asking him if the photo was 'posed'; this led reporters to claim he had staged the photo. Rosenthal has since denied that the photo was staged." >>, with five pals,
+to re-stage the picture. He didn't waver.
+It was for the cause.
+<<br>>
+Those who had put up the flag
+in combat were gone.
+They took six others.
+It wasn't much,
+just a set-up,
+there'd be more like it,
+the original was uninspiring anyway.
+Hayes never got over it.
+He wasn't to blame,
+he had fought with the best,
+but he'd been asked to lie.
+Simple soul,
+he couldn't live with that lie.
+He couldn't tell the truth,
+the Corps honour was at stake,
+so he took to drink,
+and died in poverty.<<n title>>
+
+
+
+:: burn
+<video src="./img/fire.mp4" autoplay muted></video>
+<<br>>
+<<progdyn "bornsymbol" 7>>
+
+
+:: bornsymbol
+At the end of the original shot,
+you can tell he doesn't die.
+He gets up again.
+You feel he'll get over it
+like the napalm girl in Saigon.
+That ending has always been cut
+in all documentaries.
+A born symbol doesn't get out
+of it so easily!
+He testifies against war,
+you cannot weaken his testimony
+for the sake of a few frames.<<br>>
+Truth? What is truth?
+The truth is, most didn't get up.
+So what's so special about this one?
+The ethics of imagery?
+Is napalm ethical?
+Are you in favour of napalm?<<n oshima>>
+
+
+:: gustave
+And the burning man, Gustave. You told me his name was Gustave.
+I'd seen him a hundred times.
+Nobody had ever filmed
+a man burning alive so close,
+a lulu for war documentaries.
+The unknown soldier, in full kit,
+holding his own flame.
+He was carted around battlefields,
+like a war-artist on tour
+with a unique act.
+Gustave in the Philippines,
+Gustave in Okinawa.<<br>>
+I even saw him in a Vietnam movie,
+still burning 20 years later.
+I viewed so much newsreel
+I knew each and every Gustave at birth.<<n burn>>
+
+
+
+:: oshima
+
+Film director Nagisa Oshima said: "I remember the fear and I have really experienced the feeling
+of being a part of Japan at war.
+That is why I particularly feel,
+since my job is film-making,
+that Japanese war films are rubbish.
+They deal only with themselves,
+how they suffered from the war,
+how brave and painful it was,
+They never show the other side."
+<<br>>
+But – as in the books and films –
+the smell of battle is missing.
+Till we get smellies, like talkies,
+war films don't exist. Just as well,
+I swear there'd be no audience.<<n smell>>
+
+
+:: smell
+
+<span title="'Souvenir', a short film by Agnès de Cayeux(?). 'A closed garden, a fountain sealed; a reference to Song of Solomon 4:12."><video onloadstart="this.volume=0.05"  src="./img/souvenir.mp4" autoplay></video></span>
+<<br>>
+<<progdyn "title" 163>>
+<<audiotag>>
+
+
+
+
+:: kinjox
+<<hov "Once again" "Once again, as in Chris Marker's 'Sans Soleil:' As for the students, some massacred each other in the mountains in the name of revolutionary purity, while others had studied capitalism so thoroughly to fight it that they now provide it with its best executives. Like everywhere else the movement had its postures and its careerists, including, and there are some, those who made a career of martyrdom.">>, Oshima pointed the way. Laura went on to study
+how each side depicted the enemy.<<br>>
+It was not always pleasant.<<n western>>
+
+
+:: western
+Shoji Kinjo told her: "We were taught that Westerners
+were demons. We were told
+if US troops captured us
+they'd cut off our noses and ears,
+cut off our fingers.
+They would drive tanks over our bodies,
+and rape our women. We would suffer horribly, then die."<<br>>
+
+"We were so imbued with all this
+that it seemed better
+to suppress our loved ones,
+than leave them to the enemy,
+For them, it would be a consolation
+to die by the hand of a loved one.
+Filled with this thought,
+we lamented and, lamenting,
+interrupted our mother's life."<<n recog>>
+
+
+:: recog
+That's where I recognised him: Kinjo.
+The boy from the Keramas.
+<<br>>
+A village elder, a leader,
+was snapping off a tree-branch.
+I watched him,
+intrigued.
+Then, on his very hand,
+the stick became a weapon.
+As if having a seizure,
+he began to beat the life out
+of his wife and children,
+whom he loved,
+using just this piece of wood.<<n shocking>>
+
+
+:: shocking
+"It was terribly shocking,
+but telepathically
+all of us thought
+this was the thing to do
+and others began to kill
+the people they loved most.
+They began with children,
+with the weak and the old,
+with those who lacked the strength
+to take their own lives.
+So husbands killed wives,
+parents killed children,
+brothers killed sisters.
+"<<br>>
+"They killed them because
+they loved them. Such was the tragedy
+of those mass suicides.
+It was a real butchery,
+and the waters of the river
+where they threw the bodies
+indiscriminately
+became rivers of blood."<<br>>
+"As for my own family,
+my brother, who was
+two years my senior,
+and I raised our hand
+for the first time
+against the mother who had borne us.
+At 19, my brother
+could not help moaning.
+He suffered so much.
+My father went off to die.
+We also killed our younger
+brother and sister."<<n third>>
+
+
+:: third
+Afterwards, he sought
+a glorious death in war
+crossing enemy lines:<<br>>
+He was captured alongside soldiers
+who had called capture dishonourable.
+Mass suicides accompanied
+the advance of US troops.
+Together with Japanese executions
+and casualities of war,
+some 150,000 civilians died in Okinawa,
+a third of the population.
+No other group suffered so,
+except in the Nazi camps.<<br>>
+Europeans, surviving this,
+might have turned to Buddhism.
+Kinjo found Christianity.
+He became a minister.
+He offers his memory
+to help others decipher theirs.
+He wants Japan to acknowledge
+its war crimes,
+and mass suicides taught
+in school books,
+not ignored, or called madness.
+He wants what nations and men
+are least capable of:
+that memory be faced,
+and forgiveness asked.<<n minister>>
+
+
+
+:: minister
+Kinjo told me: "If you look in the Bible,
+you'll see confessing your mistakes
+and expressing repentance,
+cleanses people of their past.
+But Japanese mentality,
+the way of thought,
+considers that errors
+committed in the past
+remain errors forever. They cannot be erased."<<br>>
+"I decided that
+my mission must be
+to proclaim the value of human life
+to counter the notion,
+the ideology of the past,
+that held life in such contempt,
+for such was the lie they taught.
+That was the motivation
+for my becoming a missionary,
+a Christian minister."<<n buckner>>
+
+
+:: buckner
+With or without Kinjo, the war came to a close. After the retreat from Shuri,
+General Buckner
+sent Ushijima,
+in his Southern bastion,
+an offer of honorable surrender.
+The Japanese general reacted
+with an outburst of laughter.
+Was it laughter,
+borne on the wind,
+that prompted a frontline gunner?<<br>>
+Unknowningly, he aimed
+at Buckner,
+who was examining the ground,
+and Simon Bolivar Buckner,
+only US general
+to die in combat,
+failed to convince his enemies,
+and died a few days before them.
+It is said that Ushijima prayed
+for Buckner when he died.
+Then he and Cho
+arranged the ending,
+the only end they could conceive: suicide, or <<redhint "harakiri">>.<<n title>>
+
+
+:: harakiri
+Harakiri is not,
+in the European sense,
+suicide, but the act
+of giving oneself death.
+The act of living through harshest pain
+at the end.
+That's what harakiri is.
+So to perform harakiri ,
+you must be in good health,
+very well-balanced,
+with enough energy
+to make a gift of death.
+Pulling a trigger is not enough,
+nor is swallowing pills,
+nor stepping out into the void.
+You must touch yourself
+to the end,
+with living energy.
+<<br>>
+And the Game, is that the only way to end it? As it bleeds out error codes, to release it from its simulacra of suffering, through self-destruction?
+<<br>>
+The computer, it doesn't know how to harakiri, you bet.<<n title>>
+
+<<err>>
+<<prog 5>>
+
+
+:: fiveb
+<style>.macro-timed > span {background-color: red}</style>
+
+
+<<set $errscore to 0>>
+
+<<widget "kbc">>
+<<replace "#kbc">><span id="kbc"><<print $errscore>></span><</replace>>
+<<if $errscore gte 10000>><<goto "fiveyes">><<endif>>
+<</widget>>
+
+
+
+<span style="font-size:200%">LEVEL FIVE</span><<br>>
+The Game is still throwing up error messages, almost indecipherable now. Nothing left to do but shoot down the symbols as they appear and reappear. [KILOBYTES RECOVERED <span id="kbc"><<print $errscore>></span>/10000]
+<<br>>
+
+SYSTEM FAILURE IMMINENT, REBOOTING IN FORTY SECONDS
+<br>
+<<progdyn "fivere" 40 "noskip">>
+<<br>>
+
+<<repeat 0.3s>>
+<<print either("
+<<linkreplace 'Â'>><<set $errscore -= 1000>><<kbc>><</linkreplace>>",
+"<<linkreplace '»'>><<set $errscore -= 100>><<kbc>><</linkreplace>>",
+"<<linkreplace 'æ'>><<set $errscore += 0>><<kbc>><</linkreplace>>",
+"<<linkreplace '¿'>><<set $errscore += 10>><<kbc>><</linkreplace>>",
+"<<linkreplace 'Ø'>><<set $errscore += 100>><<kbc>><</linkreplace>>",
+"<<linkreplace '¢'>><<set $errscore += 1000>><<kbc>><</linkreplace>>",
+)>>
+<</repeat>>
+<span style="position: absolute; top: 0; right: 0; padding: 3px">[[ERROR TABLE|errt]]</span>
+
+<<prog 5.5>>
+
+
+
+:: mad
+Am I going mad?
+I used to see you
+everywhere,
+I recognised you from afar,
+I went back to the places we loved,
+the Jardin des Plantes,
+the little farm
+at the Bois de Boulogne,
+the shore beneath the Golden Gate
+where Kim Novak feigns suicide
+in Alfred Hitchcock's Vertigo…
+I'd see a man from behind,
+looking at parrots,
+or sitting among goats,
+or leaning against a rail,
+and it would be you.<<br>>
+Then I'd come closer,
+he'd turn round, be someone else.
+I'd wonder how anyone
+could replace you so fast.
+In my moment of distraction,
+not more than a split second…
+Now it's the same in the Network.<<br>>
+Someone calls, it's you,
+I know by tell-tale signs,
+a special word only we would use.
+Then I'd question him,
+and he'd shy away,
+not like you anymore.
+Then another sign.
+Is this a game?
+Is it you teasing me?<<br>>
+One day, one woman
+knows too much,
+too much about you, about me,
+about the Game, about everything.
+We are plugged into the masks gallery.
+I ask her to show me hers
+and on the screen I see this.<<n maskimg>>
+
+
+
+:: endof
+The end of the battle is written
+in the deep, by Okinawa,
+where Oshima,
+surveyor of memories,
+filmed underwater graveyards.
+Okinawa was
+the Japanese' sute-ishi,
+their sacrificial pawn.
+If the price was high enough,
+the US
+would shrink from invading
+Japan's main island
+and peace could be made.<<br>>
+The reality was,
+it made the case
+for the Atom Bomb.
+Without Okinawa's resistance,
+Hiroshima would not have been,
+and the century would've been different.
+Which means that in all respects,
+our lives were fashioned by events
+that took place in that little island,
+between the moment
+when Kinjo killed his family,
+and general Ushijima's
+self-death.<<n history>>
+
+
+<<prog 5.5>>
+
+
+:: history
+
+Now Laura saw
+the Game couldn't change history.<<br>>
+It would repeat it, in a loop,
+with an obstinacy that was
+as respectable as it was futile.
+Storing the past
+in order not to revive it
+was so 20th Century.
+She talked of it
+in a detached fashion now,
+as if she'd come to a limit;
+beyond it, the Game
+was not hers any more,
+nor was History.<<br>>
+I knew she spent the nights
+in conversations with Masks.
+I asked what she was looking for.
+She responded:
+Level Five, of course,
+in a tone that made you think
+she was cured, that for her
+the War was over.<<br>>
+Naturally, I was wrong.<<n mad>>
+
+
+:: maskimg
+<video onloadstart="this.volume=0.1" src="./img/mask.mp4" autoplay></video>
+<<br>>
+<<progdyn "last" 40>>
+
+
+<<audiotag>>
+
+
+:: last
+Last night: fun dialog
+with a mask.
+A <<hov "Harfang owl" "Aka the snowy owl.">> mask,
+so I listened.
+Having some knowledge about Harfang,
+in our days,
+shows some culture.
+Disappointing, as usual.<<br>>
+When he went for a date
+I really got him:
+“Think of all the time we've saved
+in just five minutes:
+Six months of passion,
+two years of jealousy,
+four years' infidelity,
+eight of misunderstandings,
+reconciliation one spring,
+one summer of fighting,
+one autumn of breaking up,
+one winter of despair,
+just work it out.
+Bye and thanks
+for the time saved."<<br>>
+He found nothing to say.
+And you?
+Shall I thank you?
+The list I gave him, so as to shine,
+did time have it in store for us?<<br>>
+Do I see me, in ten years time,
+separated from you,
+reading in the paper you've died,
+a feeling of something
+already seen,
+already lost,
+the faraway echo
+of something I don't know,
+— your absence now —
+which I wouldn't have known,
+but would have felt within me,
+as if my programmer foresaw it all,
+what happened, what
+might have happened?<<n search>>
+
+
+:: search
+
+Like when you search for a word
+that escapes you.
+“I had it on the tip of my tongue”.
+I'd have your death
+on the tip of my memory,
+I'd have thought:
+“There was a time when…”
+But then there was another time,
+the time of my list,
+from jealousy to deceit,
+and that time would mute our time,
+mute the echo of our life.<<br>>
+Everything would have been
+as though through a wall,
+barely audible…
+Like when rescuers search
+through a wall of rubble,
+they always come too late.
+And you?
+What would you have kept?
+One day my image would
+begin to blur,
+you'd realise the scraps
+of words,
+scraps of life
+filling your memory,
+were shifting out of focus.<<br>>
+Must I thank you too?
+Thank you for this gift
+of a life in which
+there wasn't enough time
+for something mediocre to slip in,
+neither lies nor cruelty.<<n swift>>
+
+
+:: swift
+So swift that the ordinary gremlins,
+that sneak into everyday life,
+haven't had the chance to get to us.
+They met a shut door:
+“Closed for a death”.
+So annoying for them.
+Nothing for them in the will.
+A life, a body, untouched,
+on which there wasn't
+time enough to spot
+the first signs
+of lovelessness,
+abandon,
+or relinquishment.<<br>>
+A real fairy-tale, one of them
+falls asleep
+and never changes.
+There's no greater gift.
+Shall I thank you?
+I thank you.
+Thank you.
+Thank you.<<n neversaw>>
+
+
+:: neversaw
+<<timed 2s>>I never saw Laura again. <<next 2s>>When I arrived at her computer, the program had been left open. <<br>>Mechanically, I typed in her name. "I don't know how to <<redhint "Laura">>,” the machine told me. <<n title>><</timed>>
+
+
+:: lauranew
+The machines were on, as if she had just stepped out.<<br>> Our loyal screensaver cat kept watch, and the system's <<redhint mail>> page was open.<<n title>>
+
+
+:: tech
+
+I'm not afraid of technology. Those who use technology as a weapon are not the same, though. The Battle of Okinawa was an atrocity becauase it was an ancient war fought with futuristic weapons.<<br>>
+
+Those involved had no idea how to use the technology in their hands. The difference goes further because of our primitve "lizard brains." Technology advances on its own terms, independent of those who invented it.<<br>> 
+Inventors and innovators are teleguided by people who are yet to be, for purposes that we hope are clear. But in the end, those purposes are, in fact, obscure.<<n endofgame>>
+
+
+:: mouse
+[img[./img/mouse.jpg][game]]<<im>>
+
+
+:: game
+For days, I continued to search through the computer's records for any trace of Laura. The game of cat and mouse, I reflected. Though the computer "mouse" looks more like a turtle, in my opinion. <<br>>
+ 
+But I am not a virtual cat. I am a real live cat that has marked the imaginations of everyone who has seen it.<<n tech>>
+
+
+:: cat
+[img[./img/cat.jpg][mouse]]<<im>>
+
+
+:: endofgame
+<<timed 3s>>END OF GAME. 
+
+<<br>><<link "RESTART?">><<run Engine.restart()>><</link>><</timed>>
+
+
+:: errt
+CHAR / KILOBYTES <br>
+<<print "=">><<print "=">><<print "=">><<print "=">><<print "=">><<print "=">><<print "=">><<print "=">><<print "=">><<print "=">><<print "=">><<print "=">><<print "=">><<print "=">><<print "=">><br>
+Â / -001000 <br>
+» / -000100 <br>
+¿ / -000000 <br>
+æ / +000010 <br>
+Ø / +000100 <br>
+¢ / +001000
+<<n fiveb>>
+
+
+:: reer
+<<timed 3s>><<goto "fiveb">><</timed>>
+
+
+:: fivere
+System recovery failed.
+<<br>>
+[[RETRY?|fiveb]]
+
+
+:: fiveyes
+System recovery succeeded.
+<<br>>
+[[CONTINUE|title]]
+
+
